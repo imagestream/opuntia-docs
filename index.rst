@@ -33,6 +33,13 @@ This is a test
    rr1000/quickstart
    rr1000/hardware
 
+.. toctree::
+   :maxdepth: 2
+   :caption: AP3500 Specfic:
+
+   ap3500/quickstart
+   ap3500/hardware   
+
 Indices and tables
 ==================
 
