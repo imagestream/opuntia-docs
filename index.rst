@@ -6,16 +6,8 @@
 Welcome to Opuntia documentation!
 =================================
 
-Opuntia is a high performance routing and edge computing platform based on the Linux kernel and OpenWRT project. It's focused on providing advanced routing and edge computing features.  
-
-More filler
-
-
-Even more
-
-  Lets indent this
-
-
+Opuntia is a high performance routing and edge computing platform based on the Linux kernel and OpenWRT project. 
+It's focused on providing advanced routing and edge computing features.  
 
 .. toctree::
    :maxdepth: 2
@@ -23,9 +15,7 @@ Even more
 
    ev1000/quickstart
    ev1000/hardware
-
-This is a test   
-
+ 
 .. toctree::
    :maxdepth: 2
    :caption: Rebel Router Specfic:
@@ -43,6 +33,4 @@ This is a test
 Indices and tables
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
