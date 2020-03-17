@@ -36,7 +36,9 @@ IPv6 address is present at all times even if IPv4 and other IPv6 configurations 
 relaible way to access the AP3500. Since this address is based on the MAC address of the Ethernet interface it is unquie to each
 AP3500. An easy method to determine this address is to send a ping packet to the IPv6 "all routers" multicast address(ff02::2). 
 
-For Linux systems this can be done using the following command assuming your Ethernet interface is "eth0"::
+For Linux systems this can be done using the following command assuming your Ethernet interface is "eth0". Please note that most operating 
+systems require specifiying the interface in addtion to the address when using Link Local addresses. For example Linux systems would 
+use the following syntax if your interface was "eth0"::
  
   ping6 ff02::2%eth0
 
@@ -66,19 +68,29 @@ The admin username is "**root**".  The default password is "**imagestream**".
 
 **Access via Ethernet using the Web Interface - IPv6**
 
-To access the Web GUI using using IPv6 the method is similar to using IPv4. But most people are not familure with the syntax for entering
-IPv6 addresses in a web browser. If we assume that you determined your Ipv6 Link Local address is "fe80::b291:37ff:fe05:1" then the 
-correct url would be as follows::
+To access the Web GUI using using IPv6 the method is similar to using IPv4. To enter a IPv6 addresses in a web browser use the following syntax. 
+If we assume that you determined your Ipv6 Link Local address is "fe80::b291:37ff:fe05:1" then the correct url would be as follows::
 
   https://[fe80::b291:37ff:fe05:1]/
 
 The AP3500 ships with a self-signed ssl certificate. This may cause warning in when connecting to the AP3500 for the first time. These
 warnings can be safely ignored for accessing the management Web GUI. 
 
-SSH Access
+CLI Access via SSH 
 ----------
 
-This is fill text.
+**IPv4 & IPv6**
+
+The AP3500 can also be accessed via SSH. Using the ip address of the AP3500 connect as user root. If the AP3500 is in failback IPv4 mode the ip address
+will be 10.10.199.1. If the AP3500 is using DHCP or DHCPv6 you need to determine which address was a assigned by looking at your DHCP sever. In the following 
+screenshot the address was assigned via DHCP.  
+
+The admin username is "**root**".  The default password is "**imagestream**". 
+
+.. image:: ../images/Opuntia-default-login-ssh.png
+   :width: 600
+   :alt: Screenshot of the SSH Login
+
 
 .. rubric:: Footnotes
 
