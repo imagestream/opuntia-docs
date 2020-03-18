@@ -9,6 +9,12 @@ Welcome to Opuntia documentation!
 Opuntia is a high performance routing and edge computing platform based on the Linux kernel and OpenWRT project. 
 It's focused on providing advanced routing and edge computing features.  
 
+.. toctree:: 
+   :maxdepth: 3
+   :caption: Opuntia User Manual
+
+   Opuntia-manual/intro
+
 .. toctree::
    :maxdepth: 2
    :caption: Envoy Specific:

@@ -1,5 +1,8 @@
 ***********************
-Ev1000 Hardware details
+RR1000 Hardware details
 ***********************
 
-The Envoy 1000 is a compact platform that can be used as a router, vpn server, security device and edge compute device depending on software configuration. The hardware 
+The RR1000 a router, vpn server, security device and edge compute platform depending on software and hardware configurations.  
+
+
+The router has six Ethernet Interfaces.

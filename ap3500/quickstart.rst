@@ -1,6 +1,6 @@
-**************************
+***********************
 AP3500 QuickStart Guide
-**************************
+***********************
 
 .. contents:: Table of Contents
 
@@ -43,7 +43,8 @@ use the following syntax if your interface was "eth0"::
   ping6 ff02::2%eth0
 
 Additionally it's possible to compute the Link Local address using the MAC address. Numerious online calculators can be used
-to easily find the Link local address([2]_) using the MAC address located on the product label. 
+to easily find the Link local address([2]_) using the MAC address located on the product label. Note; the AP3500 will have a 
+MAC address that begins with "B0:91:37". 
 
 Once you have determined the correct IPv6 address you can then move to accessing the AP3500 via the Web GUI or via SSH.
 
@@ -77,7 +78,7 @@ The AP3500 ships with a self-signed ssl certificate. This may cause warning in w
 warnings can be safely ignored for accessing the management Web GUI. 
 
 CLI Access via SSH 
-----------
+------------------
 
 **IPv4 & IPv6**
 
@@ -89,8 +90,7 @@ The admin username is "**root**".  The default password is "**imagestream**".
 
 .. image:: ../images/Opuntia-default-login-ssh.png
    :width: 600
-   :alt: Screenshot of the SSH Login
-
+   :alt: Screenshot of the SSH Login showing a user loging in
 
 .. rubric:: Footnotes
 
