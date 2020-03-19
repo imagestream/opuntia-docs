@@ -22,7 +22,9 @@ description of the factory default configuration EV1000. It is possible to chang
 **Eth0 and Eth1**
 
 The default configuration of the EV1000 is to configure Eth0 and Eth1 as descrete interfaces. These interfaces runs in DHCP 
-and DHCPv6 client mode. It will continue to try to receive an IPv4 and IPv6 address on the Wan interface until it succeeds.
+and DHCPv6 client mode. It will continue to try to receive an IPv4 and IPv6 address on the Wan interface until it succeeds. 
+Since both interfaces are trying to obtain a valid IPv4 address and default routes; in the case where both interfaces install
+a default route Eth0 will be the perfered interface.  
 
 The Eth0 and Eth1 interface are part of the Wan Firewall Zone. It will Source Nat traffic flowing out these interfaces by default.    
 
