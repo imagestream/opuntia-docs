@@ -13,7 +13,8 @@ It's focused on providing advanced routing and edge computing features.
    :maxdepth: 3
    :caption: Opuntia User Manual
 
-   Opuntia-manual/intro
+   Opuntia-manual/introduction/about
+   Opuntia-manual/configuration/administrative-tasks
 
 .. toctree::
    :maxdepth: 2

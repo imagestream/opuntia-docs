@@ -1,0 +1,17 @@
+
+Intro
+	overview of the docs
+
+Configuration
+	Administrative tasks (Host name etc... )
+	configuration managment
+	Software update	
+	Interface 
+	DHCP
+	Firewall
+Status 
+	Real-time Logs/routes etc...
+	Real-time graphs
+Monitoring
+	Collectd exporter/configuration
+	Remote Syslog

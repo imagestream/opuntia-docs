@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = u'Opuntia'
-copyright = u'2020, Joshua Snyder'
+copyright = u'2020, ImageStream Internet Solutions'
 author = u'Joshua Snyder'
 
 # The short X.Y version
-version = u''
+version = u'4.8.16'
 # The full version, including alpha/beta/rc tags
-release = u'4.8.15'
+release = u'4.8.16 r45534'
 
 
 # -- General configuration ---------------------------------------------------

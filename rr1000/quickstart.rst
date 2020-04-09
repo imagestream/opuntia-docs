@@ -11,6 +11,8 @@ RR1000 QuickStart Guide
 
 .. contents:: Table of Contents
 
+.. Warning:: The documentation for the RR1000 is still a work in progress. 
+
 The RR1000 is configured by default to allow access via several different methods. 
 
 - Access via Ethernet using the Web Interface
@@ -79,6 +81,9 @@ The RR1000 ships with a self-signed ssl certificate. This may cause warning in w
 warnings can be safely ignored for accessing the management Web GUI. 
 
 The admin username is "**root**".  The default password is "**imagestream**". 
+
+.. note::
+   We strongly recommend that you change the default password as your first configuration change.
 
 .. image:: ../images/Opuntia-default-login.png
   :width: 600
