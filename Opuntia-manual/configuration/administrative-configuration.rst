@@ -97,7 +97,7 @@ file you will see the option hostname. Modify this to your desired Hostname and 
   :width: 600
   :alt: Screenshot showing the system configuration file being edited in nano
 
-And here is an ex ::
+And here is an example of the uci command needed to change the hostname to "Newhostname". ::
 
   uci set system.@system[0].hostname='Newhostname'
 
@@ -105,3 +105,31 @@ And here is an ex ::
 .. image:: ../manual-images/Hostname-uci.png
   :width: 500
   :alt: Screenshot of the uci commands
+
+Setting Time and the Timezone
+-----------------------------
+
+**Web GUI**
+
+To change the time or timezone of the system. First navigate to the General settings page. 
+
+Main Menu - *System --> System*
+
+.. note:: We recommend that you use the UTC timezone as it simplifies log aggreation from multiple systems.  
+
+.. image:: ../manual-images/System-System-General.png
+  :width: 600
+  :alt: Screenshot of the General settings page
+
+**CLI**
+
+Here is the uci command to set the timezone. ::
+
+  uci set system.@system[0].zonename='UTC'
+
+.. image:: ../manual-images/Timezone-CLI.png
+  :width: 500
+  :alt: Screenshot of commands to change the Timezone
+
+  
+
