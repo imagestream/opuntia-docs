@@ -90,8 +90,18 @@ configuration change. Examples of both methods are shown below.
 
 .. note:: The "reload_config" command must be run after each of these methods to apply the changes.
 
+Here you see the default contents of the system configuration (*/etc/config/system*). In the config system section of this
+file you will see the option hostname. Modify this to your desired Hostname and then save the file.
+
 .. image:: ../manual-images/Hostname-Nano.png
   :width: 600
   :alt: Screenshot showing the system configuration file being edited in nano
 
-  
+And here is an ex ::
+
+  uci set system.@system[0].hostname='Newhostname'
+
+
+.. image:: ../manual-images/Hostname-uci.png
+  :width: 500
+  :alt: Screenshot of the uci commands

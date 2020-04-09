@@ -10,7 +10,7 @@ About Opuntia
 Opuntia is high performance routing and edge computing platform based on OpenWrt. It includes
 support for these major features. 
 
- - Full suite of IPv4/IPv6 forwarding
+ - Support for IPv4/IPv6 connectivity
  - VPN client and server support for Ipsec, OpenVpn and Wireguard
  - Detailed usage statistics 
  - Free Range Routing (Dynamic routing support for BGP, Ospf, Eigrp and IS-IS)
