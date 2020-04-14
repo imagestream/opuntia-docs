@@ -23,7 +23,6 @@ Main Menu - *System --> Administration*
 
 Input your desired password in both boxes and click save. 
 
-
 **CLI**
 
 To change the root password, you use the standard Linux "passwd" utility. Below is an example. 
@@ -91,7 +90,8 @@ configuration change. Examples of both methods are shown below.
 .. note:: The "reload_config" command must be run after each of these methods to apply the changes.
 
 Here you see the default contents of the system configuration (*/etc/config/system*). In the config system section of this
-file you will see the option hostname. Modify this to your desired Hostname and then save the file.
+file you will see the option hostname. Modify this to your desired Hostname and then save the file. After saving the file,
+run "reload_config" to apply the changes. 
 
 .. image:: ../manual-images/Hostname-Nano.png
   :width: 600
@@ -127,9 +127,11 @@ Here is the uci command to set the timezone. ::
 
   uci set system.@system[0].zonename='UTC'
 
+Once you have used the uci command to change the timezone; run "reload_config" to apply the changes. 
+
 .. image:: ../manual-images/Timezone-CLI.png
   :width: 500
   :alt: Screenshot of commands to change the Timezone
 
-  
+
 

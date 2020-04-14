@@ -9,9 +9,16 @@ Configuration
 	Interface 
 	DHCP
 	Firewall
+	VPN Server/Client
 Status 
 	Real-time Logs/routes etc...
 	Real-time graphs
 Monitoring
 	Collectd exporter/configuration
 	Remote Syslog
+Advanced Features
+	FRR
+	Ansilbe
+	Local Docker
+	K3s
+		
