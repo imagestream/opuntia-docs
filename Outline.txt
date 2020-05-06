@@ -4,9 +4,12 @@ Intro
 
 Configuration
 	Administrative tasks (Host name etc... )
-	configuration managment
-	Software update	
-	Interface 
+	configuration managment / firmware upgrade
+	Ethernet Interface
+	Wireless Configuration's 
+		AP
+		Client
+		Bridge 
 	DHCP
 	Firewall
 	VPN Server/Client
@@ -21,4 +24,3 @@ Advanced Features
 	Ansilbe
 	Local Docker
 	K3s
-		
