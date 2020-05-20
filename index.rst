@@ -16,6 +16,7 @@ It's focused on providing advanced routing and edge computing features.
    Opuntia-manual/introduction/about
    Opuntia-manual/configuration/administrative-configuration
    Opuntia-manual/configuration/configuration-managment
+   Opuntia-manual/configuration/wired-interfaces
 
 .. toctree::
    :maxdepth: 2

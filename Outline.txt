@@ -6,6 +6,10 @@ Configuration
 	Administrative tasks (Host name etc... )
 	configuration managment / firmware upgrade
 	Ethernet Interface
+		Interface Names 
+		Static Addresses
+		
+
 	Wireless Configuration's 
 		AP
 		Client
