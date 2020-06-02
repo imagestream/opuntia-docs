@@ -14,8 +14,10 @@ Configuration
 		AP
 		Client
 		Bridge 
-	DHCP
+		Mesh
 	Firewall
+		NAT
+	Traffic Shaping	
 	VPN Server/Client
 Status 
 	Real-time Logs/routes etc...
