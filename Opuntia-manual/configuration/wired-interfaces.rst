@@ -56,19 +56,56 @@ interface has both the DHCP assigned IPv4 address and the DHCPv6 assigned IPv6 a
   :alt: Screenshot showing how both the DHCP/DHCPv6 address is on a single Linux network Interface.
 
 Understanding how Opuntia is interacting with the Linux networking stack is important if you plan to use custom iptables 
-firewall rules, monitoring and in the CLI. The Linux networking stack is unaware of Opuntia device names. So attempts to 
-use the Opuntia device names from the CLI will fail.  
+firewall rules, monitoring and interacting in the CLI. The Linux networking stack is unaware of Opuntia device names. 
+So attempts to use the Opuntia device names from the CLI will fail.  
 
 Protocol Types
 --------------
 
+Opuntia supports several different interface protocols. This protocol configuration setting configures the main operating
+mode of the interface. Below are the most commonly used protocol types. 
 
+* Static addresses
+* DHCP client
+* DHCPv6 client
+* Unmanaged
+* WireGuard VPN
+* PPPoE
 
-Static Protocol
----------------
+We will cover each of these protocol types in detail. But there are other types that are supported but we are not documenting 
+at this time due to lack of real world useage. If you believe that you are required to use one of these protocols and you are 
+having difficulty plese contact ImageStream support at *support@imagestream.com*.  
+
+To change the protocol setting of an interface first navigate the the Interface page in the Web GUI. 
+
+Main Menu - *Network --> Interfaces*
+
+There you will see a listing of all of the interfaces currently configured in the system. Below is an example of we are 
+showing the interfaces page from the *Wan and Lan* example we used in talking about Opuntia interfaces. 
+
+.. image:: ../manual-images/Network-Interfaces-Wan-Lan-example.png
+  :width: 750
+  :alt: Screenshot of the Interfaces page in the Wan/Lan example 
+
+As you can see we have three defined interfaces; Wan, Wan_6 and Lan. This example has protocol DHCP configued on the *Wan* 
+interface, DHCPv6 on the *Wan_6* interface and Static address protocol on the *Lan* interface. 
+
+To change an interface to a different protocol click the "Edit" button for that interface. Then select the drop down box 
+labled "Protocol". 
+
+.. image:: ../manual-images/Network-Interfaces-Edit-Proto.png
+  :width: 700
+  :alt: Screenshot showing the Protocol dropdown box location
+
+You can select your new protocol and you will have to *Save & Apply* the change in the Interfaces page before you will be 
+able to configure settings for the newly selected protocol. 
+
+Static addresses
+----------------
 
 The "Static Protocol" is allows for setting IPv4 and IPv6 addresses manually on an interface. This one of the most common 
-configuration scenarios for interal 
+configuration scenarios. This protocol is frequently used with *internal* RFC 1918 addresses and for upstream Internet 
+connections that with non-DHCP assigned interfaces. 
 
 .. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv4.png
   :width: 700
