@@ -123,7 +123,7 @@ Main Menu - *System --> System*
 
 **CLI**
 
-Here is the uci command to set the timezone. ::
+Here is the uci command to set the timezone to UTC.  ::
 
   uci set system.@system[0].zonename='UTC'
 

@@ -42,7 +42,7 @@ interfaces. These interfaces have protocol "DHCP" and "DHCPv6" configured. In th
 192.168.79.14/24 on the *Wan* interface and 2605:6000:62e0:400::1fa/128 on the *Wan_6* interface. Both the *Wan* and *Wan_6* 
 interface are sharing the same Linux device in this case *eth0*.  The *Lan* interface is configured with a static IPv4 address
 of 10.10.199.1/24 and the IPv6 subsystem has assigned a network range of 2605:6000:62e0:410::1/62 to this interface. 
-The color coded of the devices tell you which firewall zone applies to the interface. 
+The color code of the devices tell you which firewall zone applies to the interface. 
 
 .. image:: ../manual-images/Network-Interfaces-Wan-Lan-example.png
   :width: 750
@@ -59,8 +59,8 @@ Understanding how Opuntia is interacting with the Linux networking stack is impo
 firewall rules, monitoring and interacting in the CLI. The Linux networking stack is unaware of Opuntia device names. 
 So attempts to use the Opuntia device names from the CLI will fail.  
 
-Protocol Types
---------------
+Protocol Configuraion
+---------------------
 
 Opuntia supports several different interface protocols. This protocol configuration setting configures the main operating
 mode of the interface. Below are the most commonly used protocol types. 
@@ -70,6 +70,7 @@ mode of the interface. Below are the most commonly used protocol types.
 * DHCPv6 client
 * Unmanaged
 * WireGuard VPN
+* Link Aggregation (IEEE 802.3ad)
 * PPPoE
 
 We will cover each of these protocol types in detail. But there are other types that are supported but we are not documenting 
@@ -101,12 +102,31 @@ You can select your new protocol and you will have to *Save & Apply* the change 
 able to configure settings for the newly selected protocol. 
 
 Static addresses
-----------------
+################
 
 The "Static Protocol" is allows for setting IPv4 and IPv6 addresses manually on an interface. This one of the most common 
 configuration scenarios. This protocol is frequently used with *internal* RFC 1918 addresses and for upstream Internet 
 connections that with non-DHCP assigned interfaces. 
 
+Web GUI
+*******
+
+The interface configuration is accessed by navigating to the Network interfaces page. 
+
+Main Menu - *Network --> Interfaces*
+
+Once you have navigated to the interfaces page, you can click on the "Edit" button to see the "General Settings" interface tab.   
+
 .. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv4.png
   :width: 700
   :alt: Screenshot of editing an interfaces with the static protocol 
+
+CLI
+***
+
+
+
+VLAN Configuraion
+-----------------
+
+
