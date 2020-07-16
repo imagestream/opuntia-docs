@@ -104,9 +104,10 @@ able to configure settings for the newly selected protocol.
 Static addresses
 ################
 
-The "Static Protocol" is allows for setting IPv4 and IPv6 addresses manually on an interface. This one of the most common 
-configuration scenarios. This protocol is frequently used with *internal* RFC 1918 addresses and for upstream Internet 
-connections that with non-DHCP assigned interfaces. 
+The "Static Protocol" is allows for setting IPv4/IPv6 addresses and address ranges manually on an interface. This one of the 
+most common configuration scenarios. This protocol is frequently used with *internal* RFC 1918 addresses and for upstream Internet 
+connections. The "Static Protocol" also allows the configuration of DHCP/DHCPv6 servers. So this protocol type is almost 
+universally used on at least one interface in any deployment. 
 
 Web GUI
 *******
@@ -121,6 +122,25 @@ Once you have navigated to the interfaces page, you can click on the "Edit" butt
   :width: 700
   :alt: Screenshot of editing an interfaces with the static protocol 
 
+In this screenshot you see the "General Settings" tab. This tab allows for the setting of static IPv4 and IPv6 addresses. When 
+setting IPv4 address you are given the option of inputing the address and netmask separately or to use the CIDR list notation. 
+ImageStream recommends using CIDR syntax as it's more human readable and less likely to result is the incorrect configuration of 
+address ranges. CIDR List notation is the only option for setting IPv6 addresses. 
+
+To issure that you are in CIDR List notation. Click the small check box at the end of the IPv4 address box. 
+
+.. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv4-CIDR.png
+  :width: 700
+  :alt: Screenshot showing the CIDR check box
+  
+.. note:: When operting is CIDR notation it's import to make sure that you click the "+" button after typing in the address or it will not be saved. 
+
+This example shows 
+
+.. image:: ../manual-images/Network-Interfaces-Static-Proto-CIDR-not-saved.png
+  :width: 700
+
+
 CLI
 ***
 
@@ -128,5 +148,3 @@ CLI
 
 VLAN Configuraion
 -----------------
-
-
