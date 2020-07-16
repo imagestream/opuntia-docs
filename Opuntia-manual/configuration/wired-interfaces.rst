@@ -127,7 +127,7 @@ setting IPv4 address you are given the option of inputing the address and netmas
 ImageStream recommends using CIDR syntax as it's more human readable and less likely to result is the incorrect configuration of 
 address ranges. CIDR List notation is the only option for setting IPv6 addresses. 
 
-To issure that you are in CIDR List notation. Click the small check box at the end of the IPv4 address box. 
+To ensure that you are in CIDR List notation. Click the small check box at the end of the IPv4 address box. 
 
 .. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv4-CIDR.png
   :width: 700
