@@ -122,12 +122,22 @@ Once you have navigated to the interfaces page, you can click on the "Edit" butt
   :width: 700
   :alt: Screenshot of editing an interfaces with the static protocol 
 
-In this screenshot you see the "General Settings" tab. This tab allows for the setting of static IPv4 and IPv6 addresses. When 
-setting IPv4 address you are given the option of inputing the address and netmask separately or to use the CIDR list notation. 
-ImageStream recommends using CIDR syntax as it's more human readable and less likely to result is the incorrect configuration of 
-address ranges. CIDR List notation is the only option for setting IPv6 addresses. 
+In this screenshot you see the "General Settings" tab. This tab allows for the setting of static IPv4 and IPv6 addresses.
+ 
 
-To ensure that you are in CIDR List notation. Click the small check box at the end of the IPv4 address box. 
+- General Settings (IPv4/IPv6 address, netmask and Custom DNS servers)
+- Advanced Settings (Built-in IPv6, MAC address override and MTU override)
+- Physical Settings (Bridging configuration and Interface Selection)
+- Firewall Settings (Firewall zone assigned to the interface)
+- DHCP Server (DHCP Settings and IPv6 specific configuration)
+
+**IPv4**
+
+IPv4 addresses are the most commonly configured static addresses.  When setting IPv4 address you are given the option of inputing 
+the address and netmask separately or to use the CIDR list notation. ImageStream recommends using CIDR syntax as it's more human 
+readable and less likely to result is the incorrect configuration of address ranges. 
+
+To ensure that you are using CIDR List notation. Click the small check box at the end of the IPv4 address box. 
 
 .. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv4-CIDR.png
   :width: 700
@@ -135,15 +145,111 @@ To ensure that you are in CIDR List notation. Click the small check box at the e
   
 .. note:: When operting is CIDR notation it's import to make sure that you click the "+" button after typing in the address or it will not be saved. 
 
-This example shows 
+This example shows an address that has **NOT** been saved correctly.
 
 .. image:: ../manual-images/Network-Interfaces-Static-Proto-CIDR-not-saved.png
   :width: 700
+
+And this example shows the address is correctly saved. You will see a new text box below all saved addresses. 
+
+.. image:: ../manual-images/Network-Interfaces-Static-Proto-CIDR-saved.png
+  :width: 700
+
+Other important IPv4 settings include "IPv4 gateway". It's important to note that is  
+
+**IPv6**
+
+Given that IPv6 fundementatly support multiple addresses per interface CIDR List notation is the only option for manually setting 
+IPv6 addresses. With IPv6 often you 
 
 
 CLI
 ***
 
+**IPv4** 
+
+Here is a list configuration options. 
+
++---------------+----------------------+--------------------------------------------------+
+| Name          | Type                 | Description of the command                       |
++===============+======================+==================================================+
+| ipaddr        | ip address           | Ip address In CIDR or normal format              |
++---------------+----------------------+--------------------------------------------------+
+| netmask       | netmask              | IPv4 Subnet mask                                 |
++---------------+----------------------+--------------------------------------------------+
+| gateway       | ip address           | Default IPv4 gateway                             | 
++---------------+----------------------+--------------------------------------------------+
+| broadcast     | ip address           | Broadcast IPv4 address                           | 
++---------------+----------------------+--------------------------------------------------+
+| dns           | list of ip addresses | Dns Server List                                  | 
++---------------+----------------------+--------------------------------------------------+
+| metric        | integer              | Route metric for this interface                  |
++---------------+----------------------+--------------------------------------------------+
+
+**IPv6**
+
++---------------+----------------------+--------------------------------------------------+
+| Name          | Type                 | Description of the command                       |
++===============+======================+==================================================+
+| ip6addr       | ipv6 address         | IPv6 Address list in CIDR format                 |
++---------------+----------------------+--------------------------------------------------+
+
++---------------+----------------------+--------------------------------------------------+
++---------------+----------------------+--------------------------------------------------+
++---------------+----------------------+--------------------------------------------------+
++---------------+----------------------+--------------------------------------------------+
++---------------+----------------------+--------------------------------------------------+
+
+
+
+DHCP Client
+###########
+
+Web GUI
+*******
+
+CLI
+***
+
+DHCPv6 Client
+#############
+
+Web GUI
+*******
+
+CLI
+***
+
+Unmanaged
+#########
+
+
+WireGuard VPN
+#############
+
+Web GUI
+*******
+
+CLI
+***
+
+Link Aggregation
+################
+
+Web GUI
+*******
+
+CLI
+***
+
+PPPoE
+#####
+
+Web GUI
+*******
+
+CLI
+***
 
 
 VLAN Configuraion

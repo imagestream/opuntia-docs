@@ -15,6 +15,9 @@ Configuration
 		Client
 		Bridge 
 		Mesh
+	DHCP Server
+		General
+		IPv6	
 	Firewall
 		NAT
 	Traffic Shaping	
