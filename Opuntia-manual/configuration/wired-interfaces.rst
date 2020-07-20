@@ -155,12 +155,47 @@ And this example shows the address is correctly saved. You will see a new text b
 .. image:: ../manual-images/Network-Interfaces-Static-Proto-CIDR-saved.png
   :width: 700
 
-Other important IPv4 settings include "IPv4 gateway". It's important to note that is  
+Other important IPv4 settings include "IPv4 gateway". It's important to note that this should only be set on a single interface
+since this will set the global default IPv4 route for the system.   
 
 **IPv6**
 
+.. important:: With IPv6 deployments the majority of configurations will be using ISP provided network space. If your deployment uses provider delegated network Prefixes you **MUST** use the built IPv6 management options described below and DHCP server **MUST** be enabled on this interface. 
+
 Given that IPv6 fundementatly support multiple addresses per interface CIDR List notation is the only option for manually setting 
-IPv6 addresses. With IPv6 often you 
+IPv6 addresses. With IPv6 generally you do not set a static address since you must use provider network addresses. But you can 
+control which IPv6 address is assigned even in this situation by using the IPv6 assignment length, IPv6 assignment hint and IPv6
+suffix settings. 
+
+
+.. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv6.png
+  :width: 700
+
+With the use of these three options you can fully control IPv6 address assignment when using the built-in IPv6 management. Given 
+the dynamic nature of IPv6 prefix delegations it's often not needed to set the any of these other than the "IPv6 assignment length".
+And that setting should be set to a length of 64 bit in most configurations. The "IPv6 suffix" setting is also a commonly configured
+setting but differences in between IPv4 and IPv6 make this setting more far less important that in a IPv4 network. 
+
+The "IPv6 suffix" sets the 
+
+The "IPv6 assignment length" allows the administrator to chose the desired IPv4 prefix length for the interface. This is typically 
+set to 64 bits. This setting requests a network prefix from the built-in IPv6 management. If the system has recieved a IPv6 prefix
+delegation from an Interface running DHCPv6 the requested prefix will be allocated from that range provided that sufficent IPv6 
+network space is available.
+
+For example if the Opuntia system recieved a IPv6 prefix delegation of 2605:540:1::/60 and we set the "IPv6 assignment length" to 
+64 bits; we will recieve one of the 16 /64 network ranges in the 2605:540:1::/60 delegation. This IPv6 prefix will be asigned to 
+this interface. This setting alone only sets the length of the prefix it does not control which range will be selected.
+
+.. important:: If a "IPv6 assignment hint" is outside of the IPv6 prefix ranges that are available this setting will have no effect.
+
+If we wanted to control which /64 IPv6 prefix will be selected we can use the second setting "IPv6 assignment hint". This is an 
+optional value, the default is not set and if system will try to effecently allocate IPv6 networks. Not setting an assignment
+hint is the normal configuration. But if control of the is required; the value is a hex number that matches sub-Prefix ID. So in 
+this example if we want to assign 2605:540:1:2::/64 we could set the hint value to "2". Or if it was required to assign 
+2605:540:1:f::/64 we would set the value to "f". 
+
+
 
 
 CLI
@@ -172,33 +207,61 @@ CLI
   :width: 700
   :alt: Screenshot showing the CIDR check box
 
+And here is an example setting two static IPv4 addresses on interface named "Home_Lan".  
 
-Here is a list configuration options. 
+.. code-block:: python
+  :emphasize-lines: 4-5
+     
+  config interface 'Home_Lan'
+        option ifname 'eth1'
+        option proto 'static'
+        list ipaddr '192.168.85.1/24'
+        list ipaddr '192.168.86.1/24'
+        list dns '192.168.85.10'
 
-+---------------+----------------------+--------------------------------------------------+
-| Name          | Type                 | Description of the command                       |
-+===============+======================+==================================================+
-| ipaddr        | ip address           | Ip address In CIDR or normal format              |
-+---------------+----------------------+--------------------------------------------------+
-| netmask       | netmask              | IPv4 Subnet mask                                 |
-+---------------+----------------------+--------------------------------------------------+
-| gateway       | ip address           | Default IPv4 gateway                             | 
-+---------------+----------------------+--------------------------------------------------+
-| broadcast     | ip address           | Broadcast IPv4 address                           | 
-+---------------+----------------------+--------------------------------------------------+
-| dns           | list of ip addresses | Dns Server List                                  | 
-+---------------+----------------------+--------------------------------------------------+
-| metric        | integer              | Route metric for this interface                  |
-+---------------+----------------------+--------------------------------------------------+
+
+
+Here is a list of common configuration options. 
+
++---------------+----------------------+----------+--------------------------------------------------+
+| Name          | Type                 | Required | Description of the command                       |
++===============+======================+==========+==================================================+
+| ifname        | Interface Name       | Yes      | Physical Interface Name                          |
++---------------+----------------------+----------+--------------------------------------------------+
+| proto         | Protocol Type        | Yes      | Protocol                                         | 
++---------------+----------------------+----------+--------------------------------------------------+
+| ipaddr        | ip address           | Yes      | Ip address CIDR list                             |
++---------------+----------------------+----------+--------------------------------------------------+
+| netmask       | netmask              | No       | IPv4 Subnet mask                                 |
++---------------+----------------------+----------+--------------------------------------------------+
+| gateway       | ip address           | No       | Default IPv4 gateway                             | 
++---------------+----------------------+----------+--------------------------------------------------+
+| broadcast     | ip address           | No       | Broadcast IPv4 address                           |
++---------------+----------------------+----------+--------------------------------------------------+ 
+| dns           | list of ip addresses | No       | Dns Server List                                  | 
++---------------+----------------------+----------+--------------------------------------------------+
+| metric        | integer              | No       | Route metric for this interface                  |
++---------------+----------------------+----------+--------------------------------------------------+
 
 **IPv6**
 
-+---------------+----------------------+--------------------------------------------------+
-| Name          | Type                 | Description of the command                       |
-+===============+======================+==================================================+
-| ip6addr       | ipv6 address         | IPv6 Address list in CIDR format                 |
-+---------------+----------------------+--------------------------------------------------+
-
++---------------+----------------------+----------+-----------------------------------------------------+
+| Name          | Type                 | Required | Description of the command                          |
++===============+======================+==========+=====================================================+
+| ifname        | Interface Name       | Yes      | Physical Interface Name                             |
++---------------+----------------------+----------+-----------------------------------------------------+
+| proto         | Protocol Type        | Yes      | Protocol                                            | 
++---------------+----------------------+----------+-----------------------------------------------------+
+| ip6addr       | ipv6 address         | Yes / No*| IPv6 Address (not required if an IPv4 ipaddr is set)|
++---------------+----------------------+----------+-----------------------------------------------------+
+| ip6gw         | ipv6 address         | No       | IPv6 Default Gateway                                |
++---------------+----------------------+----------+-----------------------------------------------------+
+| ip6assign     | prefix length        | No       | Delegate a prefix of this length                    |
++---------------+----------------------+----------+-----------------------------------------------------+
+| ip6hint       | prefix hint          | No       | Prefix hint in Hex format                           |
++---------------+----------------------+----------+-----------------------------------------------------+
+| ip6class      | ipv6 prefix          | No       |                                                     |
++---------------+----------------------+----------+-----------------------------------------------------+
 
 
 
