@@ -158,44 +158,149 @@ And this example shows the address is correctly saved. You will see a new text b
 Other important IPv4 settings include "IPv4 gateway". It's important to note that this should only be set on a single interface
 since this will set the global default IPv4 route for the system.   
 
-**IPv6**
+**IPv6 with Prefix Delegation**
 
 .. important:: With IPv6 deployments the majority of configurations will be using ISP provided network space. If your deployment uses provider delegated network Prefixes you **MUST** use the built IPv6 management options described below and DHCP server **MUST** be enabled on this interface. 
+
+The Opuntia operating system includes an automatic system to manage IPv6 when you recieve a IPv6 Prefix delegation from an upstream
+provider. This automatic system will ensure that the system is providing downstream clients with the correct IPv6 addresses and 
+manages any changes in routing that may be required. IPv6 Prefix delegation is by far the most common configuration scenario if you 
+are connecting to the IPv6 Internet. This is fundementatly a dynamic proccess that makes it impossible to set a static IPv6 address.
+
+But the built-in IPv6 management system does allow for several tunable values that allows the system administrator to control the
+deployment of IPv6 networks and addresses. In order of importance these options are; IPv6 assignment length, IPv6 suffix and IPv6
+assignment hint. Each of these options will be discussed in detail in this section. But it's important understand that in most 
+common configurations the only settting that you are likely to configure is IPv6 assignment length. The other two values are likely
+to remain unconfigured and in the default state. 
+
+.. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv6.png
+  :width: 700
+
+The "IPv6 assignment length" allows the administrator to chose the desired IPv4 prefix length for the interface. This setting is 
+also used to signal to the Opuntia operating system to enable to built-in IPv6 management on this interface. Selecting any value
+will disable the normal static IPv6 configuration options for setting a static IPv6 address, IPv6 gateway and IPv6 routed prefix.
+
+IPv6 assignment length is typically set to 64 bits. A IPv6 Prefix length of 64 bits allows for the standard IPv6 address 
+auto-configuration for most client devices (SLAAC and DHCPv6). To function correctly you must recieve a IPv6 Prefix delegation from 
+an upstream provider.
+
+For example if the Opuntia system recieved a IPv6 prefix delegation of 2605:540:1::/60 and we set the "IPv6 assignment length" to 
+64 bits; Opuntia will configure one of the 16 /64 network ranges in the 2605:540:1::/60 delegation on this interface. If the 
+upstream provider changes the IPv6 prefix delegation those changes will be automatically applied to all downstream devices. 
+
+.. note:: Most clent operating sytems install IPv6 routes using the link local address of the router. So a human readable address on a interface is purely a management feature.
+
+The "IPv6 suffix" sets the IPv6 Interface ID. This is the last 64bits of a IPv6 address. This allows the administrator to control 
+the last part of an IPv6 address that is assigned. Given our example of receiving a IPv6 prefix of 2605:540:1::/64 if we were 
+set the the "IPv6 suffix" to "::100:1"; the expected IPv6 address assigned to the interface would be 2605:540:1::100:1/64. This 
+setting does have a default value of "::1" so in many cases you will not need to make adjustments to this setting if you want your
+routers IPv6 to in ::1. 
+
+Setting the IPv6 suffix setting is useful for network troubleshooting. It allows you to set the human readable IPv6 address that 
+the router will use when being probed with standard troubleshooting tools like traceroute and ping.  
+
+.. important:: If a "IPv6 assignment hint" is outside of the IPv6 prefix ranges that are available this setting will have no effect.
+
+If we wanted to control which /64 IPv6 prefix will be selected we can use the second setting "IPv6 assignment hint". This is an 
+optional value, the default is not set. If this option is in the default state, the system will try to effecently allocate IPv6 
+networks. If control of the assigned network is required; the value is a hex number that matches sub-Prefix ID. So in 
+this example if we want to assign 2605:540:1:2::/64 we could set the hint value to "2". Or if it was required to assign 
+2605:540:1:f::/64 we would set the value to "f". 
+
+Given the dynamic nature of IPv6 prefix delegation it is often not required to control the specific network. Also it's important to
+remember that this is a "hint" that requires the expected network address to be included in your IPv6 prefix delegation. If your
+provider adjustes the assigned prefix delegation it is quite possible that your "hint" will no longer be able to map to a valid 
+network range. That would result this setting having no effect. For this reason we suggest not using this feature if you are 
+receiving a Prefix Delegation. But it is useful in a few different deployment scenarios. 
+
+**DHCP/DHCPv6 settings - Static protocol**
+
+.. note:: It is a required that you use DHCP server settings on the interface for downstream devices to recieve IPv6 prefix delegation. 
+
+Client devices are almost never statically assigned IPv6 addresses and if you are using the recommended Opuntia built-in IPv6 
+management to delegate IPv6 Prefixes you must configure DHCP/DHCPv6 server on this interface. This section will contain only a 
+brief list of commands and settings needed to ensure that client devices will function. For a full description of the DHCP / DHCPv6
+server Interface settings and Global DHCP settings please look at the DHCP Server chapter linked below.
+
+:doc:`dhcp-server`
+
+.. image:: ../manual-images/Network-Interfaces-Static-DHCP-unconfig.png
+  :width: 700
+  :alt: Screenshot of the DHCP tab before being configured
+
+To begin, Edit the interface and click to the "DHCP Server" tab. You will see a large button labled "Setup DHCP Server".
+
+.. image:: ../manual-images/Network-Interfaces-Static-DHCP-Gen.png
+  :width: 700
+  :alt: Screenshot of the DHCP General Setup tab
+
+This tab shows the basic DHCP server settings for the interface. 
+
+- Ignore interface
+- Start
+- Limit
+- Lease time
+
+The "Ignore interface" checkbox will disable the IPv4 DHCP server on this interface. If selected this will automatically hide the 
+"advanced settings" tab. This can be a useful configuration option if you are manually assiging IPv4 addresses but you want to use
+the built-in IPv6 subsystem. 
+
+The "Start" configuration setting specifies where in the IPv4 network range to begin allocating DHCP client ip addresses. For 
+example if you have a static network of 192.168.85.0/24 allocated to the interface and you have the "Start" setting set to 100; the
+lowest ip address that can be allocated is 192.168.85.100. This is a required setting if DHCP server is enabled. 
+
+The "Limit" setting works with the start value to limit how many addresses can be allocated and thereby defining the DHCP addresses
+that can be allocated. In our example of starting our DHCP pool at 192.168.85.100 if we use the default value of 150 ro the "Limit" 
+setting that results in the system allocating Ip addresses from 192.168.85.100 to 192.168.85.250. Or otherwise limiting the 
+allocation to 150 addresses above the "Start" setting. This is a required setting if DHCP server is enabled. 
+
+The "Lease time" setting defines the length of time that the DHCP Lease is valid. This is a required setting if DHCP server is 
+enabled.  
+
+To configure DHCPv6 settings click the "IPv6 Settings" tab. 
+
+.. image:: ../manual-images/Network-Interfaces-Static-DHCPv6.png
+  :width: 700
+  :alt: Screenshot of the DHCPv6 settings
+
+On this tab we see the DHCPv6 settings. The most commonly used settings are as follows.  
+
+- Router Advertisement-Service
+- DHCPv6-Service
+- DHCPv6-Mode
+- Announced DNS servers
+
+The "Router Advertisement-Service" enables the Opuntia system to send IPv6 router Advertisement packets on this interface. This 
+allows client devices to learn that the Opuntia system is acting as a router for this network. It also serves as the primary 
+enabler for the usage of SLAAC (Stateless address autoconfiguration) to automatically configure IPv6 networks. The recommended 
+value is "Server mode". 
+
+The "DHCPv6-Service" is the setting that actually starts DHCPv6 on the Interface. The recommended value is "Server mode".
+
+The "DHCPv6-Mode" controls the operating mode of the DHCPv6 Server. This settting will be explained in more detail in the DHCP 
+Server chapter. The recommended value is "Stateless + Stateful". 
+
+The last most commonly configued IPv6 DHCPv6 is "Announced DNS servers". This value is very similar to setting the DNS server 
+option for IPv4. This allows the DHCPv6 clients to learn a list of DNS servers. This is an optional setting since you may learn 
+DNS servers from IPv4 DHCP or other methods. 
+
+One interesting thing about the "Announced DNS servers" setting is that you can announce IPv4 or IPv6 DNS servers addresses using 
+this configuration value. Depending on the enviorment, it may be valid to only have IPv4 DNS servers specified in the IPv6 DHCPv6 
+service. 
+
+.. image:: ../manual-images/Network-Interfaces-Static-DHCPv6-dns.png
+  :width: 700
+  :alt: Screenshot showing IPv4 and IPv6 DNS servers being Announced using DHCPv6. 
+ 
+
+**Staticly Setting IPv6**
+
+There are only a few situations where you will be required to manually 
 
 Given that IPv6 fundementatly support multiple addresses per interface CIDR List notation is the only option for manually setting 
 IPv6 addresses. With IPv6 generally you do not set a static address since you must use provider network addresses. But you can 
 control which IPv6 address is assigned even in this situation by using the IPv6 assignment length, IPv6 assignment hint and IPv6
 suffix settings. 
-
-
-.. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv6.png
-  :width: 700
-
-With the use of these three options you can fully control IPv6 address assignment when using the built-in IPv6 management. Given 
-the dynamic nature of IPv6 prefix delegations it's often not needed to set the any of these other than the "IPv6 assignment length".
-And that setting should be set to a length of 64 bit in most configurations. The "IPv6 suffix" setting is also a commonly configured
-setting but differences in between IPv4 and IPv6 make this setting more far less important that in a IPv4 network. 
-
-The "IPv6 suffix" sets the 
-
-The "IPv6 assignment length" allows the administrator to chose the desired IPv4 prefix length for the interface. This is typically 
-set to 64 bits. This setting requests a network prefix from the built-in IPv6 management. If the system has recieved a IPv6 prefix
-delegation from an Interface running DHCPv6 the requested prefix will be allocated from that range provided that sufficent IPv6 
-network space is available.
-
-For example if the Opuntia system recieved a IPv6 prefix delegation of 2605:540:1::/60 and we set the "IPv6 assignment length" to 
-64 bits; we will recieve one of the 16 /64 network ranges in the 2605:540:1::/60 delegation. This IPv6 prefix will be asigned to 
-this interface. This setting alone only sets the length of the prefix it does not control which range will be selected.
-
-.. important:: If a "IPv6 assignment hint" is outside of the IPv6 prefix ranges that are available this setting will have no effect.
-
-If we wanted to control which /64 IPv6 prefix will be selected we can use the second setting "IPv6 assignment hint". This is an 
-optional value, the default is not set and if system will try to effecently allocate IPv6 networks. Not setting an assignment
-hint is the normal configuration. But if control of the is required; the value is a hex number that matches sub-Prefix ID. So in 
-this example if we want to assign 2605:540:1:2::/64 we could set the hint value to "2". Or if it was required to assign 
-2605:540:1:f::/64 we would set the value to "f". 
-
-
 
 
 CLI
@@ -221,7 +326,7 @@ And here is an example setting two static IPv4 addresses on interface named "Hom
 
 
 
-Here is a list of common configuration options. 
+Here is a list of common configuration options and value descriptions. 
 
 +---------------+----------------------+----------+--------------------------------------------------+
 | Name          | Type                 | Required | Description of the command                       |
