@@ -169,9 +169,9 @@ are connecting to the IPv6 Internet. This is fundementatly a dynamic proccess th
 
 But the built-in IPv6 management system does allow for several tunable values that allows the system administrator to control the
 deployment of IPv6 networks and addresses. In order of importance these options are; IPv6 assignment length, IPv6 suffix and IPv6
-assignment hint. Each of these options will be discussed in detail in this section. But it's important understand that in most 
+assignment hint. Each of these options will be discussed in detail in this section. It is important understand that in most 
 common configurations the only settting that you are likely to configure is IPv6 assignment length. The other two values are likely
-to remain unconfigured and in the default state. 
+to remain unconfigured or in the default state. 
 
 .. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv6.png
   :width: 700
@@ -211,7 +211,7 @@ Given the dynamic nature of IPv6 prefix delegation it is often not required to c
 remember that this is a "hint" that requires the expected network address to be included in your IPv6 prefix delegation. If your
 provider adjustes the assigned prefix delegation it is quite possible that your "hint" will no longer be able to map to a valid 
 network range. That would result this setting having no effect. For this reason we suggest not using this feature if you are 
-receiving a Prefix Delegation. But it is useful in a few different deployment scenarios. 
+receiving a Prefix Delegation. But it is useful in a few deployment scenarios so it's usage is detailed here. 
 
 **DHCP/DHCPv6 settings - Static protocol**
 
@@ -293,15 +293,39 @@ service.
   :alt: Screenshot showing IPv4 and IPv6 DNS servers being Announced using DHCPv6. 
  
 
-**Staticly Setting IPv6**
+**Static IPv6**
 
-There are only a few situations where you will be required to manually 
+There are several deployment scenarios where you will not recieve an IPv6 prefix delegation. Typically this is when you are learning
+IPv6 routes over a dynamic routing protocol such as BGP or Ospfv3. In these cases you are required to set a IPv6 manually on 
+interfaces. To get started, you first must be sure that the "IPv6 assignment length" setting is set to disabled.
 
-Given that IPv6 fundementatly support multiple addresses per interface CIDR List notation is the only option for manually setting 
-IPv6 addresses. With IPv6 generally you do not set a static address since you must use provider network addresses. But you can 
-control which IPv6 address is assigned even in this situation by using the IPv6 assignment length, IPv6 assignment hint and IPv6
-suffix settings. 
+.. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv6-Prefix-disabled.png
+  :width: 700
+  :alt: Screenshot of the Interface General settings with a disabled IPv6 Prefix length.
 
+By disabling the "IPv6 assignment length" you will now see these configuration options. 
+
+- IPv6 address
+- IPv6 gateway
+- IPv6 routed Prefix
+- IPv6 suffix
+
+Given that IPv6 fundementatly supports multiple addresses per interface; CIDR List notation is the only option for manually setting 
+IPv6 addresses. Be sure to click the small check box at the end of the IPv6 address box. Below is an example of adding multiple 
+IPv6 addresses to an interface. 
+
+.. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv6-example.png
+  :width: 700
+  :alt: Screenshot of adding two IPv6 Address manually
+
+The "IPv6 routed Prefix" is used with the built-in IPv6 management system. This allows the system administrator to specify a 
+static IPv6 Prefix that is distrubted to clients devices using DHCPv6. DHCPv6 **MUST** enabled for this setting to be effective. 
+Since this prefix range is specified manually by the administrator; the administrator must ensure that this IPv6 Prefix range is 
+routed to the Opuntia system. This can be done using dynamic routing protocols like BGP, Ospfv3 or static routes. 
+
+The "IPv6 suffix" sets the IPv6 Interface ID. This is the last 64bits of a IPv6 address. This allows the administrator to control 
+the last part of an IPv6 address that is assigned. This setting only takes effect if you have also specified a "IPv6 routed Prefix". 
+This setting has a default value of "::1". 
 
 CLI
 ***
@@ -367,7 +391,8 @@ Here is a list of common configuration options and value descriptions.
 +---------------+----------------------+----------+-----------------------------------------------------+
 | ip6class      | ipv6 prefix          | No       |                                                     |
 +---------------+----------------------+----------+-----------------------------------------------------+
-
+| ip6prefix     | ipv6 prefix          | No       | IPv6 prefix for distribution to clients devices     |
++---------------+----------------------+----------+-----------------------------------------------------+
 
 
 DHCP Client
