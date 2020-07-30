@@ -1,6 +1,7 @@
 
 Intro
 	overview of the docs
+	Accessing the Opuntia device
 
 Configuration
 	Administrative tasks (Host name etc... )
@@ -20,7 +21,7 @@ Configuration
 		IPv6	
 	Firewall
 		NAT
-	Traffic Shaping	
+	QoS / Traffic Shaping	
 	VPN Server/Client
 Status 
 	Real-time Logs/routes etc...
@@ -28,6 +29,9 @@ Status
 Monitoring
 	Collectd exporter/configuration
 	Remote Syslog
+Security
+	Hardening
+
 Advanced Features
 	FRR
 	Ansilbe

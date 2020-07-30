@@ -330,7 +330,13 @@ This setting has a default value of "::1".
 CLI
 ***
 
+When accesing Network interface configuration is stored in the file at location */etc/config/network*. You can edit this file with 
+
+
+
 **IPv4** 
+
+
 
 .. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv4-cli.png
   :width: 700

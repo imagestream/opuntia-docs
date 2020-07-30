@@ -31,6 +31,8 @@ To change the root password, you use the standard Linux "passwd" utility. Below 
   :width: 400
   :alt: Screenshot of the password being changed from the command line. 
 
+.. _Adding-SSH-Keys:
+
 Adding SSH Keys
 ---------------
 

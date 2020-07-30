@@ -14,10 +14,13 @@ It's focused on providing advanced routing and edge computing features.
    :caption: Opuntia User Manual
 
    Opuntia-manual/introduction/about
+   Opuntia-manual/introduction/accessing
    Opuntia-manual/configuration/administrative-configuration
    Opuntia-manual/configuration/configuration-managment
    Opuntia-manual/configuration/wired-interfaces
    Opuntia-manual/configuration/dhcp-server
+   Opuntia-manual/configuration/firewall
+   Opuntia-manual/security/hardening
 
 .. toctree::
    :maxdepth: 2
