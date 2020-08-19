@@ -86,7 +86,7 @@ warnings can be safely ignored for accessing the management Web GUI.
 The admin username is "**root**".  The default password is "**imagestream**". 
 
 .. note::
-   We strongly recommend that you change the default password as your first configuration change.
+   We strongly recommend that you change the default password as your first configuration task.
 
 .. image:: ../images/Opuntia-default-login.png
   :width: 600

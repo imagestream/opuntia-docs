@@ -88,7 +88,7 @@ showing the interfaces page from the *Wan and Lan* example we used in talking ab
   :width: 750
   :alt: Screenshot of the Interfaces page in the Wan/Lan example 
 
-As you can see we have three defined interfaces; Wan, Wan_6 and Lan. This example has protocol DHCP configued on the *Wan* 
+As you can see we have three defined interfaces; Wan, Wan_6 and Lan. This example has protocol DHCP configured on the *Wan* 
 interface, DHCPv6 on the *Wan_6* interface and Static address protocol on the *Lan* interface. 
 
 To change an interface to a different protocol click the "Edit" button for that interface. Then select the drop down box 
@@ -116,7 +116,8 @@ The interface configuration is accessed by navigating to the Network interfaces 
 
 Main Menu - *Network --> Interfaces*
 
-Once you have navigated to the interfaces page, you can click on the "Edit" button to see the "General Settings" interface tab.   
+Once you have navigated to the interfaces page, you can click on the "Edit" button on the interface to see the "General Settings" 
+tab.   
 
 .. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv4.png
   :width: 700
@@ -188,7 +189,7 @@ For example if the Opuntia system recieved a IPv6 prefix delegation of 2605:540:
 64 bits; Opuntia will configure one of the 16 /64 network ranges in the 2605:540:1::/60 delegation on this interface. If the 
 upstream provider changes the IPv6 prefix delegation those changes will be automatically applied to all downstream devices. 
 
-.. note:: Most clent operating sytems install IPv6 routes using the link local address of the router. So a human readable address on a interface is purely a management feature.
+.. note:: Most client operating sytems install IPv6 routes using the link local address of the router. So a human readable address on a interface is purely a management feature.
 
 The "IPv6 suffix" sets the IPv6 Interface ID. This is the last 64bits of a IPv6 address. This allows the administrator to control 
 the last part of an IPv6 address that is assigned. Given our example of receiving a IPv6 prefix of 2605:540:1::/64 if we were 
@@ -217,7 +218,7 @@ receiving a Prefix Delegation. But it is useful in a few deployment scenarios so
 
 .. note:: It is a required that you use DHCP server settings on the interface for downstream devices to recieve IPv6 prefix delegation. 
 
-Client devices are almost never statically assigned IPv6 addresses and if you are using the recommended Opuntia built-in IPv6 
+Client devices normally are not statically assigned IPv6 addresses. If you are using the recommended Opuntia built-in IPv6 
 management to delegate IPv6 Prefixes you must configure DHCP/DHCPv6 server on this interface. This section will contain only a 
 brief list of commands and settings needed to ensure that client devices will function. For a full description of the DHCP / DHCPv6
 server Interface settings and Global DHCP settings please look at the DHCP Server chapter linked below.
@@ -280,7 +281,7 @@ The "DHCPv6-Service" is the setting that actually starts DHCPv6 on the Interface
 The "DHCPv6-Mode" controls the operating mode of the DHCPv6 Server. This settting will be explained in more detail in the DHCP 
 Server chapter. The recommended value is "Stateless + Stateful". 
 
-The last most commonly configued IPv6 DHCPv6 is "Announced DNS servers". This value is very similar to setting the DNS server 
+The last most commonly configured IPv6 DHCPv6 is "Announced DNS servers". This value is very similar to setting the DNS server 
 option for IPv4. This allows the DHCPv6 clients to learn a list of DNS servers. This is an optional setting since you may learn 
 DNS servers from IPv4 DHCP or other methods. 
 
@@ -330,91 +331,305 @@ This setting has a default value of "::1".
 CLI
 ***
 
-When accesing Network interface configuration is stored in the file at location */etc/config/network*. You can edit this file with 
+When accesing Network interface configuration is stored in the file at location */etc/config/network*. You can edit this file with
+vi or nano. After making changes to the configuration files you need to run the following command from the system shell. ::
+
+  reload_config
+
+This will force the system to reload the running configuration from the saved config files. Since the static protocol is often used
+with DHCP/DHCPv6 server settings we will also cover that configuration in this section. The DHCP server settings are located at 
+*/etc/config/dhcp*. 
+
+.. important:: When directly configuring the any settings in the configuration files it is possible to input invalid settings. Take care to enter correct values.
 
 
+**Interface IPv4 settings** 
 
-**IPv4** 
-
-
+Below we will cover a few common IPv4 configuration scenarios and what the configuration file format will look like in those 
+deployments.
 
 .. image:: ../manual-images/Network-Interfaces-Static-Proto-IPv4-cli.png
   :width: 700
-  :alt: Screenshot showing the CIDR check box
+  :alt: Screenshot showing what the 
 
-And here is an example setting two static IPv4 addresses on interface named "Home_Lan".  
+This example sets a static IPv4 address on interface named "Home_Lan" and a DHCP server on the interface with a ip-pool range of 
+192.168.85.10 - 192.168.85.250 with a leasetime. The two configuration files that need to be modified are /etc/config/network for 
+the interface configuration. And /etc/config/dhcp for the DHCP server configuration. 
 
 .. code-block:: python
-  :emphasize-lines: 4-5
+  :caption: /etc/config/network
+  :emphasize-lines: 4
      
   config interface 'Home_Lan'
         option ifname 'eth1'
         option proto 'static'
         list ipaddr '192.168.85.1/24'
-        list ipaddr '192.168.86.1/24'
         list dns '192.168.85.10'
 
+.. code-block:: python
+  :caption: /etc/config/dhcp
+  :emphasize-lines: 3-5
+     
+  config dhcp 'Home_Lan'
+        option interface 'Home_Lan'
+        option start '10'
+        option leasetime '3h'
+        option limit '250'
+        
+**IPv4 CLI Options**
+
+Here is a list of common configuration options for IPv4 interfaces and value descriptions. 
+
+.. table:: /etc/config/network
+
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | Name          | Type                 | Required | Description of the command                       |
+   +===============+======================+==========+==================================================+
+   | ifname        | Interface Name       | Yes      | Physical Interface Name                          |
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | proto         | Protocol Type        | Yes      | Protocol                                         | 
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | ipaddr        | ip address           | Yes      | Ip address CIDR list                             |
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | netmask       | netmask              | No       | IPv4 Subnet mask                                 |
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | gateway       | ip address           | No       | Default IPv4 gateway                             | 
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | broadcast     | ip address           | No       | Broadcast IPv4 address                           |
+   +---------------+----------------------+----------+--------------------------------------------------+ 
+   | dns           | list of ip addresses | No       | Dns Server List                                  | 
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | metric        | integer              | No       | Route metric for this interface                  |
+   +---------------+----------------------+----------+--------------------------------------------------+
+
+Here is a list of common IPv4 DHCP Configuraion options.
+
+.. table:: /etc/config/dhcp
+
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | Name          | Type                 | Required | Description of the command                          |
+   +===============+======================+==========+=====================================================+
+   | interface     | interface name       | Yes      | Opuntia Interface name                              |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | ignore        | Int                  | No       | Ignore IPv4 DHCP server on this interface           |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | start         | Int                  | No       | IPv4 dhcp pool start address ofset                  |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | limit         | Int                  | No       | Number of addresses in the IPv4 dhcp pool           |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | leasetime     | Time                 | No       | Lifetime of the dhcp lease  (hours or minutes)      |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | dns           | list of DNS addresses| No       | Lists of dns servers to advertise to dhcp clients   |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+
+**Interface IPv6 settings**
+
+Below we will cover a few common IPv6 configuration scenarios and what the configuration file format will look like in those 
+deployments.
+
+This example shows you a typical dual stack IPv4 / IPv6 where you are receiving a IPv6 Prefix Delegation. This example shows that
+you are only required to configure the ip6assign length. This will then use the built-in IPv6 management to determine the correct
+IPv6 Subnet to assign to the interface. Since the IPv6 suffix(ip6ifaceid) has a default value of "::1" the typical configuration 
+only has the 'ip6assign' option configured. 
+
+We are also configuring DHCPv6 to allocate addresses from the assigned IPv6 Prefix. This is configuration example for working in a 
+dual-stack enviorment.
+
+.. code-block:: python
+  :caption: /etc/config/network
+  :emphasize-lines: 6
+     
+  config interface 'Home_Lan'
+        option ifname 'eth1'
+        option proto 'static'
+        list ipaddr '192.168.85.1/24'
+        list dns '192.168.85.10'
+        option ip6assign '64'
+
+.. code-block:: python
+  :caption: /etc/config/dhcp
+  :emphasize-lines: 3-5
+     
+  config dhcp 'Home_Lan'
+        option interface 'Home_Lan'
+        option ra_management '1'
+        option ra 'server'
+        option dhcpv6 'server'
+        option start '10'
+        option leasetime '3h'
+        option limit '250'
 
 
-Here is a list of common configuration options and value descriptions. 
+This example shows two static IPv6 addresses assigned to the Home_Lan Interface. 
 
-+---------------+----------------------+----------+--------------------------------------------------+
-| Name          | Type                 | Required | Description of the command                       |
-+===============+======================+==========+==================================================+
-| ifname        | Interface Name       | Yes      | Physical Interface Name                          |
-+---------------+----------------------+----------+--------------------------------------------------+
-| proto         | Protocol Type        | Yes      | Protocol                                         | 
-+---------------+----------------------+----------+--------------------------------------------------+
-| ipaddr        | ip address           | Yes      | Ip address CIDR list                             |
-+---------------+----------------------+----------+--------------------------------------------------+
-| netmask       | netmask              | No       | IPv4 Subnet mask                                 |
-+---------------+----------------------+----------+--------------------------------------------------+
-| gateway       | ip address           | No       | Default IPv4 gateway                             | 
-+---------------+----------------------+----------+--------------------------------------------------+
-| broadcast     | ip address           | No       | Broadcast IPv4 address                           |
-+---------------+----------------------+----------+--------------------------------------------------+ 
-| dns           | list of ip addresses | No       | Dns Server List                                  | 
-+---------------+----------------------+----------+--------------------------------------------------+
-| metric        | integer              | No       | Route metric for this interface                  |
-+---------------+----------------------+----------+--------------------------------------------------+
+.. code-block:: python
+  :caption: /etc/config/network
+  :emphasize-lines: 4-5
 
-**IPv6**
+  config interface 'Home_Lan'
+        option ifname 'eth1'
+        option proto 'static'
+        list ip6addr '2506:dead:beef:540::1/64'
+        list ip6addr '2007:86:e0f1:480::5/128'
+        option ip6prefix '2001:10:96:e010::/64'
 
-+---------------+----------------------+----------+-----------------------------------------------------+
-| Name          | Type                 | Required | Description of the command                          |
-+===============+======================+==========+=====================================================+
-| ifname        | Interface Name       | Yes      | Physical Interface Name                             |
-+---------------+----------------------+----------+-----------------------------------------------------+
-| proto         | Protocol Type        | Yes      | Protocol                                            | 
-+---------------+----------------------+----------+-----------------------------------------------------+
-| ip6addr       | ipv6 address         | Yes / No*| IPv6 Address (not required if an IPv4 ipaddr is set)|
-+---------------+----------------------+----------+-----------------------------------------------------+
-| ip6gw         | ipv6 address         | No       | IPv6 Default Gateway                                |
-+---------------+----------------------+----------+-----------------------------------------------------+
-| ip6assign     | prefix length        | No       | Delegate a prefix of this length                    |
-+---------------+----------------------+----------+-----------------------------------------------------+
-| ip6hint       | prefix hint          | No       | Prefix hint in Hex format                           |
-+---------------+----------------------+----------+-----------------------------------------------------+
-| ip6class      | ipv6 prefix          | No       |                                                     |
-+---------------+----------------------+----------+-----------------------------------------------------+
-| ip6prefix     | ipv6 prefix          | No       | IPv6 prefix for distribution to clients devices     |
-+---------------+----------------------+----------+-----------------------------------------------------+
+This example shows a configuration of a pure IPv6 network. This uses the built-in IPv6 management to a s 
+
+.. code-block:: python
+  :caption: /etc/config/network
+  :emphasize-lines: 4
+
+  config interface 'Home_Lan'
+        option ifname 'eth1'
+        option proto 'static'
+        option ip6assign '64'
+
+**IPv6 CLI Options**
+
+.. table:: /etc/config/network
+
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | Name          | Type                 | Required | Description of the command                          |
+   +===============+======================+==========+=====================================================+
+   | ifname        | Interface Name       | Yes      | Physical Interface Name                             |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | proto         | Protocol Type        | Yes      | Protocol                                            | 
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | ip6addr       | ipv6 address         | Yes / No*| IPv6 Address (not required if an IPv4 ipaddr is set)|
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | ip6ifaceid    | ipv6 suffix          | No       | IPv6 Interface ID ( fixed value, Random, eui64)     |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | ip6gw         | ipv6 address         | No       | IPv6 Default Gateway                                |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | ip6assign     | prefix length        | No       | Delegate a prefix of this length                    |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | ip6hint       | prefix hint          | No       | Prefix hint in Hex format                           |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | ip6class      | ipv6 prefix          | No       |                                                     |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | ip6prefix     | ipv6 prefix          | No       | IPv6 prefix for distribution to clients devices     |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+
+.. table:: /etc/config/dhcpv6
+
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | Name          | Type                 | Required | Description of the command                          |
+   +===============+======================+==========+=====================================================+
+   | interface     | interface name       | Yes      | Opuntia Interface name                              |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | leasetime     | Time                 | No       | Lifetime of the dhcp lease  (hours or minutes)      |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | dns           | list of DNS addresses| No       | Lists of dns servers to advertise to dhcp clients   |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | dhcpv6        | server mode          | No       | DHCPv6 server ( server, relay or hybrid )           |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | ra            | server mode          | No       | Router Advertisement mode (server, relay or hybrid) |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+   | ra_management | Int                  | No       | DHCPv6 mode ( 1: Stateless + Stateful )             |
+   +---------------+----------------------+----------+-----------------------------------------------------+
+
 
 
 DHCP Client
 ###########
 
+The "DHCP client" protocol configures an interface to request a IPv4 using the DHCP protocol. When connecting as a client device
+to a network this is often the desired configuration since it allows automatic configuration of the IPv4 address and DNS settings.
+
+.. note:: Opuntia's default configuration includes a interface named "WAN" 
+
 Web GUI
 *******
+
+The interface configuration is accessed by navigating to the Network interfaces page.
+
+Main Menu - *Network --> Interfaces*
+
+Once you have navigated to the interfaces page, you can click on the "Edit" button on the interface to see the "General Settings" 
+tab.   
+
+.. image:: ../manual-images/Network-Interfaces-DHCP-Proto.png
+  :width: 700
+  :alt: Screenshot of the DHCP client protocol tabs
+
+This screenshot shows you the basic DHCP interface configuration. Since protocol "DHCP client" requests the network configuration 
+from a DHCP server, there is little user configuration required. The most important user configuration setting is likely to be the 
+choice of Firewall zone in the Firewall settings tab. Since "DHCP client" is often configured on interfaces connected to upstream 
+Internet access the default *wan* firewall zone is likely the correct setting. 
+
+The other Tabs have the following different types of configuration options. 
+
+- Advanced Settings (MAC address override and MTU override)
+- Physical Settings (Bridging configuration and Interface Selection)
+- Firewall Settings (Firewall zone assigned to the interface)
 
 CLI
 ***
 
+The "DHCP client" protocol is has no default configuration options. So the CLI configuration is very simple. 
+
+This is the standard configuration for the "DHCP client" protocol
+
+.. code-block:: python
+  :caption: /etc/config/network
+  
+  config interface 'Wan'
+        option ifname 'eth0'
+        option proto 'dhcp'
+
+Since this such a simple configuration. Here is a very slightly more complex configuration that overrides the hostname that the 
+system will report to the upstream DHCP server. 
+
+.. code-block:: python
+  :caption: /etc/config/network
+  
+  config interface 'Wan'
+        option ifname 'eth0'
+        option proto 'dhcp'
+        option hostname 'Opuntia-Test'
+
+**CLI Configuraion Options**
+
+.. table:: /etc/config/network
+
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | Name          | Type                 | Required | Description of the command                       |
+   +===============+======================+==========+==================================================+
+   | ifname        | Interface Name       | Yes      | Physical Interface Name                          |
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | proto         | Protocol Type        | Yes      | Protocol 'dhcp'                                  | 
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | hostname      | hostname             | No       | Hostname override (Defaults to current hostname) |
+   +---------------+----------------------+----------+--------------------------------------------------+
+
+
 DHCPv6 Client
 #############
 
+The "DHCPv6 client" protocol configures an interface to request IPv6 prefix delegation from a DHCPv6 server. This is the IPv6 
+equivlent "DHCP client" protocol with a few key differences. One of the major differences is that Opuntia will automatically 
+configure IPv6 addresses using Stateless address autoconfiguration (SLAAC), stateless DHCPv6, stateful DHCPv6 or DHCPv6-PD if any
+of these options are available. Since a IPv6 host addresses is going to be configured automatically on interfaces, the role of 
+DHCPv6 is often to recieve a IPv6 Prefix Delegation using DHCPv6-PD. 
+
+
+
+
+
 Web GUI
 *******
+
+The interface configuration is accessed by navigating to the Network interfaces page.
+
+Main Menu - *Network --> Interfaces*
+
+Once you have navigated to the interfaces page, you can click on the "Edit" button on the interface to see the "General Settings" 
+tab.   
+
+.. image:: ../manual-images/Network-Interfaces-DHCPv6-Proto.png
+  :width: 700
+  :alt: Screenshot of the DHCP client protocol tabs
+
 
 CLI
 ***

@@ -9,16 +9,30 @@ system for administration. But these settings were chosen to favor access over s
 insecure configuration; but it allows access to login prompts in several situations that administrators should consider limiting
 access in higher security configurations. 
 
-Web GUI
--------
+When possible, administrators should consider sperating the control plane of your network from the data plane. 
+
+.. _Hardening-Web-GUI:
+
+Hardening Web GUI
+-----------------
 
 By default Opuntia allows access to the Web GUI on ANY IPv4/IPv6 interface address. We recommend excluding access to the Web GUI to
-the default *Wan* Firewall zone. Please see the :ref:`Zone-based-Firewall` chapter for more information.
+the default *Wan* Firewall zone. Please see the :ref:`Firewall-Limiting-External-access` chapter for more information.
 
-Serial / Local Console
-----------------------
+.. _Hardening-SSH-Access:
 
-.. note:: This requires Opuntia version 4.8.16 r49400 or newer.
+Hardening SSH Access
+--------------------
+
+By default Opuntia will respond to Ssh connection atempts to any bound IPv4/IPv6 address. We recommend excluding access to Ssh 
+from the default *Wan* Firewall zone. Please see the :ref:`Firewall-Limiting-External-access` chapter for more information.
+
+.. _Hardening-Local-Console:
+
+Hardening Serial / Local Console
+--------------------------------
+
+.. note:: This requires Opuntia version 4.8.16 r49304 or newer.
 
 By default Opuntia does not require a password when accessing system from a Serial or Local console. Since this requires physical 
 access to hardware platforms this is generally considered safe. But Virtual Machines running Opuntia often do have remote methods
