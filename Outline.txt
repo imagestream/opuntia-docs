@@ -34,6 +34,7 @@ Security
 
 Advanced Features
 	FRR
+	IPv6 via Dynamic routing
 	Ansilbe
 	Local Docker
 	K3s

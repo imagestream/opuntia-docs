@@ -7,7 +7,7 @@ Firewall configuration
 This chapter covers Firewall configuration and theory for Opuntia systems. 
 
 
-.. _Zone-based-Firewall:
+.. _Firewall-Zone-based:
 
 Zone based Firewall
 -------------------

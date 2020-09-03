@@ -21,6 +21,8 @@ It's focused on providing advanced routing and edge computing features.
    Opuntia-manual/configuration/dhcp-server
    Opuntia-manual/configuration/firewall
    Opuntia-manual/security/hardening
+   Opuntia-manual/advanced/frr
+   Opuntia-manual/advanced/ipv6-dynamic
 
 .. toctree::
    :maxdepth: 2

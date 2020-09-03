@@ -59,6 +59,59 @@ Understanding how Opuntia is interacting with the Linux networking stack is impo
 firewall rules, monitoring and interacting in the CLI. The Linux networking stack is unaware of Opuntia device names. 
 So attempts to use the Opuntia device names from the CLI will fail.  
 
+Vlan Configuraion
+-----------------
+
+To configure VLAN interfaces in Opuntia is a simple process but slightly non-intuitive. In the above section we talked about how
+Opuntia interces are not necessarily the same as the Linux Interfaces. The Linux interface is what controlls if a device adds a 
+VLAN tag to outgoing Ethernet frames. This is done by simply setting the Linux interface name ending with .#vlan-id#. So for
+example; if you wanted to configure the physical interface eth1 to use VLAN ID 100 you would create a interface named eth0.100. 
+To do this you will have to create a new interface then set a custom device name. 
+
+The following screenshots show this operation. First you will create a new Interface. In this example we are using protocol
+static. The physical interface will start as *unspecificed* we select the dropdown box and type a custom Interface name into
+the box. In this case since we want the new Interface to be VLAN ID 100 on the physical eth1 interface we type **eth1.100**. 
+
+.. image:: ../manual-images/Network-Interfaces-VLAN-custom-example.png
+  :width: 750
+  :alt: Screenshot showing the custom Interface input. 
+
+Once we have input the custom interface name, hit enter and the Interface dropdown box will fill in the name correctly.
+
+.. image:: ../manual-images/Network-Interfaces-VLAN-custom-example-filled.png
+  :width: 750
+  :alt: Screenshot showing the custom Interface input filled in. 
+
+This is all that is required to configure a VLAN tagged Opuntia Interface. All traffic transmited on this interface will leave 
+the system with VLAN tag 100 set. All Ethernet frames recieved on eth1 with VLAN tag 100 will be recieved on this interface. 
+
+.. image:: ../manual-images/Network-Interfaces-VLAN-finished.png
+  :width: 750
+  :alt: Screenshot
+
+This is what Opuntia will show when the interface is finished being configured. Note the interface name listed as **eth1.100**. 
+
+QinQ
+####
+
+Opuntia also supports IEEE 802.1ad also known as provider bridging or QinQ VLAN tagging. This allows for *Stacking* VLAN taggs. 
+The configuration is exactly the same as with normal VLAN configuration but you add an extra VLAN tag. In the following example
+we are configuring a QinQ interface that has a provider service tag (*S-TAG*) of 100 and a customer tag (*C-TAG*) of 20. Follow 
+directions to configure VLAN interfaces and input "eth1.100.20" as the device name. 
+
+Here is what Opuntia will show after this is configured. Note the device name listed as **eth1.100.20**. 
+
+.. image:: ../manual-images/Network-Interfaces-QinQ.png
+  :width: 750
+  :alt: Screenshot
+
+Here is what this looks like at the Linux interface level. 
+
+.. image:: ../manual-images/Network-Interfaces-QinQ-Linux.png
+  :width: 750
+  :alt: Screenshot
+
+
 Protocol Configuraion
 ---------------------
 
@@ -536,7 +589,9 @@ DHCP Client
 The "DHCP client" protocol configures an interface to request a IPv4 using the DHCP protocol. When connecting as a client device
 to a network this is often the desired configuration since it allows automatic configuration of the IPv4 address and DNS settings.
 
-.. note:: Opuntia's default configuration includes a interface named "WAN" 
+.. note:: Dual Stack IPv4 and IPv6 requires separate Opuntia Interfaces. By default Opuntia has a *Wan* Interface for DHCP and a *Wan_6* Interface for DHCPv6 the physical interface needs to be set to the upstream interface.
+
+For more information on Dual Stack configurations see the :ref:`Wired-DHCPv6-Client` section. 
 
 Web GUI
 *******
@@ -603,6 +658,8 @@ system will report to the upstream DHCP server.
    +---------------+----------------------+----------+--------------------------------------------------+
 
 
+.. _Wired-DHCPv6-Client: 
+
 DHCPv6 Client
 #############
 
@@ -612,9 +669,14 @@ configure IPv6 addresses using Stateless address autoconfiguration (SLAAC), stat
 of these options are available. Since a IPv6 host addresses is going to be configured automatically on interfaces, the role of 
 DHCPv6 is often to recieve a IPv6 Prefix Delegation using DHCPv6-PD. 
 
+Dual Stack
+**********
 
-
-
+Dual Stack operations with concurent IPv4 and IPv6 addresses assigned to the same physical networks is a very common 
+configuration. Opuntia allows this type of configuration but since you can not run multiple protocols on a single Opuntia 
+interface; Opuntia by default includes multiple Interfaces for upstream DHCP (*Wan*) and DHCPv6 (*Wan_6*). These interfaces 
+allow the operator to configure protocol DHCP and DHCPv6 on the same physical Linux Interface. Care must be taken to be sure
+the same physical interface is referenced in both the *Wan* and *Wan_6* Opuntia Interfaces.  
 
 Web GUI
 *******
@@ -630,9 +692,40 @@ tab.
   :width: 700
   :alt: Screenshot of the DHCP client protocol tabs
 
+The DHCPv6 protocol has two main configuration options. The "Request IPv6 address" mode and the "Request IPv6 Prefix length". 
+
+The "Request IPv6 address" mode sets if we are attempting to request an IPv6 address on the interface. The default option is *try* 
+which as the name implies tries to allocate an IPv6 address. This recommended setting. 
+
+The "Request IPv6 Prefix length" option specifies the length of requested IPv6 prefix delegation from the upstream router. The 
+default value is *auto* and available options are *auto, no, 0-64*. The *auto* setting will accept the prefix length that the 
+upstream router provides.
+
+.. important:: The *auto* setting will not request automatically request enough IPv6 prefix space for your configuration. 
+
+If you need more IPv6 space than your provider is allocating to the system by default; you can then specify the IPv6 Prefix length 
+mannually. Normally providers will not allow prefix delegation requests larger than a /56. Adjust the requested IPv6 Prefix length 
+as needed. 
+
+The other Tabs have the following different types of configuration options. 
+
+- Advanced Settings (MAC address override and MTU override)
+- Physical Settings (Bridging configuration and Interface Selection)
+- Firewall Settings (Firewall zone assigned to the interface)
 
 CLI
 ***
+
+.. code-block:: python
+  :caption: /etc/config/network
+  :emphasize-lines: 4
+
+  config interface 'Wan_6'
+        option ifname 'eth0'
+        option proto 'dhcpv6'
+        option reqaddress 'try'
+        option reqprefix '60'
+
 
 Unmanaged
 #########
@@ -666,5 +759,3 @@ CLI
 ***
 
 
-VLAN Configuraion
------------------
