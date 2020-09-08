@@ -621,7 +621,8 @@ The other Tabs have the following different types of configuration options.
 CLI
 ***
 
-The "DHCP client" protocol is has no default configuration options. So the CLI configuration is very simple. 
+The "DHCP client" protocol is has no default configuration options. So the CLI configuration is very simple. Just connect to 
+the Opuntia system via ssh.  
 
 This is the standard configuration for the "DHCP client" protocol
 

@@ -25,7 +25,7 @@ address was 2605:6:62:ba40::1 then you would use this url "https://[2605:6:62:ba
 Access via SSH
 --------------
 
-Opuntia supports ssh access to the Linux command line ( ash shell ). The   
+Opuntia supports ssh access to the Linux command line ( ash shell ). The    
 :ref:`Hardening-SSH-Access`. 
 
 We recommend adding ssh keys for normal operation. See this chapter for more details :ref:`Adding-SSH-Keys`. 
@@ -35,10 +35,25 @@ Access via Serial Console
 -------------------------
 
 For hardware platforms that include a Serial Console; you can connect to the Local Console using the Serial connection. This is 
-typically running at a speed of 115.2kbps with 8n1.
+typically running at a speed of 115.2kbps with 8n1. Depending on the hardware platform you may need a null Serial connection. 
+Please check with your Quickstart guide to see if this is the case. 
 
-:ref:`Hardening-Local-Console`
+Once you have a Serial connection established, you can press any key to activate the Serial console. 
+
+.. important:: A common issue with Serial connections is cables the lack connected pins this can cause the connection to fail in unexpected ways (for example seeing output but not being able to send keystrokes). Take care you a using the correct cable for your hardware platform. 
+
+By default the Serial console has no security. Security is provided by the requirement that accessing the Serial console requires 
+phyical localiticy to the Opuntia system. This my not always be true; for example if you are access the Serial console using a 
+remote system. In this case it is highly recommend that you require password login on the Serial console please see the 
+:ref:`Hardening-Local-Console` chapter for more information. 
 
 Access via Local Console
 ------------------------
 
+On hardware platforms that support USB and Video connections. Accessing the CLI is very simple. Just connect a keyboard and
+monitor to the system and then press any key on the keyboard. This will spawn a new ash CLI shell. 
+
+By default the Local console has no security. Security is provided by the requirement that accessing the Local console requires 
+phyical localiticy to the Opuntia system. This my not always be true; for example if you are access the Local console using a 
+remote system. In this case it is highly recommend that you require password login on the Local console please see the 
+:ref:`Hardening-Local-Console` chapter for more information. 
