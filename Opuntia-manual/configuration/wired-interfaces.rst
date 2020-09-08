@@ -539,6 +539,10 @@ This example shows a configuration of a pure IPv6 network. This uses the built-i
 
 **IPv6 CLI Options**
 
+To access the Opuntia systems CLI interface please see the :ref:`Access-SSH` chapter of the manual. 
+
+Common configuraion options are listed in the table below. 
+
 .. table:: /etc/config/network
 
    +---------------+----------------------+----------+-----------------------------------------------------+
@@ -622,9 +626,9 @@ CLI
 ***
 
 The "DHCP client" protocol is has no default configuration options. So the CLI configuration is very simple. Just connect to 
-the Opuntia system via ssh.  
+the Opuntia system via ssh. To access the Opuntia systems CLI interface please see the :ref:`Access-SSH` chapter of the manual.
 
-This is the standard configuration for the "DHCP client" protocol
+Below is a typical configuration for the "DHCP client" protocol on a *Wan* interface. 
 
 .. code-block:: python
   :caption: /etc/config/network
@@ -633,7 +637,7 @@ This is the standard configuration for the "DHCP client" protocol
         option ifname 'eth0'
         option proto 'dhcp'
 
-Since this such a simple configuration. Here is a very slightly more complex configuration that overrides the hostname that the 
+Since this such a simple configuration. Below is more complex configuration that overrides the hostname that the 
 system will report to the upstream DHCP server. 
 
 .. code-block:: python
@@ -645,6 +649,8 @@ system will report to the upstream DHCP server.
         option hostname 'Opuntia-Test'
 
 **CLI Configuraion Options**
+
+Common configuraion options are listed in the table below.
 
 .. table:: /etc/config/network
 
@@ -717,6 +723,10 @@ The other Tabs have the following different types of configuration options.
 CLI
 ***
 
+To access the Opuntia systems CLI interface please see the :ref:`Access-SSH` chapter of the manual. 
+
+The 
+
 .. code-block:: python
   :caption: /etc/config/network
   :emphasize-lines: 4
@@ -726,10 +736,6 @@ CLI
         option proto 'dhcpv6'
         option reqaddress 'try'
         option reqprefix '60'
-
-
-Unmanaged
-#########
 
 
 WireGuard VPN
@@ -758,5 +764,19 @@ Web GUI
 
 CLI
 ***
+
+Unmanaged
+#########
+
+*Unmanaged* is a special protocol type that is intended to allow a Linux Kernel interface to be listed as an Opuntia 
+interface. There are two major use-cases for this protocol.
+
+First, This allows a interface to interact with the :ref:`Firewall-Zone-based` configuration. This can be useful if you want 
+to include a Linux Kernel device in a Firewall zone that does not currently have any Opuntia protocol type. 
+
+Second, If you have an interface that you configure using Linux tools. These can allow for more flexible configuraions but you 
+still need Opuntia to be aware of the interface. A real world example of this is a VPN configuraion that uses policy routing, 
+kernel routing tables and VLAN interfaces to provide a network that is by default routed over a VPN connection and does not 
+allow any traffic from that network to ever exit the *normal* Internet connection. 
 
 
