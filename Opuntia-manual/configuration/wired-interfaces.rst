@@ -625,7 +625,7 @@ The other Tabs have the following different types of configuration options.
 CLI
 ***
 
-The "DHCP client" protocol is has no default configuration options. So the CLI configuration is very simple. Just connect to 
+The "DHCP client" protocol is has few default configuration options. So the CLI configuration is very simple. Just connect to 
 the Opuntia system via ssh. To access the Opuntia systems CLI interface please see the :ref:`Access-SSH` chapter of the manual.
 
 Below is a typical configuration for the "DHCP client" protocol on a *Wan* interface. 
@@ -725,11 +725,11 @@ CLI
 
 To access the Opuntia systems CLI interface please see the :ref:`Access-SSH` chapter of the manual. 
 
-The 
+The DHCPv6 protocol has few required options for a standard configuraion. Below is a common example configuraion. 
 
 .. code-block:: python
   :caption: /etc/config/network
-  :emphasize-lines: 4
+  :emphasize-lines: 4-5
 
   config interface 'Wan_6'
         option ifname 'eth0'
@@ -737,12 +737,103 @@ The
         option reqaddress 'try'
         option reqprefix '60'
 
+As you can see, minimal configuraion is necessary in most cases. Normally just reqaddress 'try' and the length of IPv6 prefix you 
+need.   
 
+**CLI Configuraion Options**
+
+Common configuraion options are listed in the table below.
+
+.. table:: /etc/config/network
+
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | Name          | Type                 | Required | Description of the command                       |
+   +===============+======================+==========+==================================================+
+   | ifname        | Interface Name       | Yes      | Physical Interface Name                          |
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | proto         | Protocol Type        | Yes      | Protocol 'dhcpv6'                                | 
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | hostname      | Hostname             | No       | Hostname override (Defaults to current hostname) |
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | reqaddress    | Mode                 | No       | Request Mode (try, force, none)                  |
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | reqprefix     | IPv6 Prefix length   | No       | IPv6 Prefix length (auto, no, 0-64)              |
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | ip6prefix     | IPv6 Prefix          | No       | User provided IPv6 for client delegation         |
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | defaultroute  | Boolean              | No       | Default route (0 no, 1 yes, defaults to 1)       |
+   +---------------+----------------------+----------+--------------------------------------------------+
+   | dns           | List of Ip addresses | No       | User provided Dns servers                        |
+   +---------------+----------------------+----------+--------------------------------------------------+
+   
 WireGuard VPN
 #############
 
+WireGuard is a simple and fast modern VPN solution that uses state of the art cyptography. It's designed to be replace IPsec VPN's
+while simpler to configure. And it is also more performant than OpenVpn. The offical WireGuard site lists the following as the 
+major advantages of WireGuard. 
+
+- Simple & Easy to use
+- Cryptographically Sound
+- Minimal Attack Surface
+- High Performance
+
+WireGuard is also very tolerent of network changes. For example if a client device is connected to a Opuntia system using WireGuard
+and the client devices Public Ip Address changes due to roaming to a new network; the WireGuard vpn tunnel can be reestablished in 
+just miliseconds. This allows for seemless operation in changing network conditions. 
+
+For these reasons WireGuard is the perfered VPN solution for Opuntia. 
+
+Generate a key pair
+*******************
+
+WireGuard requires a public and private key pair. And all connectinng devices will need to know the Public key for the 
+WireGuard interface. And there must be a unique private key for each WireGuard interface. It's possible to generate these keys 
+on other systems and then use those keys on an Opuntia system. But currently there is no built in option to generate a new key 
+pair from the Luci Web GUI. 
+
+To generate a new WireGuard key pair you will to access the Bash CLI please see the :ref:`Access-SSH` chapter of the manual. Once
+you have an active CLI shell, you can run the following commands. 
+
+.. code-block:: bash
+   :emphasize-lines: 3
+
+   mkdir -p /etc/wireguard
+   cd /etc/wireguard
+   wg genkey | tee ./privatekey | wg pubkey > ./publickey
+
+The first two commands create a /etc/wireguard driectory. Only the last line actually creates the public and private key. The 
+resulting keys will be Base64 encoded. For the rest of this chapter we will be using the following example keys. ::
+
+  privatekey: 4NM0x6/2ndJktcHTfRXnWS3tzlo95QEgPBsen+swjFw=
+  publickey:  2wGMjbn6FU4+QKk7y1s37LuOfotw5moUR2LlFwXqJQ8=
+
+
 Web GUI
 *******
+
+To begin creating a new WireGuard interface first navigate to the Network interfaces page.
+
+Main Menu - *Network --> Interfaces*
+
+Then click on the "Add new interface" button. 
+
+.. image:: ../manual-images/Network-Interfaces-WireGuard-create.png
+  :width: 700
+  :alt: Screenshot showing the initial WireGuard Interface creation. 
+
+Name your new Interface and select protocol *WireGuard VPN*. 
+
+.. image:: ../manual-images/Network-Interfaces-WireGuard-edit.png
+  :width: 700
+  :alt: Screenshot showing
+
+You will then see the WireGuard interface configuraion settings. Start the configuraion by adding the privatekey for this WireGuard 
+interface.
+
+.. note:: WireGuard will use a default listen port of 51820. If you have multiple WireGuard interfaces you will have to specify different udp ports for each interface. 
+
+We also recommend that you set a 
 
 CLI
 ***

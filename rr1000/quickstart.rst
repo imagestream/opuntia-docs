@@ -1,6 +1,6 @@
-**************************
-RR1000 QuickStart Guide
-**************************
+*****************************
+Rebel Router QuickStart Guide
+*****************************
 
  The Rebel Router (RR1000) is configured by default to allow access via several different methods. 
 

@@ -26,13 +26,6 @@ It's focused on providing advanced routing and edge computing features.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Envoy Specific:
-
-   ev1000/quickstart
-   ev1000/hardware
- 
-.. toctree::
-   :maxdepth: 2
    :caption: Rebel Router Specfic:
 
    rr1000/quickstart
@@ -40,10 +33,25 @@ It's focused on providing advanced routing and edge computing features.
 
 .. toctree::
    :maxdepth: 2
-   :caption: AP3500 Specfic:
+   :caption: Envoy Router:
+
+   ev1000/quickstart
+   ev1000/hardware
+ 
+.. toctree::
+   :maxdepth: 2
+   :caption: AP2100 Access Point:
+
+   ap2100/quickstart-v2
+   ap2100/hardware-v2  
+
+.. toctree::
+   :maxdepth: 2
+   :caption: AP3500 Access Point:
 
    ap3500/quickstart
    ap3500/hardware   
+
 
 Indices and tables
 ==================

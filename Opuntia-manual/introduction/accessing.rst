@@ -47,9 +47,36 @@ For hardware platforms that include a Serial Console; you can connect to the Loc
 typically running at a speed of 115.2kbps with 8n1. Depending on the hardware platform you may need a null Serial connection. 
 Please check with your Quickstart guide to see if this is the case. 
 
-Once you have a Serial connection established, you can press any key to activate the Serial console. 
-
 .. important:: A common issue with Serial connections is cables the lack connected pins this can cause the connection to fail in unexpected ways (for example seeing output but not being able to send keystrokes). Take care you a using the correct cable for your hardware platform. 
+
+The specific connector and cable combination will depend on the hardware platform. If your hardware platform supports an RJ-45 
+Serial connection, the pin-out will be as follows. 
+
+.. table:: RJ-45 to DE-9 Pinout Table
+
+  +-----------------+----------+-------------------+------------+-------------------+
+  | RJ-45 Cable Pin | Color    | RJ-45 Definition  | DE-9 Pin   | DE-9 Definition   |
+  +-----------------+----------+-------------------+------------+-------------------+
+  | 1               | Brown    | CTS               | 8          | RTS               |
+  +-----------------+----------+-------------------+------------+-------------------+
+  | 2               | Purple   | DSR               | 6          | DSR               |
+  +-----------------+----------+-------------------+------------+-------------------+
+  | 3               | Yellow   | RXD               | 2          | TXD               |
+  +-----------------+----------+-------------------+------------+-------------------+
+  | 4               | Red      | GND               | 5          | GND               |
+  +-----------------+----------+-------------------+------------+-------------------+
+  | 5               | Black    | GND               | 5          | GND               |
+  +-----------------+----------+-------------------+------------+-------------------+
+  | 6               | Orange   | TXD               | 2          | RXD               |
+  +-----------------+----------+-------------------+------------+-------------------+
+  | 7               | Blue     | DTR               | 4          | DSR               |
+  +-----------------+----------+-------------------+------------+-------------------+
+  | 8               | Green    | RTS               | 7          | CTS               |
+  +-----------------+----------+-------------------+------------+-------------------+
+  |                 | N/A      | No Connect        | 1, 9       | No Connect        |
+  +-----------------+----------+-------------------+------------+-------------------+
+
+Once you have a Serial connection established, you can press any key to activate the Serial console. 
 
 By default the Serial console has no security. Security is provided by the requirement that accessing the Serial console requires 
 phyical localiticy to the Opuntia system. This my not always be true; for example if you are access the Serial console using a 
