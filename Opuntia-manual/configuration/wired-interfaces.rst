@@ -833,7 +833,7 @@ interface.
 
 .. note:: WireGuard will use a default listen port of 51820. If you have multiple WireGuard interfaces you will have to specify different udp ports for each interface. 
 
-We also recommend that you set a 
+While technically not required; we recommend that you set an Ip address on the WireGuard interface. 
 
 CLI
 ***

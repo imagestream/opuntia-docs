@@ -17,12 +17,14 @@ It's focused on providing advanced routing and edge computing features.
    Opuntia-manual/introduction/accessing
    Opuntia-manual/configuration/administrative-configuration
    Opuntia-manual/configuration/configuration-managment
+   Opuntia-manual/configuration/os-managment
    Opuntia-manual/configuration/wired-interfaces
    Opuntia-manual/configuration/dhcp-server
    Opuntia-manual/configuration/firewall
    Opuntia-manual/security/hardening
    Opuntia-manual/advanced/frr
    Opuntia-manual/advanced/ipv6-dynamic
+   Opuntia-manual/advanced/evpn
 
 .. toctree::
    :maxdepth: 2
