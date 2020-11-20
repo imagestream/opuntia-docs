@@ -66,4 +66,6 @@ CLI
 ###
 
 Upgrading the firmware from the command line is not difficult. The major complication is getting the firmware to the 
-device and insuring that you do not fill the  
+device and insuring that you do not fill the limited space that is available on the filesystem.
+
+When uploading 
