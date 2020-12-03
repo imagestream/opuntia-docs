@@ -24,9 +24,9 @@ copyright = u'2020, ImageStream Internet Solutions'
 author = u'Joshua Snyder'
 
 # The short X.Y version
-version = u'4.8.16'
+version = u'4.8.17'
 # The full version, including alpha/beta/rc tags
-release = u'4.8.16 r45534'
+release = u'4.8.17 r51464'
 
 
 # -- General configuration ---------------------------------------------------

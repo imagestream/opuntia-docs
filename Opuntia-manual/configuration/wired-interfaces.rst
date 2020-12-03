@@ -826,7 +826,7 @@ Name your new Interface and select protocol *WireGuard VPN*.
 
 .. image:: ../manual-images/Network-Interfaces-WireGuard-edit.png
   :width: 700
-  :alt: Screenshot showing
+  :alt: Screenshot showing WireGuard Interface configuraion
 
 You will then see the WireGuard interface configuraion settings. Start the configuraion by adding the privatekey for this WireGuard 
 interface.

@@ -28,7 +28,7 @@ It's focused on providing advanced routing and edge computing features.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Rebel Router Specfic:
+   :caption: Rebel Router:
 
    rr1000/quickstart
    rr1000/hardware
@@ -54,6 +54,12 @@ It's focused on providing advanced routing and edge computing features.
    ap3500/quickstart
    ap3500/hardware   
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Samurai Router:   
+
+   sr1000/quickstart
+   sr1000/hardware
 
 Indices and tables
 ==================
