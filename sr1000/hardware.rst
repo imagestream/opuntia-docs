@@ -15,7 +15,8 @@ Key features include
  - Two 10Gbase-T 10Gbit Interfaces
  - Two Sfp+ 10Gbit Interfaces
  - Redundant AC Power Supplies
- - four front pannel expansion slots
+ - four front pannel expansion slots 
+ 
  
 
 Front ports
@@ -33,19 +34,19 @@ Front ports
    +===========+=================+==================+================+================+
    | 1         | Console         | n/a              | /dev/ttyS0     | Serial Console |
    +-----------+-----------------+------------------+----------------+----------------+
-   | 2         | MGMT            | Managment        | enp2s0         | 1Gbit Ethernet |
+   | 2         | MGMT            | managment        | enp2s0         | 1Gbit Ethernet |
    +-----------+-----------------+------------------+----------------+----------------+
    | 3         | USB             | n/a              | n/a            | USB 3.0 Type A |
    +-----------+-----------------+------------------+----------------+----------------+
    | 4         | Console USB     | n/a              | n/a            | USB Console    |
    +-----------+-----------------+------------------+----------------+----------------+
-   | 5 (bottom)| IPMI/10GbE 1    | Managment-10g    | enp183s0f2     | 10Gbit Ethernet|
+   | 5 (bottom)| IPMI/10GbE 1    | managment_10g    | enp183s0f2     | 10Gbit Ethernet|
    +-----------+-----------------+------------------+----------------+----------------+
-   | 5 (top)   | 10GbE 2         | Eth2             | enp183s0f3     | 10Gbit Ethernet|
+   | 5 (top)   | 10GbE 2         | eth2             | enp183s0f3     | 10Gbit Ethernet|
    +-----------+-----------------+------------------+----------------+----------------+
-   | 6 (bottom)| SFP+ 1          | Sfp1             | enp183s0f1     | SFP+ Interface |
+   | 6 (bottom)| SFP+ 1          | sfp1             | enp183s0f1     | SFP+ Interface |
    +-----------+-----------------+------------------+----------------+----------------+
-   | 6 (top)   | SFP+ 2          | Sfp2             | enp183s0f0     | SFP+ Interface |
+   | 6 (top)   | SFP+ 2          | sfp2             | enp183s0f0     | SFP+ Interface |
    +-----------+-----------------+------------------+----------------+----------------+
    | 7         | Status LED      |                  |                | Status LED     |
    +-----------+-----------------+------------------+----------------+----------------+
@@ -60,4 +61,31 @@ Front ports
 
 .. note:: The Managment and Managment-10g interfaces may be used as normal interfaces in Opuntia. But the Managment-10 Interface will always expose the system BMC IPMI. So care should be taken to provide the needed security if using this interface.
 
+The managment interface will be configured with a static 
 
+The status LED has several different operating modes depending on the current system status. This table shows the different
+LED apperance and system status.
+
+.. table:: Status LED
+
+    +--------------------------+-----------------------------------------+
+    | LED Apperance            | Description                             |
+    +==========================+=========================================+
+    | Solid Green              | System powered on operating normally    |
+    +--------------------------+-----------------------------------------+
+    | Blinking Green           | System is shutting down                 |
+    +--------------------------+-----------------------------------------+
+    | Solid Red                | System is overheating                   |
+    +--------------------------+-----------------------------------------+
+    | 1 Second Blinking Red    | System Fan Failure                      |
+    +--------------------------+-----------------------------------------+
+    | 1/4 Second Blinking Red  | System Power Failure                    |
+    +--------------------------+-----------------------------------------+
+    | Solid Blue               | System Local UID enabled                |
+    +--------------------------+-----------------------------------------+
+    | 1 Second Blinking Blue   | System Remote UID enabled               |
+    +--------------------------+-----------------------------------------+
+    | Not lit                  | System is powered off                   |
+    +--------------------------+-----------------------------------------+
+    
+.. note:: The system UID status is enabaled in the IMPI Interface. 

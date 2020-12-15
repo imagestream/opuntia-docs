@@ -790,7 +790,7 @@ Generate a key pair
 WireGuard requires a public and private key pair. And all connectinng devices will need to know the Public key for the 
 WireGuard interface. And there must be a unique private key for each WireGuard interface. It's possible to generate these keys 
 on other systems and then use those keys on an Opuntia system. But currently there is no built in option to generate a new key 
-pair from the Luci Web GUI. 
+pair from the Luci Web GUI. This functionality will be added in the future. 
 
 To generate a new WireGuard key pair you will to access the Bash CLI please see the :ref:`Access-SSH` chapter of the manual. Once
 you have an active CLI shell, you can run the following commands. 
@@ -812,6 +812,8 @@ resulting keys will be Base64 encoded. For the rest of this chapter we will be u
 Web GUI
 *******
 
+To function, a WireGuard VPN requires a WireGuard Interface and Peer configuraion for each device connected to the VPN. 
+
 To begin creating a new WireGuard interface first navigate to the Network interfaces page.
 
 Main Menu - *Network --> Interfaces*
@@ -829,11 +831,16 @@ Name your new Interface and select protocol *WireGuard VPN*.
   :alt: Screenshot showing WireGuard Interface configuraion
 
 You will then see the WireGuard interface configuraion settings. Start the configuraion by adding the privatekey for this WireGuard 
-interface.
+interface. The privatekey will be only be used in the interface configuraion. To allow 
 
 .. note:: WireGuard will use a default listen port of 51820. If you have multiple WireGuard interfaces you will have to specify different udp ports for each interface. 
 
 While technically not required; we recommend that you set an Ip address on the WireGuard interface. 
+
+Peer Configuraion
+*****************
+
+
 
 CLI
 ***
