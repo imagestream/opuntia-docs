@@ -7,7 +7,8 @@ Samurai Router Hardware Details
 Samurai Router
 --------------
 
-The Samurai Router is the top of the line ImageStream Router. 
+The Samurai Router is the top of the line ImageStream Router. The Samurai Router is designed to provide reliable high performace
+layer 3 routing for demanding applications.
 
 Key features include
  
@@ -16,11 +17,25 @@ Key features include
  - Two Sfp+ 10Gbit Interfaces
  - Redundant AC Power Supplies
  - four front pannel expansion slots 
- 
- 
 
-Front ports
------------
+The four front pannel expansion slots allow any combination of the following expansion cards.
+
+Addon Front pannel Options
+ - 8 port GbE Rj-45 Interfaces 
+ - 4 port GbE SFP Interfaces
+ - 2 port 10Gbase-T Rj-45 Interfaces
+ - 2 port 25 Gbit SFP28 Interfaces
+
+These options allow the Samurai Router to be configured for wide variety of deployment options. 
+
+**System Block Diagram**
+
+.. image:: images/SR1000-System-Block-Diagram.png
+  :width: 900
+  :alt: System Block Diagram
+
+Built-in Interfaces
+-------------------
 
 .. image:: images/SR1000-Front-Ports-LEDs.png
   :width: 700
@@ -34,13 +49,13 @@ Front ports
    +===========+=================+==================+================+================+
    | 1         | Console         | n/a              | /dev/ttyS0     | Serial Console |
    +-----------+-----------------+------------------+----------------+----------------+
-   | 2         | MGMT            | managment        | enp2s0         | 1Gbit Ethernet |
+   | 2         | MGMT            | mgmt             | enp2s0         | 1Gbit Ethernet |
    +-----------+-----------------+------------------+----------------+----------------+
    | 3         | USB             | n/a              | n/a            | USB 3.0 Type A |
    +-----------+-----------------+------------------+----------------+----------------+
    | 4         | Console USB     | n/a              | n/a            | USB Console    |
    +-----------+-----------------+------------------+----------------+----------------+
-   | 5 (bottom)| IPMI/10GbE 1    | managment_10g    | enp183s0f2     | 10Gbit Ethernet|
+   | 5 (bottom)| IPMI/10GbE 1    | mgmt_10g         | enp183s0f2     | 10Gbit Ethernet|
    +-----------+-----------------+------------------+----------------+----------------+
    | 5 (top)   | 10GbE 2         | eth2             | enp183s0f3     | 10Gbit Ethernet|
    +-----------+-----------------+------------------+----------------+----------------+
