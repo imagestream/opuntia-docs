@@ -9,20 +9,28 @@ This chapter covers Firewall configuration and theory for Opuntia systems.
 
 .. _Firewall-Zone-based:
 
-Zone based Firewall theory
+Zone based Firewall Theory
 --------------------------
 
 Statefull firewall systems have 
 
-Opuntia implments Zone based by default using *managment* and *wan* zones. Opuntia groups interfaces into *Zones* for 
-
+Opuntia implments Zone based by default using *managment* and *wan* zones. Opuntia groups interfaces into *Zones* to define common
 
 By default Opuntia allows access to the Web GUI on ANY IPv4/IPv6 interface address. The 
 
 
+Zone based Firewall Configuration
+---------------------------------
+
+
+
+.. image:: ../manual-images/Firewall-Gereral-Settings.png
+  :width: 600
+  :alt: The main Firewall General Settings page
+
+
+
 .. _Firewall-Limiting-External-access:
-
-
 
 Limiting External access
 ------------------------
