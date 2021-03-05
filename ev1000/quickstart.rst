@@ -23,7 +23,7 @@ description of the factory default configuration EV1000. It is possible to chang
 
 **Eth0 and Eth1**
 
-The default configuration of the EV1000 is to configure Eth0 and Eth1 as descrete interfaces. These interfaces runs in DHCP 
+The default configuration of the EV1000 is to configure Eth0 and Eth1 as discrete interfaces. These interfaces runs in DHCP 
 and DHCPv6 client mode. It will continue to try to receive an IPv4 and IPv6 address on the Wan interface until it succeeds. 
 Since both interfaces are trying to obtain a valid IPv4 address and default routes; in the case where both interfaces install
 a default route Eth0 will be the perfered interface.  
@@ -122,6 +122,25 @@ CLI Access via the Serial Interface
 
 The EV1000 has a built in DE-9 Rs232 Interface. When connecting via the Serial Interface; to access the CLI no password is currently required (as of Opuntia version 
 4.8.16). Just connect using this interface (for details see above) and press the "enter" key. 
+
+Firewall defaults
+-----------------
+
+The table below describes the default firewall zone and policy for the EV1000.
+
+.. table:: Firewall Interface defaults
+
+ +----------------+--------------+--------------+----------------+---------------+
+ | Interface Name | Default Zone | Input policy | Forward policy | Output policy |
+ +----------------+--------------+--------------+----------------+---------------+
+ | Eth0           | Wan          | Accept       | Accept         | Accept        |
+ +----------------+--------------+--------------+----------------+---------------+
+ | Eth1           | Wan          | Accept       | Accept         | Accept        |
+ +----------------+--------------+--------------+----------------+---------------+
+ | Eth2           | Management   | Accept       | Accept         | Accept        |
+ +----------------+--------------+--------------+----------------+---------------+
+
+ 
 
 
 .. rubric:: Footnotes

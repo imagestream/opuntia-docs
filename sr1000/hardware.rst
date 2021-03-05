@@ -74,9 +74,9 @@ Built-in Interfaces
    | 11        | Power LED/Button|                  |                | Status LED     |
    +-----------+-----------------+------------------+----------------+----------------+
 
-.. note:: The Managment and Managment-10g interfaces may be used as normal interfaces in Opuntia. But the Managment-10 Interface will always expose the system BMC IPMI. So care should be taken to provide the needed security if using this interface.
+.. note:: The Management and Management-10g interfaces may be used as normal interfaces in Opuntia. But the Management-10 Interface will always expose the system BMC IPMI. So care should be taken to provide the needed security if using this interface.
 
-The managment interface will be configured with a static 
+The management interface will be configured with a static 
 
 The status LED has several different operating modes depending on the current system status. This table shows the different
 LED apperance and system status.

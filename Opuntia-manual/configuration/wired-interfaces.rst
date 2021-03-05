@@ -488,6 +488,10 @@ only has the 'ip6assign' option configured.
 We are also configuring DHCPv6 to allocate addresses from the assigned IPv6 Prefix. This is configuration example for working in a 
 dual-stack enviorment.
 
+This example shows the simplest IPv6 configuraion. This requests a /64 IPv6 netblock to be assigned to the interface. This will cause
+the system try to obtain a valid public IPv6 network to assign to the interface. This address space is allocated from the assigned IPv6
+prefix delegation that the system obtained via DHCPv6. If there is insufficient IPv6 address space, the system will not assign a /64. 
+
 .. code-block:: python
   :caption: /etc/config/network
   :emphasize-lines: 6
@@ -499,9 +503,8 @@ dual-stack enviorment.
         list dns '192.168.85.10'
         option ip6assign '64'
 
-This example shows the simplest IPv6 configuraion. This requests a /64 IPv6 netblock to be assigned to the interface. This will cause
-the system try to obtain a valid public IPv6 network to assign to the interface. This address space is allocated from the assigned IPv6
-prefix delegation that the system obtained via DHCPv6. If there is insufficient IPv6 address space, the system will not assign a /64. 
+This DHCP/DHCPv6 configuraion shows how to set the Opuntia system as a DHCPv6 server. And allows for the system to do prefix delegation 
+to downstream devices. This is typically combinded with the simple Dual Stack interface configuraion above.  
 
 .. code-block:: python
   :caption: /etc/config/dhcp
@@ -530,7 +533,7 @@ This example shows two static IPv6 addresses assigned to the Home_Lan Interface.
         list ip6addr '2007:86:e0f1:480::5/128'
         option ip6prefix '2001:10:96:e010::/64'
 
-This example shows a configuration of a pure IPv6 network. This uses the built-in IPv6 management to assign 
+This example shows a configuration of a pure IPv6 network. This uses the built-in IPv6 management to assign the /64 netblock.  
 
 .. code-block:: python
   :caption: /etc/config/network
