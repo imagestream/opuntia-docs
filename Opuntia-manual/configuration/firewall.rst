@@ -14,8 +14,8 @@ Major features of Netfilter
 * Network Address Translation
 * Port Address Translation
 
-In this section of the Opuntia manual we will provide examples of using these features. As a reveiw here is general packet flow
-through the Linux Netfilter chains and tables.
+In this section of the Opuntia manual we will provide examples of using these features. As a reveiw here is general packet 
+flow[1] through the Linux Netfilter chains and tables.
 
 .. image:: ../manual-images/Netfilter-packet-flow.svg
   :width: 700
@@ -40,15 +40,15 @@ Guide for more information.
 
 By default Opuntia allows access to the Web GUI on ANY IPv4/IPv6 interface address. The 
 
-Firewall Configuration
-----------------------
+Firewall
+--------
 
 To navigate to the Firewall configuraion page. 
 
 Main Menu - *Network --> Firewall*
 
-General Settings
-################
+General Settings Tab
+####################
 
 .. image:: ../manual-images/Firewall-Gereral-Settings.png
   :width: 600
@@ -85,6 +85,12 @@ This section has two options. *Software flow Offloading* and if you enable that 
 option. These options can allow you to lower cpu usage by bypassing some of the default Netfilter packet processing for known 
 packet flows. This can sometimes cause issues with applications. So these are not enabled by default. 
 
+But if your network design is simple with only a single Internet gateway or no Multi-path Routing, the *Software flow Offloading*
+can greatly reduce the cpu load at a given throughput. 
+
+*Hardware flow Offloading* is only supported on specific hardware platforms check your QuickStart Guide to see if your platform
+supports this feature. 
+
 Zones
 *****
 
@@ -110,3 +116,4 @@ administrator access to the equipment; this can be a security risk. This section
 the default firewall rules that allow access to these services from remote. 
 
 
+.. [1] This image is from https://commons.wikimedia.org/wiki/File:Netfilter-packet-flow.svg This is a Common Creatives work that is based on the Joshua Snyders (Author of this manual) work. 
