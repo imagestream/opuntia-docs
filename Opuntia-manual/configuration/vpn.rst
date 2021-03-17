@@ -19,6 +19,78 @@ We will detail each option in a section of this chapter of the Opuntia manual.
 Wireguard
 ---------
 
+WireGuard is a simple and fast modern VPN solution that uses state of the art cyptography. It's designed to be replace IPsec VPN's
+while simpler to configure. And it is also more performant than OpenVpn. The offical WireGuard site lists the following as the 
+major advantages of WireGuard. 
+
+- Simple & Easy to use
+- Cryptographically Sound
+- Minimal Attack Surface
+- High Performance
+
+WireGuard is also very tolerent of network changes. For example if a client device is connected to a Opuntia system using WireGuard
+and the client devices Public Ip Address changes due to roaming to a new network; the WireGuard vpn tunnel can be reestablished in 
+just miliseconds. This allows for seemless operation in changing network conditions. 
+
+For these reasons WireGuard is the perfered VPN solution for Opuntia. 
+
+Generate a key pair
+###################
+
+WireGuard requires a public and private key pair. And all connectinng devices will need to know the Public key for the 
+WireGuard interface. And there must be a unique private key for each WireGuard interface. It's possible to generate these keys 
+on other systems and then use those keys on an Opuntia system. But currently there is no built in option to generate a new key 
+pair from the Luci Web GUI. This functionality will be added in the future. 
+
+To generate a new WireGuard key pair you will to access the Bash CLI please see the :ref:`Access-SSH` chapter of the manual. Once
+you have an active CLI shell, you can run the following commands. 
+
+.. code-block:: bash
+   :emphasize-lines: 3
+
+   mkdir -p /etc/wireguard
+   cd /etc/wireguard
+   wg genkey | tee ./privatekey | wg pubkey > ./publickey
+
+The first two commands create a /etc/wireguard driectory. Only the last line actually creates the public and private key. The 
+resulting keys will be Base64 encoded. For the rest of this chapter we will be using the following example keys. ::
+
+  privatekey: 4NM0x6/2ndJktcHTfRXnWS3tzlo95QEgPBsen+swjFw=
+  publickey:  2wGMjbn6FU4+QKk7y1s37LuOfotw5moUR2LlFwXqJQ8=
+
+
+Web GUI
+*******
+
+To function, a WireGuard VPN requires a WireGuard Interface and Peer configuraion for each device connected to the VPN. 
+
+To begin creating a new WireGuard interface first navigate to the Network interfaces page.
+
+Main Menu - *Network --> Interfaces*
+
+Then click on the "Add new interface" button. 
+
+.. image:: ../manual-images/Network-Interfaces-WireGuard-create.png
+  :width: 700
+  :alt: Screenshot showing the initial WireGuard Interface creation. 
+
+Name your new Interface and select protocol *WireGuard VPN*. 
+
+.. image:: ../manual-images/Network-Interfaces-WireGuard-edit.png
+  :width: 700
+  :alt: Screenshot showing WireGuard Interface configuraion
+
+You will then see the WireGuard interface configuraion settings. Start the configuraion by adding the privatekey for this WireGuard 
+interface. The privatekey will be only be used in the interface configuraion. To allow 
+
+.. note:: WireGuard will use a default listen port of 51820. If you have multiple WireGuard interfaces you will have to specify different udp ports for each interface. 
+
+While technically not required; we recommend that you set an Ip address on the WireGuard interface. 
+
+Peer Configuraion
+*****************
+
+
 OpenVpn
 -------
 
@@ -147,7 +219,7 @@ passwords that these users have chosen. This "*" setting allows the client to ge
 that we have defined. 
 
 Firewall configuraion
-*********************
+#####################
 
 By default Opuntia needs to be configured to allow incoming L2TP connections in the *wan* firewall zone. If see the 
 firewall chapter for more general information. 
@@ -168,12 +240,61 @@ Once that rule is installed you will see this from the firewall ruleset summary.
   :width: 600
   :alt: L2TP Firewall ruleset
 
+Client Setup
+############
 
+MacOS Big Sur
+*************
 
+MacOS supports IPsec/L2TP clients natively. In this section we will detail the configuraion process when setting up a MacOS 
+client to connect to our example IPsec/L2TP vpn from above.
 
+.. image:: ../manual-images/VPN-Client/VPN-L2TP-Macos-Step1.png
+  :width: 400
+  :alt: MacOS Big Sur Step1
 
+The first step is to add a new interface in the *System Preferences*-->*Network*. You can create a new Interface by clicking 
+the + in the bottom left side of the interface menu. Set the "Interface Type" to *VPN* and the "VPN Type" to 
+*L2TP over IPsec*. The "Service Name" can be set to your perfered name for the VPN. In our example we will set it to
+*L2TP-VPN*. 
 
+.. image:: ../manual-images/VPN-Client/VPN-L2TP-Macos-Step2.png
+  :width: 600
+  :alt: MacOS Big Sur Step2
 
+The next step is to configure the basic "Server Address" and "Account Name" for the VPN. The "Server Address" will be the 
+public IPv4 address that we set above; or in this example *203.0.113.1*. The "Account Name" will be *alice*.
+
+The next two configuraion items can be set by pressing the "Authentication Settings..." button.
+
+.. image:: ../manual-images/VPN-Client/VPN-L2TP-Macos-Step3.png
+  :width: 400
+  :alt: MacOS Big Sur Step3
+ 
+In the "Authentication Settings" dialog box, you will need to set the password for the user. In this example the password 
+for *alice* is *47roses* and is entered into the "Password" field in the "User Authentication" section. 
+
+Next; set the *Pre-Shared Key* in the "Shared Secret" field in the "Machine Authentication" section. In our example 
+this would be *3dTamd01m*. This concludes the minimum configuraion settings for a IPsec/L2TP VPN. 
+
+**MacOS Big Sur Optional Settings**
+
+MacOS IPsec/L2TP has two common configuraion options descibed below.  
+
+.. image:: ../manual-images/VPN-Client/VPN-L2TP-Macos-route.png
+  :width: 600
+  :alt: MacOS Big Sur default route.
+
+By default MacOS does not route all traffic through the IPsec/L2TP Vpn. This is a common requested configuraion. Access the 
+advanced vpn configuration option. Then under the *Options* tab select "Send all traffic over VPN connection". 
+
+.. image:: ../manual-images/VPN-Client/VPN-L2TP-Macos-dns.png
+  :width: 600
+  :alt: MacOS Big Sur DNS settings.
+
+When routing all traffic over the VPN it is also necessary to define your DNS servers. Access the advanced vpn 
+configuration option. Then under the *DNS* tab add a new DNS server by clicking the "+" button on the bottom left side of 
+the dialog box. In this example we set the Google IPv4 public DNS servers.  
 
 
 
