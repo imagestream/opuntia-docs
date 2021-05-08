@@ -25,7 +25,8 @@ Opuntia firmware is available at the following website. We
 Upgrading the OS 
 ----------------
 
-Opuntia supports several different hardware platforms. 
+Opuntia supports several different hardware platforms, at the current time Opuntia nativily runs on x86, Arm64 and Mips 
+systems. Please consult your hardware quickstart guide.
 
 Web GUI
 #######

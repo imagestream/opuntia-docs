@@ -102,8 +102,9 @@ IPsec/L2TP
 
 IPsec/L2TP is a widely deployed VPN technlogy since client support is built into most operating systems. It features the 
 strong security of IPsec with the addition of the the L2TP tunneling protocol. This does add complexity to the already 
-feature rich IPsec vpn. This allows for a username and password to be asigned each user. This multi-factor VPN 
-configuraion is required in some remote security enviorments. 
+feature rich IPsec vpn. This allows for a username and password to be asigned each user. This is also sometimes
+considered a multi-factor VPN (Username/Password and PSK) which can fullfil configuraion requirements in some remote 
+security enviorments. 
 
 Currently as of Opuntia version 4.8.17 this configuration has not recieved a Web GUI configuration menu. We will outline
 CLI method to configure this VPN type. To successfully configure IPsec/L2TP you will need the following items. 
