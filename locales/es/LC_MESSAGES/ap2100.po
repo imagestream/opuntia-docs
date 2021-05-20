@@ -1,0 +1,254 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, ImageStream Internet Solutions
+# This file is distributed under the same license as the Opuntia package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Opuntia 4.8.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-18 20:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../ap2100/hardware-v2.rst:3
+msgid "AP2100 Hardware details"
+msgstr ""
+
+#: ../../ap2100/hardware-v2.rst:5 ../../ap2100/quickstart-v2.rst:5
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../ap2100/hardware-v2.rst:8
+msgid "Hardware Description"
+msgstr ""
+
+#: ../../ap2100/hardware-v2.rst:10
+msgid ""
+"The AP2100 x86 based 802.11ac Wave 2 indoor AP that features high "
+"performance Wifi with"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:3
+msgid "AP2100 QuickStart Guide"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:7
+msgid ""
+"The AP2100 is configured by default to allow access via several different"
+" methods."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:9
+msgid "Access via Ethernet using the Web Interface"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:10
+msgid "Access via Ethernet using SSH"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:11
+msgid "Access via the Local Serial Console"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:14
+msgid "Ethernet Connectivity"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:16
+msgid ""
+"The Ethernet interface on the AP2100 supports auto mdi/mdix so the "
+"interface can be connected directly to a client device or an Ethernet "
+"switch with a standard Ethernet cable."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:19
+msgid "**IPv4**"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:21
+msgid ""
+"The AP2100 has two Ethernet interfaces eth0 and eth1. The default "
+"configuration of the AP2100 is to configure eth0 as the physical "
+"interface for the Opuntia **Wan** interface. Due to this default "
+"configuration the AP2100 defaults to acting as a DHCP/DHCPv6 client. It "
+"will receive an ip address from any existing DHCP servers that are "
+"present on the network connected to the Ethernet interface. If an IPv6 "
+"router advertiment is received on the eth0 interface it will us SLAAC to "
+"configure a Ipv6 client address. If a DHCPv6 server is present, the "
+"router will attempt to receive an IPv6 Prefix Delegation."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:27
+msgid ""
+"The physical Ethernet *eth1* interface is configured as the Opuntia "
+"**Lan** interface. This interface by default is configured to provide a "
+"DHCP server for the 10.10.199.0/24 network."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:30
+msgid ""
+"Once you have determined the correct IPv4 address you can then move to "
+"accessing the AP2100 via the Web GUI or via SSH."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:32
+msgid "**IPv6**"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:34
+msgid ""
+"The AP2100 will obtain an IPv6 address using DHCPv6 or SLAAC (Stateless "
+"Address Autoconfiguration) if these methods are present on the connected "
+"network. If the AP2100 received a IPv6 Prefix Delegation on the **Wan** "
+"interface it will generate IPv6 router advertiment packets and run a "
+"DHCPv6 server on the *eth1* interface using the received Prefix "
+"Delegation."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:38
+msgid ""
+"The AP2100 will also always configure an IPv6 Link local address based on"
+" the MAC address([1]_) of the AP2100. This Link local IPv6 address is "
+"present at all times even if IPv4 and other IPv6 configurations are "
+"invalid. So the Link local address is the most relaible way to access the"
+" AP2100. Since this address is based on the MAC address of the Ethernet "
+"interface it is unquie to each AP2100. An easy method to determine this "
+"address is to send a ping packet to the IPv6 \"all routers\" multicast "
+"address(ff02::2)."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:43
+msgid ""
+"For Linux systems this can be done using the following command assuming "
+"your Ethernet interface is \"eth0\". Please note that most operating "
+"systems require specifiying the interface in addtion to the address when "
+"using Link Local addresses. For example Linux systems would use the "
+"following syntax if your interface was \"eth0\"::"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:49
+msgid ""
+"Additionally it's possible to compute the Link Local address using the "
+"MAC address. Numerious online calculators can be used to easily find the "
+"Link local address([2]_) using the MAC address located on the product "
+"label. Note; the AP2100 will have a MAC address that begins with "
+"\"B0:91:37\"."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:53
+msgid ""
+"Once you have determined the correct IPv6 address you can then move to "
+"accessing the AP2100 via the Web GUI or via SSH."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:56
+msgid "Web GUI Access"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:58
+msgid "**Access via Ethernet using the Web Interface - IPv4**"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:60
+msgid ""
+"This interface defaults to a network address range of 10.10.199.0/24 with"
+" the router configured as 10.10.199.1 and supports DHCP client access."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:63
+msgid ""
+"When the AP2100 is using the failback IPv4 address access the login page "
+"use the following url: `https://10.10.199.1/ <https://10.10.199.1>`_"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:65 ../../ap2100/quickstart-v2.rst:84
+msgid ""
+"The AP2100 ships with a self-signed ssl certificate. This may cause "
+"warning in when connecting to the AP2100 for the first time. These "
+"warnings can be safely ignored for accessing the management Web GUI."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:68 ../../ap2100/quickstart-v2.rst:96
+msgid ""
+"The admin username is \"**root**\".  The default password is "
+"\"**imagestream**\"."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:71
+msgid ""
+"We strongly recommend that you change the default password as your first "
+"configuration change."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:77
+msgid "**Access via Ethernet using the Web Interface - IPv6**"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:79
+msgid ""
+"To access the Web GUI using using IPv6 the method is similar to using "
+"IPv4. To enter a IPv6 addresses in a web browser use the following "
+"syntax. If we assume that you determined your Ipv6 Link Local address is "
+"\"fe80::b291:37ff:fe05:1\" then the correct url would be as follows::"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:88
+msgid "CLI Access via SSH"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:90
+msgid "**IPv4 & IPv6**"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:92
+msgid ""
+"The AP2100 can also be accessed via SSH. Using the ip address of the "
+"AP2100 connect as user root. If the AP2100 is in failback IPv4 mode the "
+"ip address will be 10.10.199.1. If the AP2100 is using DHCP or DHCPv6 you"
+" need to determine which address was a assigned by looking at your DHCP "
+"sever. In the following screenshot the address was assigned via DHCP."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:104
+msgid "Cli Access via Serial Console"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:106
+msgid ""
+"The EV1000 features a DE-9([3]_) connector using the Rs232 Serial "
+"standard. You will need a **Null Serial** connection to connect to this "
+"interface. The interface will be running at a baud rate 115,200 bps and "
+"using 8 data bits; no parity bit and 1 stop bit; or commonly known as "
+"\"115.2kbps 8n1\"."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:110
+msgid ""
+"The most likely cause of problems when using the Serial interface is "
+"issues with incorrect cables. As noted above, a **Null Serial** cable is "
+"required."
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:114
+msgid "Footnotes"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:115
+msgid "Using the RFC4862 standard for Link Local address creation"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:116
+msgid "https://ben.akrin.com/?p=1347 Ipv6 Link Local Calculator"
+msgstr ""
+
+#: ../../ap2100/quickstart-v2.rst:117
+msgid "The DE-9 connector is often incorrectly known as a DB-9 interface."
+msgstr ""
+

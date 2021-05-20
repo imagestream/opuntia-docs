@@ -1,0 +1,273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, ImageStream Internet Solutions
+# This file is distributed under the same license as the Opuntia package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Opuntia 4.8.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-18 20:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../rr1000/hardware.rst:3
+msgid "RR1000 Hardware details"
+msgstr ""
+
+#: ../../rr1000/hardware.rst:5
+msgid ""
+"The RR1000 a router, vpn server, security device and edge compute "
+"platform depending on software and hardware configurations."
+msgstr ""
+
+#: ../../rr1000/hardware.rst:8
+msgid "The router has six Ethernet Interfaces."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:3
+msgid "Rebel Router QuickStart Guide"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:5
+msgid ""
+"The Rebel Router (RR1000) is configured by default to allow access via "
+"several different methods."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:7 ../../rr1000/quickstart.rst:19
+msgid "Access via Ethernet using SSH"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:8 ../../rr1000/quickstart.rst:18
+msgid "Access via Ethernet using the Web Interface"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:9
+msgid "Access using the built-in console port"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:12
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:14
+msgid "The documentation for the RR1000 is still a work in progress."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:16
+msgid ""
+"The RR1000 is configured by default to allow access via several different"
+" methods."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:20
+msgid "Access via the Serial Interface"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:23
+msgid "Ethernet Connectivity"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:25
+msgid ""
+"The Ethernet interface on the RR1000 supports auto mdi/mdix so the "
+"interface can be connected directly to a client device or an Ethernet "
+"switch with a standard Ethernet cable."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:28
+msgid "**IPv4**"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:30
+msgid ""
+"The RR1000 has a single Ethernet interface. The default configuration of "
+"the RR1000 is to bridge the Ethernet interface with the wireless radio. "
+"Due to this default configuration the RR1000 defaults to acting as a DHCP"
+" client. It will receive an ip address from any existing DHCP servers "
+"that are present on the network connected to the Ethernet interface."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:34
+msgid ""
+"If the RR1000 fails to obtain an DHCP lease within the first 60 seconds; "
+"the RR1000 will switch modes and it will assign 10.10.199.1/24 to the "
+"Ethernet interface. In this failback mode the RR1000 will then be "
+"accessable using this self-assigned address."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:37
+msgid ""
+"Once you have determined the correct IPv4 address you can then move to "
+"accessing the RR1000 via the Web GUI or via SSH."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:39
+msgid "**IPv6**"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:41
+msgid ""
+"The RR1000 will obtain an IPv6 address using DHCPv6 or SLAAC (Stateless "
+"Address Autoconfiguration) if these methods are present on the connected "
+"network."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:44
+msgid ""
+"The RR1000 will always configure an IPv6 Link local address based on the "
+"MAC address([1]_) of the RR1000. This Link local IPv6 address is present "
+"at all times even if IPv4 and other IPv6 configurations are invalid. So "
+"the Link local address is the most relaible way to access the RR1000. "
+"Since this address is based on the MAC address of the Ethernet interface "
+"it is unquie to each RR1000. An easy method to determine this address is "
+"to send a ping packet to the IPv6 \"all routers\" multicast "
+"address(ff02::2)."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:49
+msgid ""
+"For Linux systems this can be done using the following command assuming "
+"your Ethernet interface is \"eth0\". Please note that most operating "
+"systems require specifiying the interface in addtion to the address when "
+"using Link Local addresses. For example Linux systems would use the "
+"following syntax if your interface was \"eth0\"::"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:55
+msgid ""
+"Additionally it's possible to compute the Link Local address using the "
+"MAC address. Numerious online calculators can be used to easily find the "
+"Link local address([2]_) using the MAC address located on the product "
+"label."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:58
+msgid ""
+"Once you have determined the correct IPv6 address you can then move to "
+"accessing the RR1000 via the Web GUI or via SSH."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:61
+msgid "Serial Connectivity"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:63
+msgid ""
+"The RR1000 features a DE-9([3]_) connector using the Rs232 Serial "
+"standard. You will need a **Null Serial** connection to connect to this "
+"interface. The interface will be running at a baud rate 115,200 bps and "
+"using 8 data bits; no parity bit and 1 stop bit; or commonly known as "
+"\"115.2kbps 8n1\"."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:67
+msgid ""
+"The most likely cause of problems when using the Serial interface is "
+"issues with incorrect cables. As noted above, a **Null Serial** cable is "
+"required."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:71
+msgid "Web GUI Access"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:73
+msgid "**Access via Ethernet using the Web Interface - IPv4**"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:75
+msgid ""
+"This interface defaults to a network address range of 10.10.199.0/24 with"
+" the router configured as 10.10.199.1 and supports DHCP client access."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:78
+msgid ""
+"When the RR1000 is using the failback IPv4 address access the login page "
+"use the following url: `https://10.10.199.1/ <https://10.10.199.1>`_"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:80 ../../rr1000/quickstart.rst:99
+msgid ""
+"The RR1000 ships with a self-signed ssl certificate. This may cause "
+"warning in when connecting to the RR1000 for the first time. These "
+"warnings can be safely ignored for accessing the management Web GUI."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:83 ../../rr1000/quickstart.rst:111
+msgid ""
+"The admin username is \"**root**\".  The default password is "
+"\"**imagestream**\"."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:86
+msgid ""
+"We strongly recommend that you change the default password as your first "
+"configuration change."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:92
+msgid "**Access via Ethernet using the Web Interface - IPv6**"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:94
+msgid ""
+"To access the Web GUI using using IPv6 the method is similar to using "
+"IPv4. To enter a IPv6 addresses in a web browser use the following "
+"syntax. If we assume that you determined your Ipv6 Link Local address is "
+"\"fe80::b291:37ff:fe05:1\" then the correct url would be as follows::"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:103
+msgid "CLI Access via SSH"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:105
+msgid "**IPv4 & IPv6**"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:107
+msgid ""
+"The RR1000 can also be accessed via SSH. Using the ip address of the "
+"RR1000 connect as user root. If the RR1000 is in failback IPv4 mode the "
+"ip address will be 10.10.199.1. If the RR1000 is using DHCP or DHCPv6 you"
+" need to determine which address was a assigned by looking at your DHCP "
+"sever. In the following screenshot the address was assigned via DHCP."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:117
+msgid "CLI Access via the Serial Interface"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:119
+msgid ""
+"The RR1000 has a built in DE-9 Rs232 Interface. When connecting via the "
+"Serial Interface; to access the CLI no password is currently required (as"
+" of Opuntia version 4.8.16). Just connect using this interface (for "
+"details see above) and press the \"enter\" key."
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:124
+msgid "Footnotes"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:125
+msgid "Using the RFC4862 standard for Link Local address creation"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:126
+msgid "https://ben.akrin.com/?p=1347 Ipv6 Link Local Calculator"
+msgstr ""
+
+#: ../../rr1000/quickstart.rst:127
+msgid "The DE-9 connector is often incorrectly known as an DB-9 interface."
+msgstr ""
+

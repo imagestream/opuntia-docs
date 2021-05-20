@@ -1,0 +1,399 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, ImageStream Internet Solutions
+# This file is distributed under the same license as the Opuntia package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Opuntia 4.8.17\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-18 20:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: ../../sr1000/hardware.rst:3
+msgid "Samurai Router Hardware Details"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:5 ../../sr1000/quickstart.rst:6
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:8
+msgid "Samurai Router"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:10
+msgid ""
+"The Samurai Router is the top of the line ImageStream Router. The Samurai"
+" Router is designed to provide reliable high performace layer 3 routing "
+"for demanding applications."
+msgstr ""
+
+#: ../../sr1000/hardware.rst:13
+msgid "Key features include"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:15
+msgid "Powerful 8 Core CPU"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:16
+msgid "Two 10Gbase-T 10Gbit Interfaces"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:17
+msgid "Two Sfp+ 10Gbit Interfaces"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:18
+msgid "Redundant AC Power Supplies"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:19
+msgid "four front pannel expansion slots"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:21
+msgid ""
+"The four front pannel expansion slots allow any combination of the "
+"following expansion cards."
+msgstr ""
+
+#: ../../sr1000/hardware.rst:27
+msgid "Addon Front pannel Options"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:24
+msgid "8 port GbE Rj-45 Interfaces"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:25
+msgid "4 port GbE SFP Interfaces"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:26
+msgid "2 port 10Gbase-T Rj-45 Interfaces"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:27
+msgid "2 port 25 Gbit SFP28 Interfaces"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:29
+msgid ""
+"These options allow the Samurai Router to be configured for wide variety "
+"of deployment options."
+msgstr ""
+
+#: ../../sr1000/hardware.rst:31
+msgid "**System Block Diagram**"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:38
+msgid "Built-in Interfaces"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:45
+msgid "Front Ports and LEDs"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:48
+msgid "Diagram #"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:48
+msgid "Case Label"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:48
+msgid "Opuntia Dev Name"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:48
+msgid "Linux Dev Name"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:48 ../../sr1000/hardware.rst:87
+msgid "Description"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:50
+msgid "1"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:50
+msgid "Console"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:50 ../../sr1000/hardware.rst:54
+#: ../../sr1000/hardware.rst:56
+msgid "n/a"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:50
+msgid "/dev/ttyS0"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:50
+msgid "Serial Console"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:52
+msgid "2"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:52
+msgid "MGMT"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:52
+msgid "mgmt"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:52
+msgid "enp2s0"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:52
+msgid "1Gbit Ethernet"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:54
+msgid "3"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:54
+msgid "USB"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:54
+msgid "USB 3.0 Type A"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:56
+msgid "4"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:56
+msgid "Console USB"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:56
+msgid "USB Console"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:58
+msgid "5 (bottom)"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:58
+msgid "IPMI/10GbE 1"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:58
+msgid "mgmt_10g"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:58
+msgid "enp183s0f2"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:58 ../../sr1000/hardware.rst:60
+msgid "10Gbit Ethernet"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:60
+msgid "5 (top)"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:60
+msgid "10GbE 2"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:60
+msgid "eth2"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:60
+msgid "enp183s0f3"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:62
+msgid "6 (bottom)"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:62
+msgid "SFP+ 1"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:62
+msgid "sfp1"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:62
+msgid "enp183s0f1"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:62 ../../sr1000/hardware.rst:64
+msgid "SFP+ Interface"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:64
+msgid "6 (top)"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:64
+msgid "SFP+ 2"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:64
+msgid "sfp2"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:64
+msgid "enp183s0f0"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:66
+msgid "7"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:66 ../../sr1000/hardware.rst:74
+#: ../../sr1000/hardware.rst:84
+msgid "Status LED"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:68
+msgid "8"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:68
+msgid "UID LED"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:70
+msgid "9"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:70
+msgid "HDD LED"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:72
+msgid "10"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:72
+msgid "Reset LED"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:74
+msgid "11"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:74
+msgid "Power LED/Button"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:77
+msgid ""
+"The Management and Management-10g interfaces may be used as normal "
+"interfaces in Opuntia. But the Management-10 Interface will always expose"
+" the system BMC IPMI. So care should be taken to provide the needed "
+"security if using this interface."
+msgstr ""
+
+#: ../../sr1000/hardware.rst:79
+msgid "The management interface will be configured with a static"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:81
+msgid ""
+"The status LED has several different operating modes depending on the "
+"current system status. This table shows the different LED apperance and "
+"system status."
+msgstr ""
+
+#: ../../sr1000/hardware.rst:87
+msgid "LED Apperance"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:89
+msgid "Solid Green"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:89
+msgid "System powered on operating normally"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:91
+msgid "Blinking Green"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:91
+msgid "System is shutting down"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:93
+msgid "Solid Red"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:93
+msgid "System is overheating"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:95
+msgid "1 Second Blinking Red"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:95
+msgid "System Fan Failure"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:97
+msgid "1/4 Second Blinking Red"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:97
+msgid "System Power Failure"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:99
+msgid "Solid Blue"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:99
+msgid "System Local UID enabled"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:101
+msgid "1 Second Blinking Blue"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:101
+msgid "System Remote UID enabled"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:103
+msgid "Not lit"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:103
+msgid "System is powered off"
+msgstr ""
+
+#: ../../sr1000/hardware.rst:106
+msgid "The system UID status is enabaled in the IMPI Interface."
+msgstr ""
+
+#: ../../sr1000/quickstart.rst:5
+msgid "Samuria Router QuickStart Guide"
+msgstr ""
+

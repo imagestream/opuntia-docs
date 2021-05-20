@@ -84,7 +84,7 @@ the reboot process is complete.
 
 This completes restoring a saved configuration file. 
 
-To restore the system to a default state it is needed to click on the "Perform reset" button. And then to conferm that you 
+To restore the system to a default state it is needed to click on the "Perform reset" button. And then to confirm that you 
 want to restore to factory defaults. This then performs a system reboot. 
 
 **CLI**
