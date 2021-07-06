@@ -794,12 +794,16 @@ For these reasons WireGuard is the perfered VPN solution for Opuntia.
 Generate a key pair
 *******************
 
-WireGuard requires a public and private key pair. And all connectinng devices will need to know the Public key for the 
-WireGuard interface. And there must be a unique private key for each WireGuard interface. It's possible to generate these keys 
-on other systems and then use those keys on an Opuntia system. But currently there is no built in option to generate a new key 
-pair from the Luci Web GUI. This functionality will be added in the future. 
+**Web GUI**
 
-To generate a new WireGuard key pair you will to access the Bash CLI please see the :ref:`Access-SSH` chapter of the manual. Once
+WireGuard requires a public and private key pair. And all connectinng devices will need to know the Public key for the 
+WireGuard interface. And there must be a unique private key for each WireGuard interface. With Opuntia version 4.8.18 and newer
+when creating a new WireGuard interface you will be given the option to easily create a new key pair on the general settings page 
+of the WireGuard interface. 
+
+**CLI**
+
+To generate a new WireGuard key pair using the Bash CLI please see the :ref:`Access-SSH` chapter of the manual. Once
 you have an active CLI shell, you can run the following commands. 
 
 .. code-block:: bash
@@ -833,7 +837,10 @@ Then click on the "Add new interface" button.
 
 Name your new Interface and select protocol *WireGuard VPN*. 
 
-.. image:: ../manual-images/Network-Interfaces-WireGuard-edit.png
+In Opuntia version 4.8.18 or newer if you have not already created a WireGuard key pair you can now press the "Generate Key" button to 
+create a new key pair for this tunnel interface.
+ 
+.. image:: ../manual-images/Network-Interfaces-WireGuard-edit-v18.png
   :width: 700
   :alt: Screenshot showing WireGuard Interface configuraion
 

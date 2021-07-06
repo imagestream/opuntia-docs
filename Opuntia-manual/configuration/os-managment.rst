@@ -69,4 +69,13 @@ CLI
 Upgrading the firmware from the command line is not difficult. The major complication is getting the firmware to the 
 device and insuring that you do not fill the limited space that is available on the filesystem.
 
-When uploading 
+.. warning:: When transfering your new firmware image to a router store it in the /tmp directory
+
+Be sure to select the correct firmware image. If you are upgrading the system and want to keep current settings use a 
+"sysupgrade" image. In the example below we are upgrading an EV1000 v4 router using the 4.8.18 sysupgrade firmware.  
+
+Assuming you have transfered your new firmware image to the router; you can now use the sysupgrade command to flash the 
+firmware. 
+
+  sysupgrade -v /tmp/opuntia-EV1000-v4-4.8.18-r58415-sysupgrade.bin
+
