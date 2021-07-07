@@ -776,8 +776,8 @@ Common configuraion options are listed in the table below.
 WireGuard VPN
 #############
 
-WireGuard is a simple and fast modern VPN solution that uses state of the art cyptography. It's designed to be replace IPsec VPN's
-while simpler to configure. And it is also more performant than OpenVpn. The offical WireGuard site lists the following as the 
+WireGuard is a simple and fast modern VPN solution that uses state of the art cyptography. It's designed to be replace traditional VPN's
+while being simpler to configure. It is also more performant than OpenVpn. The offical WireGuard site lists the following as the 
 major advantages of WireGuard. 
 
 - Simple & Easy to use
@@ -823,6 +823,8 @@ resulting keys will be Base64 encoded. For the rest of this chapter we will be u
 Web GUI
 *******
 
+**Interface Configuraion**
+
 To function, a WireGuard VPN requires a WireGuard Interface and Peer configuraion for each device connected to the VPN. 
 
 To begin creating a new WireGuard interface first navigate to the Network interfaces page.
@@ -849,15 +851,75 @@ interface. The privatekey will be only be used in the interface configuraion. To
 
 .. note:: WireGuard will use a default listen port of 51820. If you have multiple WireGuard interfaces you will have to specify different udp ports for each interface. 
 
-While technically not required; we recommend that you set an Ip address on the WireGuard interface. 
+While technically not required; we recommend that you set an Ip address on the WireGuard interface. In this example we will used the ip 
+address of 172.26.0.1/30. 
 
-Peer Configuraion
-*****************
+**Peer Configuraion** 
 
+Once a WireGuard Interface has been configured, you will need to configure a peer. A single WireGuard interface can have one or many peers 
+connected. In our example above we used the 172.26.0.1/30 address so we can only connect a single remote peer. To add a Peer you must know
+the public key of the WireGuard interface the remote peer. 
 
+In our example the public key is "3OAccqtCvi8wsbUssrN6luBgIQSv8QdTqlokZIcc9mE=". It's possible to add a Preshared Key for additional 
+security.
+
+Each peer configuraion has an allowed range of IP addresses that will be passed over the WireGuard VPN. In this case since we have 
+configured 172.26.0.1/30 on our interface. So it follows that the valid IPv4 network range is 172.26.0.0/30. So in our example we add 
+that network range to the Allowed IPs. 
+
+This example also shows the common option of "Route Allowed IPs". When enabled; this option adds to kernel route to the network ranges that
+are configured as allowed IPs. This is very useful if you have networks that you wish to reach over the WireGuard VPN. In this example, 
+the WireGuard Interface has a /30 network range assigned. But we also have a 10.40.2.0/24 network we wish to reach over the VPN. Using the 
+"Route Allowed IPs" option makes it easy to add the routes. 
+
+The "Endpoint Host" is the IP address or DNS hostname of the remote peer. This allows the Opuntia system to initiate the VPN connection.
+
+.. note:: For Remote peers that have dynamic IP addresses or port numbers, you do not set Endpoint host or Port number. The remote peer will have to initiate the vpn connection.
+
+.. image:: ../manual-images/Network-Interfaces-WireGuard-peer.png
+  :width: 700
+  :alt: Screenshot showing WireGuard Interface configuraion
+
+Once configured save the changes on the peer tab and then Save & Apply the changes on the interface page. 
 
 CLI
 ***
+
+To access the Opuntia systems CLI interface please see the :ref:`Access-SSH` chapter of the manual.
+
+**Interface Configuraion**
+
+Once you have CLI access you can edit the network configuration located in '/etc/config/network'. Below is the WireGuard Interface 
+configuraion that matches the configuraion example we detailed in the Web GUI section. 
+
+.. code-block:: python
+  :caption: /etc/config/network
+
+  config interface 'VPN'
+        option proto 'wireguard'
+        list addresses '172.26.0.1/30'
+        option private_key '4NM0x6/2ndJktcHTfRXnWS3tzlo95QEgPBsen+swjFw='
+        option listen_port '51820'
+
+As you can see, the interface configuraion is quite simple. 
+
+**Peer Configuraion**
+
+Here is the matching peer configuraion for our example vpn. 
+
+.. code-block:: python
+  :caption: /etc/config/network
+
+  config wireguard_VPN
+        option public_key '3OAccqtCvi8wsbUssrN6luBgIQSv8QdTqlokZIcc9mE='
+        option description 'mouse'
+        option route_allowed_ips '1'
+        option persistent_keepalive '25'
+        option endpoint_port '47500'
+        option endpoint_host '192.168.79.1'
+        list allowed_ips '17.26.0.0/30'
+        list allowed_ips '10.40.2.0/24'
+         
 
 Link Aggregation
 ################
