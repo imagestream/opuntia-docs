@@ -3,397 +3,382 @@
 # This file is distributed under the same license as the Opuntia package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Opuntia 4.8.17\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-18 20:56+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2021-08-03 14:54-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"X-Generator: Poedit 3.0\n"
 
 #: ../../sr1000/hardware.rst:3
 msgid "Samurai Router Hardware Details"
-msgstr ""
+msgstr "Información del hardware del router Samurai"
 
 #: ../../sr1000/hardware.rst:5 ../../sr1000/quickstart.rst:6
 msgid "Table of Contents"
-msgstr ""
+msgstr "Índice"
 
 #: ../../sr1000/hardware.rst:8
 msgid "Samurai Router"
-msgstr ""
+msgstr "Router Samurai"
 
 #: ../../sr1000/hardware.rst:10
-msgid ""
-"The Samurai Router is the top of the line ImageStream Router. The Samurai"
-" Router is designed to provide reliable high performace layer 3 routing "
-"for demanding applications."
-msgstr ""
+msgid "The Samurai Router is the top of the line ImageStream Router. The Samurai Router is designed to provide reliable high performace layer 3 routing for demanding applications."
+msgstr "El router Samurai es el Enrutador de gama alta de la línea ImageStream. El router Samurai está diseñado para ofrecer un enrutamiento capa 3 fiable y de alto desempeño para aplicaciones exigentes."
 
 #: ../../sr1000/hardware.rst:13
 msgid "Key features include"
-msgstr ""
+msgstr "Las principales características incluyen"
 
 #: ../../sr1000/hardware.rst:15
 msgid "Powerful 8 Core CPU"
-msgstr ""
+msgstr "Potente CPU de 8 núcleos"
 
 #: ../../sr1000/hardware.rst:16
 msgid "Two 10Gbase-T 10Gbit Interfaces"
-msgstr ""
+msgstr "Dos interfaces 10Gbase-T 10Gbit"
 
 #: ../../sr1000/hardware.rst:17
 msgid "Two Sfp+ 10Gbit Interfaces"
-msgstr ""
+msgstr "Dos interfaces Sfp+ 10Gbit"
 
 #: ../../sr1000/hardware.rst:18
 msgid "Redundant AC Power Supplies"
-msgstr ""
+msgstr "Fuentes de alimentación de CA redundantes"
 
 #: ../../sr1000/hardware.rst:19
 msgid "four front pannel expansion slots"
-msgstr ""
+msgstr "cuatro ranuras de expansión en el panel frontal"
 
 #: ../../sr1000/hardware.rst:21
-msgid ""
-"The four front pannel expansion slots allow any combination of the "
-"following expansion cards."
-msgstr ""
+msgid "The four front pannel expansion slots allow any combination of the following expansion cards."
+msgstr "Las cuatro ranuras de expansión del panel frontal permiten cualquier combinación de las siguientes tarjetas de expansión."
 
 #: ../../sr1000/hardware.rst:27
 msgid "Addon Front pannel Options"
-msgstr ""
+msgstr "Opciones complementarias del panel frontal"
 
 #: ../../sr1000/hardware.rst:24
 msgid "8 port GbE Rj-45 Interfaces"
-msgstr ""
+msgstr "Interfaces de 8 puertos Rj-45 GbE"
 
 #: ../../sr1000/hardware.rst:25
 msgid "4 port GbE SFP Interfaces"
-msgstr ""
+msgstr "Interfaces de 4 puertos GbE SFP"
 
 #: ../../sr1000/hardware.rst:26
 msgid "2 port 10Gbase-T Rj-45 Interfaces"
-msgstr ""
+msgstr "Interfaces de 2 puertos Rj-45 10Gbase-T"
 
 #: ../../sr1000/hardware.rst:27
 msgid "2 port 25 Gbit SFP28 Interfaces"
-msgstr ""
+msgstr "Interfaces de 2 puertos de 25 Gbit SFP28"
 
 #: ../../sr1000/hardware.rst:29
-msgid ""
-"These options allow the Samurai Router to be configured for wide variety "
-"of deployment options."
-msgstr ""
+msgid "These options allow the Samurai Router to be configured for wide variety of deployment options."
+msgstr "Estas opciones permiten configurar el router Samurai para una amplia variedad de opciones de implementación."
 
 #: ../../sr1000/hardware.rst:31
 msgid "**System Block Diagram**"
-msgstr ""
+msgstr "**Diagrama de bloques del sistema**"
 
 #: ../../sr1000/hardware.rst:38
 msgid "Built-in Interfaces"
-msgstr ""
+msgstr "Interfaces integradas"
 
 #: ../../sr1000/hardware.rst:45
 msgid "Front Ports and LEDs"
-msgstr ""
+msgstr "Puertos y LED frontales"
 
 #: ../../sr1000/hardware.rst:48
 msgid "Diagram #"
-msgstr ""
+msgstr "Núm. de diagrama"
 
 #: ../../sr1000/hardware.rst:48
 msgid "Case Label"
-msgstr ""
+msgstr "Etiqueta de la carcasa"
 
 #: ../../sr1000/hardware.rst:48
 msgid "Opuntia Dev Name"
-msgstr ""
+msgstr "Nombre del dispositivo Opuntia "
 
 #: ../../sr1000/hardware.rst:48
 msgid "Linux Dev Name"
-msgstr ""
+msgstr "Nombre del dispositivo Linux"
 
 #: ../../sr1000/hardware.rst:48 ../../sr1000/hardware.rst:87
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: ../../sr1000/hardware.rst:50
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: ../../sr1000/hardware.rst:50
 msgid "Console"
-msgstr ""
+msgstr "Consola"
 
-#: ../../sr1000/hardware.rst:50 ../../sr1000/hardware.rst:54
-#: ../../sr1000/hardware.rst:56
+#: ../../sr1000/hardware.rst:50 ../../sr1000/hardware.rst:54 ../../sr1000/hardware.rst:56
 msgid "n/a"
-msgstr ""
+msgstr "n/a"
 
 #: ../../sr1000/hardware.rst:50
 msgid "/dev/ttyS0"
-msgstr ""
+msgstr "/dev/ttyS0"
 
 #: ../../sr1000/hardware.rst:50
 msgid "Serial Console"
-msgstr ""
+msgstr "Serie de la consola"
 
 #: ../../sr1000/hardware.rst:52
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: ../../sr1000/hardware.rst:52
 msgid "MGMT"
-msgstr ""
+msgstr "MGMT"
 
 #: ../../sr1000/hardware.rst:52
 msgid "mgmt"
-msgstr ""
+msgstr "mgmt"
 
 #: ../../sr1000/hardware.rst:52
 msgid "enp2s0"
-msgstr ""
+msgstr "enp2s0"
 
 #: ../../sr1000/hardware.rst:52
 msgid "1Gbit Ethernet"
-msgstr ""
+msgstr "Ethernet 1Gbit"
 
 #: ../../sr1000/hardware.rst:54
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: ../../sr1000/hardware.rst:54
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #: ../../sr1000/hardware.rst:54
 msgid "USB 3.0 Type A"
-msgstr ""
+msgstr "USB 3.0 Tipo A"
 
 #: ../../sr1000/hardware.rst:56
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../sr1000/hardware.rst:56
 msgid "Console USB"
-msgstr ""
+msgstr "Consola USB"
 
 #: ../../sr1000/hardware.rst:56
 msgid "USB Console"
-msgstr ""
+msgstr "Consola USB"
 
 #: ../../sr1000/hardware.rst:58
 msgid "5 (bottom)"
-msgstr ""
+msgstr "5 (inferior)"
 
 #: ../../sr1000/hardware.rst:58
 msgid "IPMI/10GbE 1"
-msgstr ""
+msgstr "IPMI/10GbE 1"
 
 #: ../../sr1000/hardware.rst:58
 msgid "mgmt_10g"
-msgstr ""
+msgstr "mgmt_10g"
 
 #: ../../sr1000/hardware.rst:58
 msgid "enp183s0f2"
-msgstr ""
+msgstr "enp183s0f2"
 
 #: ../../sr1000/hardware.rst:58 ../../sr1000/hardware.rst:60
 msgid "10Gbit Ethernet"
-msgstr ""
+msgstr "Ethernet 10Gbit"
 
 #: ../../sr1000/hardware.rst:60
 msgid "5 (top)"
-msgstr ""
+msgstr "5 (superior)"
 
 #: ../../sr1000/hardware.rst:60
 msgid "10GbE 2"
-msgstr ""
+msgstr "10GbE 2"
 
 #: ../../sr1000/hardware.rst:60
 msgid "eth2"
-msgstr ""
+msgstr "eth2"
 
 #: ../../sr1000/hardware.rst:60
 msgid "enp183s0f3"
-msgstr ""
+msgstr "enp183s0f3"
 
 #: ../../sr1000/hardware.rst:62
 msgid "6 (bottom)"
-msgstr ""
+msgstr "6 (inferior)"
 
 #: ../../sr1000/hardware.rst:62
 msgid "SFP+ 1"
-msgstr ""
+msgstr "SFP+ 1"
 
 #: ../../sr1000/hardware.rst:62
 msgid "sfp1"
-msgstr ""
+msgstr "sfp1"
 
 #: ../../sr1000/hardware.rst:62
 msgid "enp183s0f1"
-msgstr ""
+msgstr "enp183s0f1"
 
 #: ../../sr1000/hardware.rst:62 ../../sr1000/hardware.rst:64
 msgid "SFP+ Interface"
-msgstr ""
+msgstr "Interfaz SFP+"
 
 #: ../../sr1000/hardware.rst:64
 msgid "6 (top)"
-msgstr ""
+msgstr "6 (superior)"
 
 #: ../../sr1000/hardware.rst:64
 msgid "SFP+ 2"
-msgstr ""
+msgstr "SFP+ 2"
 
 #: ../../sr1000/hardware.rst:64
 msgid "sfp2"
-msgstr ""
+msgstr "sfp2"
 
 #: ../../sr1000/hardware.rst:64
 msgid "enp183s0f0"
-msgstr ""
+msgstr "enp183s0f0"
 
 #: ../../sr1000/hardware.rst:66
 msgid "7"
-msgstr ""
+msgstr "7"
 
-#: ../../sr1000/hardware.rst:66 ../../sr1000/hardware.rst:74
-#: ../../sr1000/hardware.rst:84
+#: ../../sr1000/hardware.rst:66 ../../sr1000/hardware.rst:74 ../../sr1000/hardware.rst:84
 msgid "Status LED"
-msgstr ""
+msgstr "LED de estado"
 
 #: ../../sr1000/hardware.rst:68
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../sr1000/hardware.rst:68
 msgid "UID LED"
-msgstr ""
+msgstr "LED UID"
 
 #: ../../sr1000/hardware.rst:70
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: ../../sr1000/hardware.rst:70
 msgid "HDD LED"
-msgstr ""
+msgstr "LED HDD"
 
 #: ../../sr1000/hardware.rst:72
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: ../../sr1000/hardware.rst:72
 msgid "Reset LED"
-msgstr ""
+msgstr "LED de reinicio"
 
 #: ../../sr1000/hardware.rst:74
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: ../../sr1000/hardware.rst:74
 msgid "Power LED/Button"
-msgstr ""
+msgstr "LED/botón de encendido"
 
 #: ../../sr1000/hardware.rst:77
-msgid ""
-"The Management and Management-10g interfaces may be used as normal "
-"interfaces in Opuntia. But the Management-10 Interface will always expose"
-" the system BMC IPMI. So care should be taken to provide the needed "
-"security if using this interface."
+msgid "The Management and Management-10g interfaces may be used as normal interfaces in Opuntia. But the Management-10 Interface will always expose the system BMC IPMI. So care should be taken to provide the needed security if using this interface."
 msgstr ""
+"Las interfaces de gestión, Management y Management-10g pueden utilizarse como interfaces normales en Opuntia. Pero la Interfaz de Management-10 siempre expondrá el sistema BMC IPMI. Por lo tanto, si se utiliza esta interfaz se debe tener cuidado de proporcionar la seguridad necesaria."
 
 #: ../../sr1000/hardware.rst:79
 msgid "The management interface will be configured with a static"
-msgstr ""
+msgstr "La interfaz de gestión se configurará con una estática"
 
 #: ../../sr1000/hardware.rst:81
-msgid ""
-"The status LED has several different operating modes depending on the "
-"current system status. This table shows the different LED apperance and "
-"system status."
-msgstr ""
+msgid "The status LED has several different operating modes depending on the current system status. This table shows the different LED apperance and system status."
+msgstr "El LED de estado tiene varios modos de funcionamiento que dependen del estado actual del sistema. Esta tabla muestra la apariencia de los diferentes LED y el estado del sistema."
 
 #: ../../sr1000/hardware.rst:87
 msgid "LED Apperance"
-msgstr ""
+msgstr "Aspecto del LED"
 
 #: ../../sr1000/hardware.rst:89
 msgid "Solid Green"
-msgstr ""
+msgstr "Verde sólido"
 
 #: ../../sr1000/hardware.rst:89
 msgid "System powered on operating normally"
-msgstr ""
+msgstr "Sistema encendido funcionando normalmente"
 
 #: ../../sr1000/hardware.rst:91
 msgid "Blinking Green"
-msgstr ""
+msgstr "Verde parpadeante"
 
 #: ../../sr1000/hardware.rst:91
 msgid "System is shutting down"
-msgstr ""
+msgstr "El sistema se está apagando"
 
 #: ../../sr1000/hardware.rst:93
 msgid "Solid Red"
-msgstr ""
+msgstr "Rojo sólido"
 
 #: ../../sr1000/hardware.rst:93
 msgid "System is overheating"
-msgstr ""
+msgstr "El sistema está sobrecalentado"
 
 #: ../../sr1000/hardware.rst:95
 msgid "1 Second Blinking Red"
-msgstr ""
+msgstr "Rojo parpadeante 1 segundo"
 
 #: ../../sr1000/hardware.rst:95
 msgid "System Fan Failure"
-msgstr ""
+msgstr "Fallo del ventilador del sistema"
 
 #: ../../sr1000/hardware.rst:97
 msgid "1/4 Second Blinking Red"
-msgstr ""
+msgstr "Rojo parpadeante 1/4 de segundo "
 
 #: ../../sr1000/hardware.rst:97
 msgid "System Power Failure"
-msgstr ""
+msgstr "Fallo de alimentación del sistema"
 
 #: ../../sr1000/hardware.rst:99
 msgid "Solid Blue"
-msgstr ""
+msgstr "Azul sólido"
 
 #: ../../sr1000/hardware.rst:99
 msgid "System Local UID enabled"
-msgstr ""
+msgstr "Sistema UID local activado"
 
 #: ../../sr1000/hardware.rst:101
 msgid "1 Second Blinking Blue"
-msgstr ""
+msgstr "Azul parpadeante 1 segundo"
 
 #: ../../sr1000/hardware.rst:101
 msgid "System Remote UID enabled"
-msgstr ""
+msgstr "Sistema UID remoto activado"
 
 #: ../../sr1000/hardware.rst:103
 msgid "Not lit"
-msgstr ""
+msgstr "Sin iluminación"
 
 #: ../../sr1000/hardware.rst:103
 msgid "System is powered off"
-msgstr ""
+msgstr "El sistema está apagado"
 
 #: ../../sr1000/hardware.rst:106
 msgid "The system UID status is enabaled in the IMPI Interface."
-msgstr ""
+msgstr "El estado del sistema UID está habilitado en la interfaz IMPI."
 
 #: ../../sr1000/quickstart.rst:5
 msgid "Samuria Router QuickStart Guide"
-msgstr ""
-
+msgstr "Guía de inicio rápido del router Samurai"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../index.rst:7
 msgid "Welcome to Opuntia documentation!"
-msgstr ""
+msgstr "¡Bienvenido a la documentación de Opuntia!"
 
 #: ../../index.rst:9
 msgid ""
@@ -27,36 +27,36 @@ msgid ""
 "on the Linux kernel and OpenWRT project. It's focused on providing "
 "advanced routing and edge computing features."
 msgstr ""
+"Opuntia es una plataforma de enrutamiento (routing) y computación de borde (edge computing) de alto desempeño basada en el núcleo (kernel) de Linux y el proyecto OpenWRT. Se centra en proporcionar funciones avanzadas de enrutamiento (routing) y computación de borde (edge computing)."
 
 #: ../../index.rst:12
 msgid "Opuntia User Manual"
-msgstr ""
+msgstr "Manual del usuario de Opuntia"
 
 #: ../../index.rst:30
 msgid "Rebel Router:"
-msgstr ""
+msgstr "Router Rebelde:"
 
 #: ../../index.rst:37
 msgid "Envoy Router:"
-msgstr ""
+msgstr "Router Envoy:"
 
 #: ../../index.rst:44
 msgid "AP2100 Access Point:"
-msgstr ""
+msgstr "Punto de acceso AP2100:"
 
 #: ../../index.rst:51
 msgid "AP3500 Access Point:"
-msgstr ""
+msgstr "Punto de acceso AP3500:"
 
 #: ../../index.rst:58
 msgid "Samurai Router:"
-msgstr ""
+msgstr "Router Samurai:"
 
 #: ../../index.rst:66
 msgid "Indices and tables"
-msgstr ""
+msgstr "Índices y tablas"
 
 #: ../../index.rst:68
 msgid ":ref:`search`"
-msgstr ""
-
+msgstr ":ref:`búsqueda`"

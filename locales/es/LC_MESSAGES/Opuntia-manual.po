@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../Opuntia-manual/advanced/evpn.rst:3
 msgid "Evpn"
-msgstr ""
+msgstr "Evpn"
 
 #: ../../Opuntia-manual/advanced/evpn.rst:5
 #: ../../Opuntia-manual/advanced/frr.rst:7
@@ -36,11 +36,11 @@ msgstr ""
 #: ../../Opuntia-manual/introduction/accessing.rst:5
 #: ../../Opuntia-manual/security/hardening.rst:5
 msgid "Table of Contents"
-msgstr ""
+msgstr "Índice"
 
 #: ../../Opuntia-manual/advanced/evpn.rst:8
 msgid "Evpn Theory"
-msgstr ""
+msgstr "Teoría de la Evpn"
 
 #: ../../Opuntia-manual/advanced/evpn.rst:10
 msgid ""
@@ -48,6 +48,7 @@ msgid ""
 "segments over a Layer 3 IP network. This allows Layer 2 networks that are"
 " seperated by Layer 3 network. This allows building"
 msgstr ""
+"Una red virtual privada por ethernet , Evpn ó Ethernet VPN es una tecnología que conecta segmentos de red de capa 2 sobre una red IP de capa 3. Esto permite que las redes de capa 2 estén separadas por la red de capa 3. Lo que permite construir"
 
 #: ../../Opuntia-manual/advanced/evpn.rst:13
 msgid ""
@@ -55,10 +56,11 @@ msgid ""
 "major advantanges of Evpn is that it allows a common configuration on the"
 " remote devices."
 msgstr ""
+"Evpn utiliza túneles VxLan y un plano de control basado en BGP. Una de las principales ventajas de Evpn es que permite una configuración común en los dispositivos remotos."
 
 #: ../../Opuntia-manual/advanced/frr.rst:3
 msgid "FRR"
-msgstr ""
+msgstr "FRR"
 
 #: ../../Opuntia-manual/advanced/frr.rst:9
 msgid ""
@@ -66,34 +68,35 @@ msgid ""
 "included in Opuntia. This software provides support for the following "
 "dynamic routing protocols."
 msgstr ""
+"Este capítulo cubre el uso del software de enrutamiento de intervalo libre, FRR (FRRouting), que se incluye en Opuntia. Este software ofrece soporte para los siguientes protocolos de enrutamiento dinámico."
 
 #: ../../Opuntia-manual/advanced/frr.rst:12
 msgid "Rip v4|v6"
-msgstr ""
+msgstr "Rip v4|v6"
 
 #: ../../Opuntia-manual/advanced/frr.rst:13
 msgid "OSPF v4|v6"
-msgstr ""
+msgstr "OSPF v4|v6"
 
 #: ../../Opuntia-manual/advanced/frr.rst:14
 msgid "ISIS v4|v6"
-msgstr ""
+msgstr "ISIS v4|v6"
 
 #: ../../Opuntia-manual/advanced/frr.rst:15
 msgid "BGP4 v4|v6"
-msgstr ""
+msgstr "BGP4 v4|v6"
 
 #: ../../Opuntia-manual/advanced/frr.rst:20
 msgid "Free Range Routing"
-msgstr ""
+msgstr "Enrutamiento de intervalo libre"
 
 #: ../../Opuntia-manual/advanced/frr.rst:22
 msgid "Frr (FRRouting) is an OpenSource IP routing protocol suite for Linux."
-msgstr ""
+msgstr "Frr (FRRouting) es un conjunto de protocolos de enrutamiento IP de código abierto (OpenSource) para Linux."
 
 #: ../../Opuntia-manual/advanced/ipv6-dynamic.rst:3
 msgid "IPv6 via Dynamic Routing"
-msgstr ""
+msgstr "IPv6 vía enrutamiento dinámico"
 
 #: ../../Opuntia-manual/advanced/ipv6-dynamic.rst:7
 msgid ""
@@ -103,30 +106,33 @@ msgid ""
 "chapter should be consulted if you have any questions. Please see the "
 ":ref:`FRR` chapter for more information."
 msgstr ""
+"Este capítulo cubre los métodos de uso de diseño de redes IPv6 cuando se reciben redes IPv6 usando protocolos de enrutamiento dinámicos y no Delegación de Prefijo DHCPv6. Dado que estos métodos requieren un enrutamiento dinámico, se debe consultar el capítulo sobre el FFR en caso de tener alguna duda. Para más información, consulte el capítulo :ref:`FRR`."
 
 #: ../../Opuntia-manual/advanced/ipv6-dynamic.rst:13
 msgid "Mulitiprotocal BGP and IPv6"
-msgstr ""
+msgstr "Multiprotocolo BGP e IPv6"
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:3
 msgid "Administrative Configuration"
-msgstr ""
+msgstr "Configuración administrativa"
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:7
 msgid ""
 "This chapter will describe configuring Opuntia systems Administrative "
 "settings."
 msgstr ""
+"Este capítulo describirá la configuración administrativa del sistema Opuntia."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:10
 msgid "Changing the Password"
-msgstr ""
+msgstr "Cambiar la contraseña"
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:12
 msgid ""
 "Changing the password is an instant change that does not need to be "
 "applied to take effect."
 msgstr ""
+"El cambio de la contraseña es un cambio instantáneo que no necesita aplicarse para que surta efecto."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:14
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:41
@@ -135,22 +141,23 @@ msgstr ""
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:12
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:47
 msgid "**Web GUI**"
-msgstr ""
+msgstr "**GUI web**"
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:16
 msgid ""
 "To change the root password, first navigate to the \"Router Password\" "
 "menu."
 msgstr ""
+"Para cambiar la contraseña root, primero navegue hasta el menú "Contraseña del router"."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:18
 #: ../../Opuntia-manual/introduction/about.rst:45
 msgid "Main Menu - *System --> Administration*"
-msgstr ""
+msgstr "Menú principal - *Sistema --> Administración*"
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:24
 msgid "Input your desired password in both boxes and click save."
-msgstr ""
+msgstr "Introduzca la contraseña deseada en ambas casillas y haga clic en guardar (save)."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:26
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:61
@@ -159,76 +166,84 @@ msgstr ""
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:25
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:90
 msgid "**CLI**"
-msgstr ""
+msgstr "**CLI**"
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:28
 msgid ""
 "To change the root password, you use the standard Linux \"passwd\" "
 "utility. Below is an example."
 msgstr ""
+"Para cambiar la contraseña root, se utiliza la utilidad estándar de Linux \"passwd\". A continuación, un ejemplo."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:37
 msgid "Adding SSH Keys"
-msgstr ""
+msgstr "Añadir claves SSH"
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:39
 msgid ""
 "Adding SSH authorized keys can be a convenient option when accessing an "
 "Opuntia based systems via the CLI."
 msgstr ""
+"Añadir claves autorizadas SSH puede ser una opción conveniente cuando se accede a un sistema basado en Opuntia a través de la interfaz de línea de comando (CLI)."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:43
 msgid "To add an authorized SSH key, first navigate to the \"SSH-Keys\" menu."
-msgstr ""
+msgstr "Para añadir una clave SSH autorizada, primero navegue hasta el menú \"SSH-Keys\"."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:45
 msgid ""
 "Main Menu - *System --> Administration* and then click the \"SSH-Keys\" "
 "Tab."
 msgstr ""
+"Menú principal - *Sistema --> Administración* y luego haga clic en la pestaña \"SSH-Keys\"."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:47
 msgid ""
 "Adding a SSH-Key is an instant change that does not need to be applied to"
 " take effect."
 msgstr ""
+"Añadir una clave SSH es un cambio instantáneo que no necesita aplicarse para que tenga efecto."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:49
 msgid ""
 "Also take care when pasting the ssh key into the textbox the ssh key must"
 " be a single line of text."
 msgstr ""
+"También tenga cuidado al pegar la clave ssh en el cuadro de texto, la clave ssh debe ser una sola línea de texto."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:55
 msgid ""
 "Once a key is added you will see a summary of the key including the "
 "comment of the key."
 msgstr ""
+"Una vez añadida una clave, verá un resumen de la misma, incluyendo el comentario de la clave."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:63
 msgid ""
 "To add an authorized SSH key from the CLI you will need to edit the "
 "*/etc/dropbear/authorized_keys* file."
 msgstr ""
+"Para añadir una clave SSH autorizada desde la CLI necesitará editar el archivo */etc/dropbear/authorized_keys*."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:65
 msgid "The authorized key file format requires each SSH key be on a single line"
-msgstr ""
+msgstr "El formato de archivo de clave autorizado requiere que cada clave SSH esté en una sola línea"
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:72
 msgid "Changing the Hostname"
-msgstr ""
+msgstr "Cambiar el nombre del anfitrión (Hostname)"
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:76
 msgid ""
 "To change the Hostname of the system. First navigate to the General "
 "settings page."
 msgstr ""
+"Para cambiar el Hostname del sistema. En primer lugar, vaya a la página de ajustes generales."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:78
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:118
 msgid "Main Menu - *System --> System*"
-msgstr ""
+msgstr "Menú principal - *Sistema --> Sistema*"
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:84
 msgid ""
@@ -236,6 +251,7 @@ msgid ""
 "\"Save\" or \"Save & Apply\" if you want the change to happen "
 "immediately."
 msgstr ""
+"Introduzca su Hostname deseado en el cuadro de texto Hostname. A continuación, haga clic en \"Guardar\" o \"Guardar y aplicar\" si desea que el cambio se produzca inmediatamente."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:89
 msgid ""
@@ -243,12 +259,14 @@ msgid ""
 " file. Or use the uci utility to make the needed configuration change. "
 "Examples of both methods are shown below."
 msgstr ""
+"Para cambiar el Hostname desde la CLI puede editar el archivo */etc/config/system*. O utilice la utilidad uci para realizar el cambio de configuración necesario. A continuación se muestran ejemplos de ambos métodos."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:92
 msgid ""
 "The \"reload_config\" command must be run after each of these methods to "
 "apply the changes."
 msgstr ""
+"El comando \"reload_config\" debe ejecutarse después de cada uno de estos métodos para aplicar los cambios."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:94
 msgid ""
@@ -258,64 +276,71 @@ msgid ""
 "then save the file. After saving the file, run \"reload_config\" to apply"
 " the changes."
 msgstr ""
+"Aquí se ve el contenido por defecto de la configuración del sistema (*/etc/config/system*). En la sección de sistema de configuración de este archivo verá la opción hostname. Modifique esto a su Hostname deseado y luego guarde el archivo. Después de guardar el archivo, ejecute \"reload_config\" para aplicar los cambios."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:102
 msgid ""
 "And here is an example of the uci command needed to change the hostname "
 "to \"Newhostname\". ::"
 msgstr ""
+"Y aquí hay un ejemplo del comando uci necesario para cambiar el hostname a \"Newhostname\" (nuevo nombre de anfitrión). ::"
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:112
 msgid "Setting Time and the Timezone"
-msgstr ""
+msgstr "Ajuste de la hora y la zona horaria"
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:116
 msgid ""
 "To change the time or timezone of the system. First navigate to the "
 "General settings page."
 msgstr ""
+"Para cambiar la hora o la zona horaria del sistema. En primer lugar, vaya a la página de ajustes generales."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:120
 msgid ""
 "We recommend that you use the UTC timezone as it simplifies log "
 "aggreation from multiple systems."
 msgstr ""
+"Le recomendamos que utilice la zona horaria UTC, ya que simplifica la agregación de registros (log aggregation) de varios sistemas."
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:128
 msgid "Here is the uci command to set the timezone to UTC.  ::"
-msgstr ""
+msgstr "Aquí está el comando uci para establecer la zona horaria a UTC.  ::"
 
 #: ../../Opuntia-manual/configuration/administrative-configuration.rst:132
 msgid ""
 "Once you have used the uci command to change the timezone; run "
 "\"reload_config\" to apply the changes."
 msgstr ""
+"Una vez que haya utilizado el comando uci para cambiar la zona horaria; ejecute \"reload_config\" para aplicar los cambios."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:3
 msgid "Configuration Managment"
-msgstr ""
+msgstr "Gestión de la configuración"
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:7
 msgid ""
 "This chapter will detail how to back-up, restore and reset to defaults of"
 " your system configuration."
 msgstr ""
+"Este capítulo detallará cómo hacer una copia de seguridad y restaurar y restablecer los valores predeterminados de la configuración del sistema."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:10
 msgid "Configuration Backup"
-msgstr ""
+msgstr "Copia de seguridad de la configuración"
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:14
 msgid ""
 "The easiest wasy to get a backup of an Opuntia system is to use the "
 "Backup option on the \"Flash operations\" page."
 msgstr ""
+"La forma más fácil de obtener una copia de seguridad de un sistema Opuntia es utilizar la opción de Backup (copia de seguridad) en la página de \"Flash operations\"."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:16
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:51
 #: ../../Opuntia-manual/configuration/os-managment.rst:41
 msgid "Main Menu - *System --> Backup/Flash Firmware*"
-msgstr ""
+msgstr "Menú principal - *Sistema --> Copia de seguridad/flash del firmware*"
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:18
 msgid ""
@@ -324,6 +349,7 @@ msgid ""
 "\"backup-<Current hostname>-<Current Date>.tar.gz\". This file will be "
 "downloaded by your Web Browser."
 msgstr ""
+"Para obtener una copia de seguridad, simplemente haga clic en el botón \"Generate archive\". Esto hará que el sistema genere un archivo de copia de seguridad con el siguiente formato. \"backup-<Hostname actual>-<Fecha actual>.tar.gz\". Este archivo será descargado por su navegador web."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:27
 msgid ""
@@ -331,6 +357,7 @@ msgid ""
 "manually generate the backup file. And then transfer the file off of the "
 "system. ::"
 msgstr ""
+"El proceso para hacer una copia de seguridad utilizando la CLI es más complicado, primero hay que generar manualmente el archivo de copia de seguridad. Y luego transferir el archivo fuera del sistema. ::"
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:32
 msgid ""
@@ -338,12 +365,14 @@ msgid ""
 "when using the Web GUI method. But it is possible to use whatever "
 "filename you wish."
 msgstr ""
+"Esto generará un archivo de copia de seguridad que coincide con el mismo formato que se obtiene cuando se utiliza el método de la GUI web. Sin embargo es posible utilizar cualquier nombre de archivo que desee."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:35
 msgid ""
 "If you do generate a backup file make sure you use the /tmp/ directory as"
 " the destination."
 msgstr ""
+"Si genera un archivo de copia de seguridad, asegúrese de utilizar el directorio /tmp/ como destino."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:41
 msgid ""
@@ -351,16 +380,18 @@ msgid ""
 "system. The simplest way to do this is to use the \"scp\" command. This "
 "allows you to transfer the image off of the system and to a remote host."
 msgstr ""
+"Una vez que haya creado una imagen de copia de seguridad, debe transferirla fuera del sistema. La forma más sencilla de hacerlo es utilizar el comando \"scp\". Esto le permite transferir la imagen fuera del sistema y hacia un anfitrión remoto."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:45
 msgid "Restoring Configurations"
-msgstr ""
+msgstr "Restauración de configuraciones"
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:49
 msgid ""
 "To restore the system from a downloaded configuration file, first "
 "navigate to the \"Flash operations\" page."
 msgstr ""
+"Para restaurar el sistema a partir de un archivo de configuración descargado, primero navegue a la página de \"Flash operations\"."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:57
 msgid ""
@@ -368,6 +399,7 @@ msgid ""
 "saved backup file or you can restore the system to the default "
 "configuration. We will cover both operations in this section."
 msgstr ""
+"Hay dos opciones para restaurar el sistema. Puede restaurar desde un archivo de copia de seguridad guardado o puede restaurar el sistema a la configuración predeterminada. En esta sección cubriremos ambas operaciones."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:60
 msgid ""
@@ -378,6 +410,7 @@ msgid ""
 "upload summary dialog box. That will show your filename and size of the "
 "configuration file. Click upload to be the upload process."
 msgstr ""
+"Para restaurar a partir de una copia de seguridad guardada, primero hay que cargar el archivo de copia de seguridad en el sistema Opuntia. Para ello, haga clic en el botón \"Upload archive\". Esto hace que se muestre un explorador de archivos local. Debe seleccionar el archivo de copia de seguridad deseado. Una vez seleccionado, verá el siguiente cuadro de diálogo de resumen de carga. Eso mostrará el nombre y tamaño de su archivo de configuración. Haga clic en cargar (upload) para iniciar el proceso de carga."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:69
 msgid ""
@@ -385,6 +418,7 @@ msgid ""
 "list of all of the files contained in the backup configuration file. You "
 "will need to scroll to the bottom of the list to see the contine button."
 msgstr ""
+"Una vez cargado el archivo de configuración de respaldo, verá una lista detallada de todos los archivos contenidos en el archivo de configuración de respaldo. Tendrá que desplazarse hasta el final de la lista para ver el botón de continuar."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:76
 msgid ""
@@ -392,16 +426,18 @@ msgid ""
 "does not change, the Web GUI will reconnect after the reboot process is "
 "complete."
 msgstr ""
+"Una vez que se pulse el botón [continue] el sistema se reiniciará. Si la URL no cambia, la interfaz gráfica de usuario web volverá a conectarse una vez finalizado el proceso de reinicio."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:79
 msgid ""
 "The configuration can change the ip address of the system so you may have"
 " to reconnect to a different url."
 msgstr ""
+"La configuración puede cambiar la dirección ip del sistema, por lo que es posible que tenga que volver a conectarse a una url diferente."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:85
 msgid "This completes restoring a saved configuration file."
-msgstr ""
+msgstr "Esto completa la restauración de un archivo de configuración guardado."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:87
 msgid ""
@@ -409,6 +445,7 @@ msgid ""
 "\"Perform reset\" button. And then to conferm that you want to restore to"
 " factory defaults. This then performs a system reboot."
 msgstr ""
+"Para restaurar el sistema a un estado predeterminado es necesario hacer clic en el botón \"Perform reset\" (Ejecutar el reinicio). Con esto se confirma que desea restaurar los valores predeterminados de fábrica. Esto hace que se reinicie el sistema."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:92
 msgid ""
@@ -416,12 +453,14 @@ msgid ""
 "interface you must first upload the file to the system. The recommended "
 "method is to use \"scp\" to upload the file."
 msgstr ""
+"Para restaurar un archivo de configuración de copia de seguridad guardado utilizando la interfaz de línea de comandos (CLI), primero debe cargar el archivo en el sistema. El método recomendado es utilizar \"scp\" para cargar el archivo."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:95
 msgid ""
 "If you are manual uploading configuration files to a system you must use "
 "the /tmp directory as the destination for the file."
 msgstr ""
+"Si está cargando manualmente archivos de configuración a un sistema, debe utilizar el directorio /tmp como destino del archivo."
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:97
 msgid ""
@@ -431,6 +470,7 @@ msgid ""
 "Opuntia-2020-04-09.tar.gz\" and the Opuntia system has an ip address of "
 "192.168.79.14 ::"
 msgstr ""
+"Cubrir todas las opciones del comando scp está más allá del alcance de este manual. Pero esta línea de comando y el ejemplo funcionarán para la mayoría de las situaciones. Este ejemplo supone que el nombre del archivo de la copia de seguridad es \"backup-Opuntia-2020-04-09.tar.gz\" y que el sistema Opuntia tiene una dirección ip de 192.168.79.14 ::"
 
 #: ../../Opuntia-manual/configuration/configuration-managment.rst:107
 msgid ""
@@ -438,32 +478,33 @@ msgid ""
 "wish to reboot immediately remove the \"reboot\" from the end of this "
 "example. ::"
 msgstr ""
+"Para restaurar desde la carga utilice el siguiente comando. Si no desea reiniciar inmediatamente, elimine \"reboot\" del final de este ejemplo. ::"
 
 #: ../../Opuntia-manual/configuration/dhcp-server.rst:3
 msgid "DHCP Server"
-msgstr ""
+msgstr "Servidor DHCP"
 
 #: ../../Opuntia-manual/configuration/dhcp-server.rst:8
 #: ../../Opuntia-manual/configuration/firewall.rst:59
 #: ../../Opuntia-manual/configuration/firewall.rst:64
 msgid "General Settings"
-msgstr ""
+msgstr "Configuración general"
 
 #: ../../Opuntia-manual/configuration/dhcp-server.rst:12
 msgid "IPv4 Settings"
-msgstr ""
+msgstr "Configuración de IPv4"
 
 #: ../../Opuntia-manual/configuration/dhcp-server.rst:17
 msgid "IPv6 Settings"
-msgstr ""
+msgstr "Configuración de IPv6"
 
 #: ../../Opuntia-manual/configuration/dhcp-server.rst:47
 msgid ":ref:`_IPv6_DHCP-server`."
-msgstr ""
+msgstr ":ref:`_IPv6_DHCP-server`."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:3
 msgid "Firewall configuration"
-msgstr ""
+msgstr "Configuración del cortafuegos"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:7
 msgid ""
@@ -472,26 +513,27 @@ msgid ""
 "subsystem uses the standard Linux Netfilter project tools and methods to "
 "provide IPv4 and IPv6 packet filtering."
 msgstr ""
+"Este capítulo cubre la configuración y teoría del cortafuegos (firewall) para el sistema Opuntia. Opuntia es un sistema operativo basado en Linux. El subsistema de cortafuegos utiliza las herramientas y métodos estándar del proyecto Netfilter de Linux para proporcionar el filtrado de paquetes de IPv4 e IPv6."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:10
 msgid "Major features of Netfilter"
-msgstr ""
+msgstr "Principales características de Netfilter"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:12
 msgid "Stateless Packet Filtering"
-msgstr ""
+msgstr "Filtrado de paquetes sin estado"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:13
 msgid "Statefull Packet Filtering"
-msgstr ""
+msgstr "Filtrado de paquetes con estado"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:14
 msgid "Network Address Translation"
-msgstr ""
+msgstr "Traducción de direcciones de red"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:15
 msgid "Port Address Translation"
-msgstr ""
+msgstr "Traducción de direcciones de puerto"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:17
 msgid ""
@@ -499,10 +541,11 @@ msgid ""
 "these features. As a reveiw here is general packet flow[1] through the "
 "Linux Netfilter chains and tables."
 msgstr ""
+"En esta sección del manual de Opuntia proporcionaremos ejemplos de uso de estas características. A modo de revisión, aquí se presenta el flujo general de paquetes[1] a través de las cadenas y tablas de Netfilter de Linux."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:29
 msgid "Zone based Firewall Theory"
-msgstr ""
+msgstr "Teoría del cortafuegos basado en zonas"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:31
 msgid ""
@@ -513,10 +556,11 @@ msgid ""
 " single firewall rule to the Zone. This simplifies the configuraion of "
 "the firewall ruleset by reducing the total number of rules."
 msgstr ""
+"Las funciones estándar de cortafuegos de Linux pueden dar lugar a configuraciones largas y repetitivas si se desea que una regla se aplique a varias interfaces. Para ayudar a superar estos problemas, Opuntia implanta el sistema de cortafuegos (firewalling) basado en zonas. Las zonas le permiten agrupar varias interfaces en una Zona y luego aplicar una única regla de cortafuegos a la Zona. Esto simplifica la configuración del conjunto de reglas del cortafuegos al reducir el número total de reglas."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:36
 msgid "Opuntia implments two Zones by default *Management* and *Wan*."
-msgstr ""
+msgstr "Opuntia implanta dos Zonas predeterminadas *Gestión* y *Wan*."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:38
 msgid ""
@@ -524,43 +568,45 @@ msgid ""
 "*Wan* or *Management* zones by default. See your QuickStart Guide for "
 "more information."
 msgstr ""
+"Dependiendo de su plataforma de hardware; las interfaces pueden estar incluidas en las zonas predeterminadas *Wan* o *Gestión*. Consulte su Guía de inicio rápido para obtener más información."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:41
 msgid ""
 "By default Opuntia allows access to the Web GUI on ANY IPv4/IPv6 "
 "interface address. The"
 msgstr ""
+"Por defecto, Opuntia permite el acceso a la GUI Web en CUALQUIER dirección de interfaz IPv4/IPv6. El"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:44
 msgid "Firewall"
-msgstr ""
+msgstr "Cortafuegos (firewall)"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:46
 #: ../../Opuntia-manual/configuration/vpn.rst:230
 msgid "To navigate to the Firewall configuraion page."
-msgstr ""
+msgstr "Navegar a la página de configuración del cortafuegos (firewall)."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:48
 msgid "Main Menu - *Network --> Firewall*"
-msgstr ""
+msgstr "Menú principal - *Red --> Firewall*"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:51
 msgid "General Settings Tab"
-msgstr ""
+msgstr "Pestaña de configuración general"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:57
 msgid "The Firewall *General Settings* tab has three main sections."
-msgstr ""
+msgstr "La pestaña *Configuración general* del cortafuegos (Firewall) tiene tres secciones principales."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:60
 #: ../../Opuntia-manual/configuration/firewall.rst:82
 msgid "Routing/Nat Offloading"
-msgstr ""
+msgstr "Enrutamiento/descarga NAT"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:61
 #: ../../Opuntia-manual/configuration/firewall.rst:95
 msgid "Zones"
-msgstr ""
+msgstr "Zonas"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:66
 msgid ""
@@ -571,6 +617,7 @@ msgid ""
 "Protection is enabled by default on all Opuntia platforms. This option is"
 " unlikely to cause any issues."
 msgstr ""
+"Sé que es extraño que la pestaña de la GUI sea \"Configuración general\" y que exista una subsección que también se llame \"Configuración general\", pero así es como la GUI organiza estos ajustes. Hay dos ajustes en esta sección. *Habilitar la protección Inundación-Syn* y *Rechazar paquetes no válidos*. La protección Inundación-Syn está activada por defecto en todas las plataformas Opuntia. Es poco probable que esta opción cause problemas."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:70
 msgid ""
@@ -580,6 +627,7 @@ msgid ""
 " option to enable. The most impactful rule that this option creates is a "
 "rule to drop packets that are not known in the Netfilter conntrack table."
 msgstr ""
+"La opción *Drop Invalid Packets* (Rechazar paquetes no válidos) no está habilitada por defecto en ninguna plataforma de Opuntia. Esta opción crea una serie de reglas de cortafuegos cuyo objetivo es descartar los paquetes no válidos que circulan por el sistema. Esta suele ser una opción segura para activar. La regla más impactante que crea esta opción es una regla para descartar los paquetes que no se conocen en la tabla de seguimiento de conexiones (conntrack) de Netfilter."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:74
 msgid ""
@@ -589,6 +637,7 @@ msgid ""
 "care if you decide to enable this configuraion and you have Multi-Path "
 "Routing."
 msgstr ""
+"En la mayoría de los casos en los que hay una sola puerta de acceso a Internet, esta configuración es aceptable. Pero si se utiliza algún tipo de enrutamiento multitrayectoria Multi-Path Routing), esta opción provocará la pérdida de paquetes y la interrupción de las conexiones. Así que tenga cuidado si decide habilitar esta configuración y tiene enrutamiento multitrayectoria."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:78
 msgid ""
@@ -597,6 +646,7 @@ msgid ""
 "possible to change these options but it should be done with care if you "
 "modify the INPUT or FORWARD chain."
 msgstr ""
+"Además, en esta sección están las tres selecciones de políticas predeterminadas. El valor predeterminado de Opuntia tiene todas las anteriores configuradas para aceptar. Es posible cambiar estas opciones pero debe hacerse con cuidado si se modifica la cadena INPUT o FORWARD."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:84
 msgid ""
@@ -607,6 +657,7 @@ msgid ""
 "can sometimes cause issues with applications. So these are not enabled by"
 " default."
 msgstr ""
+"Esta sección tiene dos opciones. *Software flow Offloading* (descarga de flujo por software) y si activa esa opción también verá la opción *Hardware flow Offloading* (descarga de flujo por hardware). Estas opciones pueden permitirle reducir el uso de la cpu omitiendo parte del procesamiento de paquetes predeterminados de Netfilter para los flujos de paquetes conocidos. Esto a veces puede causar problemas con las aplicaciones. Por lo tanto, no están activados por defecto."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:88
 msgid ""
@@ -614,6 +665,7 @@ msgid ""
 "or no Multi-path Routing, the *Software flow Offloading* can greatly "
 "reduce the cpu load at a given throughput."
 msgstr ""
+"Pero si el diseño de su red es sencillo, con una sola puerta de enlace de Internet o sin enrutamiento multitrayectoria, la *Software flow Offloading* puede reducir en gran medida la carga de la cpu a un rendimiento determinado."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:91
 msgid ""
@@ -621,6 +673,7 @@ msgid ""
 "platforms check your QuickStart Guide to see if your platform supports "
 "this feature."
 msgstr ""
+"La descarga de flujo de hardware, *Hardware flow Offloading*, sólo es compatible en determinadas plataformas de hardware. Verifique su Guía de inicio rápido para comprobar si su plataforma admite esta función."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:97
 msgid ""
@@ -628,22 +681,25 @@ msgid ""
 "to default packet policy in these zones. Here is a detailed screenshot of"
 " the zones section."
 msgstr ""
+"Esta sección describe el mapeo de las relaciones de las zonas del cortafuegos con la política de paquetes predeterminadas en estas zonas. Aquí hay una captura de pantalla detallada de la sección de zonas."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:104
 msgid ""
 "Here you see the two default zones that are configured in Opuntia. The "
 "*Wan* and *Management* zones."
 msgstr ""
+"Aquí puede ver las dos zonas predeterminadas que están configuradas en Opuntia. Las zonas *Wan* y *Gestión*."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:106
 msgid ""
 "Looking at the *Management* zone, You can see the arrow indicating the "
 "direction of the traffic. From the *Management* zone to the *Wan* zone."
 msgstr ""
+"Analizando en la zona de *Gestión*, puede ver la flecha que indica el sentido del tráfico. De la zona de *Gestión* a la zona *Wan*."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:112
 msgid "Limiting External access"
-msgstr ""
+msgstr "Limitación del acceso externo"
 
 #: ../../Opuntia-manual/configuration/firewall.rst:114
 msgid ""
@@ -653,6 +709,7 @@ msgid ""
 " manual will detail how to remove some of the default firewall rules that"
 " allow access to these services from remote."
 msgstr ""
+"Por defecto, Opuntia es permisivo con el acceso a los servicios locales como la interfaz gráfica de usuario (GUI) web y el inicio de sesión ssh. Aunque es muy útil para permitir el acceso del administrador al equipo, esto puede ser un riesgo para la seguridad. En esta sección del manual se detallará cómo eliminar algunas de las reglas predeterminadas del cortafuegos que permiten el acceso a estos servicios de forma remota."
 
 #: ../../Opuntia-manual/configuration/firewall.rst:119
 msgid ""
@@ -660,26 +717,29 @@ msgid ""
 "packet-flow.svg This is a Common Creatives work that is based on the "
 "Joshua Snyders (Author of this manual) work."
 msgstr ""
+"Esta imagen es de https://commons.wikimedia.org/wiki/File:Netfilter-packet-flow.svg Es una obra de Common Creatives que se basa en la obra de Joshua Snyders (autor de este manual)."
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:3
 msgid "Operating System Managment"
-msgstr ""
+msgstr "Gestión del sistema operativo"
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:8
 msgid "Firmware file format"
-msgstr ""
+msgstr "Formato de archivo del firmware"
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:10
 msgid ""
 "The firmware has a standard filename format to help identify the correct "
 "firmware image for a specifc hardware platform."
 msgstr ""
+"El firmware tiene un formato de nombre de archivo estándar para ayudar a identificar la imagen de firmware correcta para una plataforma de hardware específica."
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:12
 msgid ""
 "<Os-name>-<Model name>-<Hardware version>-<Major Release>-<release "
 "tag>-<factory/sysupgrade>.img"
 msgstr ""
+"<nombre-SO>-<nombre del Modelo><versión Hardware><Versión principal>-<release tag>-<factory/sysupgrade>.img"
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:14
 msgid ""
@@ -688,16 +748,18 @@ msgid ""
 "and it has a release tag of r51455. This is a system upgrade image that "
 "if installed will upgrate the OS on the EV1000 to 4.8.17."
 msgstr ""
+"Por ejemplo: opuntia-EV1000-v4-4.8.17-r51455-sysupgrade.bin es una imagen de Opuntia para la versión 4 del hardware de EV1000. La versión principal del SO es la 4.8.17 y tiene la etiqueta de versión  r51455. Esta es una imagen de actualización del sistema que, si se instala, actualizará el SO del EV1000 a la versión 4.8.17."
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:18
 msgid "Opuntia firmware is available at the following website. We"
-msgstr ""
+msgstr "El firmware de Opuntia está disponible en el siguiente sitio web. Nosotros"
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:20
 msgid ""
 "`Opuntia Firmware Download Site <http://router-"
 "updates.imagestream.com/opuntia/>`_"
 msgstr ""
+"`Sitio de descarga del firmware de Opuntia <http://router-updates.imagestream.com/opuntia/>`_"
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:22
 msgid ""
@@ -705,10 +767,11 @@ msgid ""
 "hardware platform and device type. Failure to do so will result in "
 "sadness and a bricked device."
 msgstr ""
+"Tenga cuidado al descargar el firmware: la imagen del firmware debe coincidir con su plataforma de hardware y el tipo de dispositivo. La inobservancia de ello dará como resultado un dispositivo inservible junto con la tristeza correspondiente."
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:26
 msgid "Upgrading the OS"
-msgstr ""
+msgstr "Actualización del SO"
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:28
 msgid ""
@@ -716,6 +779,7 @@ msgid ""
 "time Opuntia nativily runs on x86, Arm64 and Mips systems. Please consult"
 " your hardware quickstart guide."
 msgstr ""
+"Opuntia es compatible con diferentes plataformas de hardware. Actualmente Opuntia funciona de forma nativa en sistemas x86, Arm64 y Mips. Consulte la guía de inicio rápido de su hardware."
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:32
 #: ../../Opuntia-manual/configuration/vpn.rst:63
@@ -726,7 +790,7 @@ msgstr ""
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:859
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:868
 msgid "Web GUI"
-msgstr ""
+msgstr "Interfaz gráfica de usuario web (GUI Web)"
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:34
 msgid ""
@@ -734,18 +798,21 @@ msgid ""
 " will be given the option to save the current configuration after the "
 "firmware update. This is the default option."
 msgstr ""
+"La actualización del Firmware en un sistema Opuntia es fácil desde la GUI web. Se le dará la opción de guardar la configuración actual después de la actualización del firmware. Esta es la opción predeterminada."
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:37
 msgid ""
 "When upgrading between major versions, configuration settings are not "
 "guaranteed to be compatible."
 msgstr ""
+"Al actualizar entre versiones principales, no se garantiza que los ajustes de configuración sean compatibles."
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:39
 msgid ""
 "Navigate to the \"Backup/Flash Firmware\" page to get started on the "
 "upgrade process."
 msgstr ""
+"Navegue a la página \"Backup/Flash Firmware\" para comenzar el proceso de actualización."
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:47
 msgid ""
@@ -756,22 +823,25 @@ msgid ""
 "\"flash confirmation dialog box\". You will see the firmware size, MD5 "
 "and SHA256 hash values."
 msgstr ""
+"Compruebe que tiene el archivo de firmware correcto para su plataforma de hardware. A continuación, haga clic en el botón \"Flash image\" para que aparezca un explorador de archivos local. A continuación, seleccione el archivo de firmware correcto. Este archivo se cargará en el sistema. Una vez finalizada la carga, verá el \"cuadro de diálogo de confirmación flash\". Verá el tamaño del firmware y los valores hash MD5 y SHA256."
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:56
 msgid ""
 "The firmware update can change the ip address of the system so you may "
 "have to reconnect to a different url."
 msgstr ""
+"La actualización del firmware puede cambiar la dirección ip del sistema por lo que es posible que tenga que volver a conectarse a una url diferente."
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:58
 msgid "After clicking contine the system will begin flashing."
-msgstr ""
+msgstr "Después de hacer clic en continuar el indicador del sistema comenzará a parpadear."
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:60
 msgid ""
 "DO NOT POWER off the system while the firmware upgrade process is "
 "running. Failure to do so may result in the system being unable to boot."
 msgstr ""
+"NO APAGUE el sistema mientras el proceso de actualización del firmware esté en marcha. La inobservancia de lo anterior puede resultar en que el sistema sea incapaz de arrancar."
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:67
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:385
@@ -781,7 +851,7 @@ msgstr ""
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:862
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:871
 msgid "CLI"
-msgstr ""
+msgstr "CLI"
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:69
 msgid ""
@@ -789,50 +859,53 @@ msgid ""
 "complication is getting the firmware to the device and insuring that you "
 "do not fill the limited space that is available on the filesystem."
 msgstr ""
+"Actualizar el firmware desde la línea de comandos no es difícil. La mayor complicación es llevar el firmware al dispositivo y asegurarse de no llenar el limitado espacio disponible en el sistema de archivos."
 
 #: ../../Opuntia-manual/configuration/os-managment.rst:72
 msgid "When uploading"
-msgstr ""
+msgstr "Al cargar"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:3
 msgid "VPN Configuraion"
-msgstr ""
+msgstr "Configuración VPN"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:8
 msgid "Opuntia VPN"
-msgstr ""
+msgstr "VPN de Opuntia"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:10
 msgid ""
 "Opuntia supports a wide variety of VPN technologies. The main options for"
 " Opuntia are the following Vpn types."
 msgstr ""
+"Opuntia es compatible con una amplia variedad de tecnologías de VPN. Las principales opciones para Opuntia son los siguientes tipos de Vpn."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:12
 #: ../../Opuntia-manual/configuration/vpn.rst:20
 msgid "Wireguard"
-msgstr ""
+msgstr "Wireguard"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:13
 #: ../../Opuntia-manual/configuration/vpn.rst:95
 msgid "OpenVpn"
-msgstr ""
+msgstr "OpenVpn"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:14
 #: ../../Opuntia-manual/configuration/vpn.rst:98
 msgid "IPsec"
-msgstr ""
+msgstr "IPsec"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:15
 #: ../../Opuntia-manual/configuration/vpn.rst:101
 msgid "IPsec/L2TP"
-msgstr ""
+msgstr "IPsec/L2TP"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:17
 msgid ""
 "We will detail each option in a section of this chapter of the Opuntia "
 "manual."
 msgstr ""
+"Detallaremos cada opción en una sección del presente capítulo del manual de Opuntia."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:22
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:779
@@ -842,26 +915,27 @@ msgid ""
 "to configure. And it is also more performant than OpenVpn. The offical "
 "WireGuard site lists the following as the major advantages of WireGuard."
 msgstr ""
+"WireGuard es una solución VPN moderna, sencilla y rápida que utiliza la criptografía más avanzada. Está diseñado para reemplazar a las VPN IPsec, pero es más sencillo de configurar. Y también es más eficaz que OpenVpn. El sitio oficial de WireGuard enumera las siguientes ventajas principales de WireGuard."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:26
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:783
 msgid "Simple & Easy to use"
-msgstr ""
+msgstr "Sencillo y fácil de usar"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:27
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:784
 msgid "Cryptographically Sound"
-msgstr ""
+msgstr "Criptográficamente sólido"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:28
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:785
 msgid "Minimal Attack Surface"
-msgstr ""
+msgstr "Superficie de ataque mínima"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:29
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:786
 msgid "High Performance"
-msgstr ""
+msgstr "Alto desempeño"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:31
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:788
@@ -872,16 +946,17 @@ msgid ""
 " the WireGuard vpn tunnel can be reestablished in just miliseconds. This "
 "allows for seemless operation in changing network conditions."
 msgstr ""
+"WireGuard también es muy tolerante a los cambios en la red. Por ejemplo, si un dispositivo cliente está conectado a un sistema Opuntia utilizando WireGuard y la dirección IP pública de los dispositivos cliente cambia debido a la itinerancia a una nueva red; el túnel vpn de WireGuard puede ser restablecido en sólo milisegundos. Esto permite un funcionamiento sin problemas en condiciones de red cambiantes."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:35
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:792
 msgid "For these reasons WireGuard is the perfered VPN solution for Opuntia."
-msgstr ""
+msgstr "Por estas razones WireGuard es la solución VPN preferida para Opuntia."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:38
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:795
 msgid "Generate a key pair"
-msgstr ""
+msgstr "Generar un par de claves"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:40
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:797
@@ -894,6 +969,7 @@ msgid ""
 "generate a new key pair from the Luci Web GUI. This functionality will be"
 " added in the future."
 msgstr ""
+"WireGuard requiere un par de claves públicas y privadas. Y todos los dispositivos que se conecten necesitarán conocer la clave pública de la interfaz de WireGuard. Debe haber una clave privada única para cada interfaz de WireGuard. Es posible generar estas claves en otros sistemas y luego utilizarlas en un sistema Opuntia. Pero actualmente no hay una opción integrada para generar un nuevo par de claves desde la GUI Web de Luci. Esta funcionalidad se añadirá en el futuro."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:45
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:802
@@ -902,6 +978,7 @@ msgid ""
 "please see the :ref:`Access-SSH` chapter of the manual. Once you have an "
 "active CLI shell, you can run the following commands."
 msgstr ""
+"Para generar un nuevo par de claves de WireGuard tendrá que acceder a la CLI de Bash; le sugerimos ver el capítulo :ref:`Acceso-SSH` del manual. Una vez que tenga una consola CLI activa, puede ejecutar los siguientes comandos."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:55
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:812
@@ -911,6 +988,7 @@ msgid ""
 " be Base64 encoded. For the rest of this chapter we will be using the "
 "following example keys. ::"
 msgstr ""
+"Los dos primeros comandos crean un directorio /etc/wireguard. Sólo la última línea crea efectivamente la clave pública y privada. Las claves resultantes estarán codificadas en Base64. Para el resto de este capítulo utilizaremos las siguientes claves de ejemplo. ::"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:65
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:822
@@ -918,6 +996,7 @@ msgid ""
 "To function, a WireGuard VPN requires a WireGuard Interface and Peer "
 "configuraion for each device connected to the VPN."
 msgstr ""
+"Para funcionar, una VPN de WireGuard requiere una interfaz de WireGuard y una configuración de pares para cada dispositivo conectado a la VPN."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:67
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:824
@@ -925,6 +1004,7 @@ msgid ""
 "To begin creating a new WireGuard interface first navigate to the Network"
 " interfaces page."
 msgstr ""
+"Para comenzar a crear una nueva interfaz de WireGuard primero navegue a la página de interfaces de la red."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:69
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:135
@@ -933,17 +1013,17 @@ msgstr ""
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:700
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:826
 msgid "Main Menu - *Network --> Interfaces*"
-msgstr ""
+msgstr "Menú principal - *Red --> Interfaces*"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:71
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:828
 msgid "Then click on the \"Add new interface\" button."
-msgstr ""
+msgstr "Luego, haga clic en el botón \"Añadir nueva interfaz\"."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:77
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:834
 msgid "Name your new Interface and select protocol *WireGuard VPN*."
-msgstr ""
+msgstr "Dé nombre su nueva interfaz y seleccione el protocolo *WireGuard VPN*."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:83
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:840
@@ -953,6 +1033,7 @@ msgid ""
 "The privatekey will be only be used in the interface configuraion. To "
 "allow"
 msgstr ""
+"A continuación, verá los ajustes de configuración de la interfaz de WireGuard. Inicie la configuración añadiendo la clave privada para esta interfaz de WireGuard. La clave privada sólo se utilizará en la configuración de la interfaz. Para permitir"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:86
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:843
@@ -961,6 +1042,7 @@ msgid ""
 "WireGuard interfaces you will have to specify different udp ports for "
 "each interface."
 msgstr ""
+"WireGuard utilizará un puerto de escucha predeterminado de 51820. Si tiene varias interfaces de WireGuard tendrá que especificar diferentes puertos udp para cada interfaz."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:88
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:845
@@ -968,11 +1050,12 @@ msgid ""
 "While technically not required; we recommend that you set an Ip address "
 "on the WireGuard interface."
 msgstr ""
+"Aunque técnicamente no es necesario, le recomendamos que establezca una dirección IP en la interfaz del WireGuard."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:91
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:848
 msgid "Peer Configuraion"
-msgstr ""
+msgstr "Configuración de pares"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:103
 msgid ""
@@ -984,6 +1067,7 @@ msgid ""
 "considered a multi-factor VPN (Username/Password and PSK) which can "
 "fullfil configuraion requirements in some remote security enviorments."
 msgstr ""
+"IPsec/L2TP es una tecnología VPN muy extendida, ya que el soporte de clientes está integrado en la mayoría de los sistemas operativos. Cuenta con una seguridad robusta de IPsec con la adición del protocolo de túnel L2TP. Esto añade complejidad a la ya enriquecida vpn IPsec. Esto permite asignar un nombre de usuario y una contraseña a cada usuario. A veces también se considera una VPN multifactor (nombre de usuario/contraseña y PSK) que puede cumplir los requisitos de configuración en algunos entornos de seguridad remotos."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:109
 msgid ""
@@ -992,22 +1076,23 @@ msgid ""
 "configure this VPN type. To successfully configure IPsec/L2TP you will "
 "need the following items."
 msgstr ""
+"Actualmente, a partir de la versión 4.8.17 de Opuntia, esta configuración no ha recibido un menú de configuración de la GUI Web. Vamos a describir el método de CLI para configurar este tipo de VPN. Para configurar correctamente IPsec/L2TP necesitará los siguientes elementos."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:112
 msgid "Public IP Address"
-msgstr ""
+msgstr "Dirección IP pública"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:113
 msgid "Pre-Shared Key"
-msgstr ""
+msgstr "Clave precompartida"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:114
 msgid "Username for each user"
-msgstr ""
+msgstr "Nombre de usuario para cada usuario"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:115
 msgid "Password for each user"
-msgstr ""
+msgstr "Contraseña para cada usuario"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:117
 msgid ""
@@ -1015,14 +1100,15 @@ msgid ""
 "most of the options for this type of VPN the total configuration is not "
 "that complex. There are four main files that need to be edited."
 msgstr ""
+"Dado que las opciones predeterminadas para IPsec/L2TP es negociar automáticamente la mayoría de las opciones para este tipo de VPN, la configuración total no es tan compleja. Hay cuatro archivos principales que deben ser editados."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:120
 msgid "The first file that must be edited is /etc/ipsec.secrets."
-msgstr ""
+msgstr "El primer archivo que debe ser editado es /etc/ipsec.secrets."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:122
 msgid "/etc/ipsec.secrets"
-msgstr ""
+msgstr "/etc/ipsec.secrets"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:129
 msgid ""
@@ -1032,20 +1118,22 @@ msgid ""
 "connect to this VPN. This can be used to limit connecting clients but is "
 "generally set to \"%any\" in most vpn configurations."
 msgstr ""
+"Este archivo configura su dirección IP pública y la clave precompartida. En este ejemplo, la dirección 203.0.113.1 es su dirección IP pública a la que se conectarán los clientes. El \"%any" permite que cualquier dirección IP se conecte a esta VPN. Se puede utilizar para limitar los clientes que se conectan, pero generalmente se establece en \"%any\" en la mayoría de las configuraciones de VPN."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:133
 msgid ""
 "The Pre-Shared Key in this example is a short text string *3dTamd01m* "
 "this string can be any valid ASCII string."
 msgstr ""
+"La clave precompartida en este ejemplo es una cadena de texto corta *3dTamd01m*. Esta cadena puede ser cualquier cadena ASCII válida."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:135
 msgid "The second file is the main IPsec configuraion file /etc/ipsec.conf"
-msgstr ""
+msgstr "El segundo archivo es el archivo principal de configuración de IPsec /etc/ipsec.conf"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:137
 msgid "/etc/ipsec.conf"
-msgstr ""
+msgstr "/etc/ipsec.conf"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:160
 msgid ""
@@ -1054,6 +1142,7 @@ msgid ""
 "specified are *authby=secret*, *left=203.0.113.1*, *right=%any* and both "
 "of the right and left protocol ports."
 msgstr ""
+"Aquí puede ver la configuración de la clave precompartida IPsec denominada *vpnserver*. Este define los parámetros IPsec para la conexión. Las opciones especificadas son *authby=secret*, *left=203.0.113.1*, *right=%any* y ambos puertos de protocolo derecho (right) e izquierdo (left)."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:164
 msgid ""
@@ -1063,20 +1152,22 @@ msgid ""
 "any client to connect. The two protocolport options specify that only UDP"
 " port 1701 will be encrypted using IPsec."
 msgstr ""
+"La configuración *authby* le dice al subsistema IPsec que use la clave precompartida que establecimos en el archivo /etc/ipsec.secrets. La configuración *izquierda* define la dirección IP pública que el sistema está utilizando y esta *derecha* permite que cualquier cliente se conecte. Las dos opciones de protocolport especifican que sólo el puerto UDP 1701 será encriptado usando IPsec."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:168
 msgid "This ends the IPsec configuraion that needs to be configured."
-msgstr ""
+msgstr "Esto termina la configuración de IPsec que necesita configurarse."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:170
 msgid ""
 "The next two files deal with the L2TP configuraion. First up is the "
 "/etc/xl2tpd/xl2tpd.conf configuraion file."
 msgstr ""
+"Los dos siguientes archivos se ocupan de la configuración de L2TP. El primero es el archivo de configuración /etc/xl2tpd/xl2tpd.conf."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:172
 msgid "/etc/xl2tpd/xl2tpd.conf"
-msgstr ""
+msgstr "/etc/xl2tpd/xl2tpd.conf"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:195
 msgid ""
@@ -1085,6 +1176,7 @@ msgid ""
 "(L2TP server) specifies the local IP Address that will be assigned to the"
 " router and to the client devices."
 msgstr ""
+"Este es el archivo de configuración del servidor L2TP. Aquí se ve la dirección IP pública referenciada en el ajuste global *listen-addr*. El lns (servidor L2TP) predeterminado especifica la dirección IP local que se asignará al router y a los dispositivos cliente."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:199
 msgid ""
@@ -1093,6 +1185,7 @@ msgid ""
 " 192.168.88.200. If you are accessing other internal networks; you may "
 "need to add a route to this network from other devices."
 msgstr ""
+"En este ejemplo, hemos elegido establecer la dirección IP del router en 192.168.88.1 y permitimos a los clientes utilizar un intervalo de 192.168.88.10 a 192.168.88.200. Si está accediendo a otras redes internas, es posible que tenga que añadir una ruta a esta red desde otros dispositivos."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:203
 msgid ""
@@ -1100,16 +1193,18 @@ msgid ""
 "cause verbose system logs to be generated when clients connect to the vpn"
 " service."
 msgstr ""
+"Otro ajuste a tener en cuenta es la opción *ppp debug = yes*. Esto hará que se generen registros detallados del sistema cuando los clientes se conecten al servicio vpn."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:206
 msgid ""
 "The final configuration file defines the users and passwords that the "
 "clients need to provide to access the VPN."
 msgstr ""
+"El archivo de configuración final define los usuarios y las contraseñas que los clientes deben proporcionar para acceder a la VPN."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:208
 msgid "/etc/ppp/chap-secrets"
-msgstr ""
+msgstr "/etc/ppp/chap-secrets"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:217
 msgid ""
@@ -1120,10 +1215,11 @@ msgid ""
 "setting allows the client to get any IP address from the pool that we "
 "have defined."
 msgstr ""
+"Este archivo tiene el formato estándar de chap-secrets. Aquí tenemos dos usuarios configurados; alice y bob. Vemos que la configuración del servidor es *vnp* que es el nombre del lns predeterminado establecido en nuestro archivo xl2tpd.conf de ejemplo anteriormente. También vemos las dos contraseñas que han elegido estos usuarios. Esta configuración \"*\" permite al cliente obtener cualquier dirección IP del grupo que hayamos definido."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:223
 msgid "Firewall configuraion"
-msgstr ""
+msgstr "Configuración del cortafuegos"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:225
 msgid ""
@@ -1131,30 +1227,33 @@ msgid ""
 "connections in the *wan* firewall zone. If see the firewall chapter for "
 "more general information."
 msgstr ""
+"Por defecto, Opuntia necesita ser configurado para permitir conexiones L2TP entrantes en la zona del firewall *wan*. Consulte el capítulo de cortafuegos para más información general."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:228
 msgid ""
 "The rule we need to add is an accept rule for the *Wan* input zone that "
 "allows TCP and UDP port 1701 traffic."
 msgstr ""
+"La regla que necesitamos añadir es una regla de aceptación para la zona de entrada *Wan* que permite el tráfico de los puertos TCP y UDP 1701."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:232
 msgid "Main Menu - *Network --> Firewall --> Traffic Rules*"
-msgstr ""
+msgstr "Menú principal - *Red --> Firewall --> Reglas de tráfico*"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:238
 msgid ""
 "Once that rule is installed you will see this from the firewall ruleset "
 "summary."
 msgstr ""
+"Una vez instalada esa regla, verá esto en el resumen del conjunto de reglas del cortafuegos."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:245
 msgid "Client Setup"
-msgstr ""
+msgstr "Configuración del cliente"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:248
 msgid "MacOS Big Sur"
-msgstr ""
+msgstr "MacOS Big Sur"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:250
 msgid ""
@@ -1162,6 +1261,7 @@ msgid ""
 "detail the configuraion process when setting up a MacOS client to connect"
 " to our example IPsec/L2TP vpn from above."
 msgstr ""
+"MacOS soporta clientes IPsec/L2TP de forma nativa. En esta sección detallaremos el proceso de configuración de un cliente MacOS para conectarse a nuestro ejemplo anterior de vpn IPsec/L2TP."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:257
 msgid ""
@@ -1172,6 +1272,7 @@ msgid ""
 "Name\" can be set to your perfered name for the VPN. In our example we "
 "will set it to *L2TP-VPN*."
 msgstr ""
+"El primer paso es añadir una nueva interfaz en las *Preferencias del sistema*-->*Red*. Puede crear una nueva interfaz haciendo clic en el signo + de la parte inferior izquierda del menú de la interfaz. Fije el \"Tipo de interfaz\" a *VPN* y el "\Tipo de VPN\" a *L2TP sobre IPsec*. El \"Nombre del Servicio\" puede establecerse al nombre preferido para su VPN. En nuestro ejemplo lo fijaremos como *L2TP-VPN*."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:266
 msgid ""
@@ -1180,12 +1281,14 @@ msgid ""
 "address that we set above; or in this example *203.0.113.1*. The "
 "\"Account Name\" will be *alice*."
 msgstr ""
+"El siguiente paso es configurar la \"Dirección del servidor\" básica y el \"Nombre de la cuenta\" para la VPN. La \"Dirección del servidor\" será la dirección IPv4 pública que establecimos anteriormente; o en este ejemplo *203.0.113.1*. El \"Nombre de la cuenta\" será *alice*."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:269
 msgid ""
 "The next two configuraion items can be set by pressing the "
 "\"Authentication Settings...\" button."
 msgstr ""
+"Los dos siguientes elementos de configuración se pueden establecer pulsando el botón \"Configuración de la autenticación...\" ."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:275
 msgid ""
@@ -1194,6 +1297,7 @@ msgid ""
 "*47roses* and is entered into the \"Password\" field in the \"User "
 "Authentication\" section."
 msgstr ""
+"En el cuadro de diálogo \"Configuración de la autenticación...\" deberá establecer la contraseña del usuario. En este ejemplo, la contraseña de *alice* es *47roses* y se introduce en el campo \"Contraseña\" de la sección \"Autenticación de usuario\"."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:278
 msgid ""
@@ -1202,14 +1306,15 @@ msgid ""
 "*3dTamd01m*. This concludes the minimum configuraion settings for a "
 "IPsec/L2TP VPN."
 msgstr ""
+"A continuación, establezca la *clave precompartida* en el campo \"Secreto compartido\" (Shared Secret) de la sección \"Autenticación de máquina\" (Machine Authentication). En nuestro ejemplo sería *3dTamd01m*. Esto concluye los ajustes mínimos de configuración para una VPN IPsec/L2TP."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:281
 msgid "**MacOS Big Sur Optional Settings**"
-msgstr ""
+msgstr "**Configuración opcional de MacOS Big Sur**"
 
 #: ../../Opuntia-manual/configuration/vpn.rst:283
 msgid "MacOS IPsec/L2TP has two common configuraion options descibed below."
-msgstr ""
+msgstr "MacOS IPsec/L2TP tiene dos opciones de configuración comunes que se describen a continuación."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:289
 msgid ""
@@ -1218,6 +1323,7 @@ msgid ""
 "configuration option. Then under the *Options* tab select \"Send all "
 "traffic over VPN connection\"."
 msgstr ""
+"Por defecto, MacOS no enruta todo el tráfico a través de la Vpn IPsec/L2TP. Esta es una configuración solicitada con frecuencia. Acceda a la opción de configuración avanzada de vpn. A continuación, en la pestaña *Opciones* seleccione \"Enviar todo el tráfico a través de la conexión VPN\"."
 
 #: ../../Opuntia-manual/configuration/vpn.rst:296
 msgid ""
@@ -1227,14 +1333,15 @@ msgid ""
 "bottom left side of the dialog box. In this example we set the Google "
 "IPv4 public DNS servers."
 msgstr ""
+"Al enrutar todo el tráfico a través de la VPN también es necesario definir sus servidores DNS. Acceda a la opción de configuración avanzada de vpn. A continuación, en la pestaña *DNS* añada un nuevo servidor DNS haciendo clic en el botón \"+\" en la parte inferior izquierda del cuadro de diálogo. En este ejemplo establecemos los servidores DNS públicos IPv4 de Google."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:3
 msgid "Wired Ethernet Interface Configuraion"
-msgstr ""
+msgstr "Configuración de la interfaz Ethernet alámbrica"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:8
 msgid "Interfaces in Opuntia"
-msgstr ""
+msgstr "Interfaces en Opuntia"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:10
 msgid ""
@@ -1244,6 +1351,7 @@ msgid ""
 " an Ethernet port. It can also represent virtual devices like a Loopback "
 "device."
 msgstr ""
+"Un concepto familiar en las redes informáticas es el de "interfaz". Una \"interfaz\" es una construcción de software que permite a los sistemas informáticos interactuar con las redes. Una interfaz puede representar un dispositivo físico como un puerto Ethernet. También puede representar dispositivos virtuales como un dispositivo de bucle de retorno."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:14
 msgid ""
@@ -1255,6 +1363,7 @@ msgid ""
 "same network IP / IPv6 address space. And any host connected to any of "
 "these interfaces can communicate directly."
 msgstr ""
+"Opuntia amplía ligeramente este concepto. Opuntia se basa en un sistema operativo Linux y el sistema Linux base puede tener muchas interfaces de red diferentes. Una interfaz Opuntia puede ser mapeada a una interfaz Linux. Y la Interfaz Opuntia también puede ser un grupo de Interfaces Linux puenteadas. Al unir varias interfaces, todas comparten el mismo espacio de direcciones IP / IPv6 de la red. Y cualquier anfitrión (host) conectado a cualquiera de estas interfaces puede comunicarse directamente."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:19
 msgid ""
@@ -1266,6 +1375,7 @@ msgid ""
 " one interface is used to connect to an Internet provider and all other "
 "interfaces in the system share a network."
 msgstr ""
+"Por ejemplo, una configuración común es tener una interfaz de red *Lan* y *Wan*. La interfaz *Wan* se asigna a una interfaz de Linux que está conectada a un proveedor de Internet ascendente (upstream). La interfaz *Lan* suele ser un conjunto de todas las demás interfaces Ethernet del router. Esto replica una configuración común de equipo en instalaciones del consumidor (CPE, por sus siglas en inglés, Customer premises equipment) en la que se utiliza una interfaz para conectarse a un proveedor de Internet y todas las demás interfaces del sistema comparten una red."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:24
 msgid ""
@@ -1276,6 +1386,7 @@ msgid ""
 " of the Opuntia interface to the Linux networking interface that controls"
 " if traffic leaving the system will be VLAN tagged."
 msgstr ""
+"Esta relación entre una interfaz en Opuntia y la interfaz de red base de Linux es un concepto clave que también es necesario para entender cómo configurar las etiquetas VLAN en los dispositivos Ethernet. Esto se tratará en detalle en la sección de VLAN. Pero como breve introducción es el mapeo de la interfaz de Opuntia a la interfaz de red de Linux el que controla si el tráfico que sale del sistema será etiquetado VLAN."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:29
 msgid ""
@@ -1286,6 +1397,7 @@ msgid ""
 " of *enp97s0f0*. They are also used to define membership of a firewall "
 "zone."
 msgstr ""
+"De tal manera, las interfaces de red de Opuntia son un mapeo 1:1, 1:muchos o incluso muchos:1 con respecto a las interfaces de red de Linux. Las interfaces de Opuntia tienen una nomenclatura flexible que facilita la comprensión del propósito de una interfaz; por ejemplo, el nombre de *Wan* frente a un nombre de dispositivo Linux de *enp97s0f0*. También se utilizan para definir la pertenencia a una zona de cortafuegos."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:33
 msgid ""
@@ -1301,6 +1413,7 @@ msgid ""
 " will often be a private `RFC 1918 address "
 "<https://tools.ietf.org/html/rfc1918>`_."
 msgstr ""
+"En Opuntia cada interfaz tiene un protocolo de red asociado. Volviendo al ejemplo común del dispositivo CPE. La interfaz *Wan* normalmente está configurada con el protocolo \"Cliente DHCP\". Esta configuración hace que el sistema realice una solicitud de DHCP IPv4 en la interfaz física conectada al ISP. Si se requiere IPv6 DHCP es común tener una interfaz *Wan_6* también configurada. Esta interfaz Opuntia comparte la misma interfaz física con la interfaz *Wan*. Pero en este caso tiene una configuración de protocolo de red diferente \"cliente DHCPv6\". La interfaz *Lan* tendría configurada una \"dirección estática\". Esta dirección estática suele ser una dirección privada `RFC 1918 <https://tools.ietf.org/html/rfc1918>`_."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:40
 msgid ""
@@ -1315,6 +1428,7 @@ msgid ""
 "2605:6000:62e0:410::1/62 to this interface. The color code of the devices"
 " tell you which firewall zone applies to the interface."
 msgstr ""
+"A continuación se muestra la página de la interfaz de red de un router configurado en este escenario. Puede ver un par de interfaces *Wan* y *Wan_6*. Estas interfaces tienen configurado el protocolo \"DHCP\" y \"DHCPv6\". En esto, obtendremos la dirección ip 192.168.79.14/24 en la interfaz *Wan* y 2605:6000:62e0:400::1fa/128 en la interfaz *Wan_6*. Tanto la interfaz *Wan* como *Wan_6* están compartiendo el mismo dispositivo Linux, en este caso *eth0*.  La interfaz *Lan* está configurada con una dirección IPv4 estática de 10.10.199.1/24 y el subsistema IPv6 ha asignado un intervalo de red de 2605:6000:62e0:410::1/62 a esta interfaz. El código de color de los dispositivos le indica qué zona de cortafuegos se aplica a la interfaz."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:51
 msgid ""
@@ -1323,6 +1437,7 @@ msgid ""
 "has both the DHCP assigned IPv4 address and the DHCPv6 assigned IPv6 "
 "address bound."
 msgstr ""
+"Para demostrar lo que ocurre a nivel de Linux aquí está la configuración en el sistema operativo base. La interfaz Linux *eth0* tiene tanto la dirección IPv4 asignada por DHCP como la dirección IPv6 asignada por DHCPv6."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:58
 msgid ""
@@ -1332,10 +1447,11 @@ msgid ""
 "unaware of Opuntia device names. So attempts to use the Opuntia device "
 "names from the CLI will fail."
 msgstr ""
+"Entender cómo interactúa Opuntia con la pila de redes de Linux es importante si planea usar reglas de cortafuegos iptables personalizadas, para monitorear e interactuar en la CLI. La pila de redes de Linux no conoce los nombres de los dispositivos de Opuntia. Por lo tanto, los intentos de utilizar los nombres de los dispositivos de Opuntia desde la CLI fallarán."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:63
 msgid "Vlan Configuraion"
-msgstr ""
+msgstr "Configuración de la Vlan"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:65
 msgid ""
@@ -1349,6 +1465,7 @@ msgid ""
 "eth0.100. To do this you will have to create a new interface then set a "
 "custom device name."
 msgstr ""
+"Configurar las interfaces VLAN en Opuntia es un proceso sencillo pero poco intuitivo. En la sección anterior hemos hablado de que las interfaces de Opuntia no son necesariamente las mismas que las de Linux. La interfaz Linux es la que controla si un dispositivo añade una etiqueta VLAN a las tramas Ethernet salientes. Esto se hace simplemente configurando el nombre de la interfaz Linux que termina con .#vlan-id#. Así, por ejemplo, si se quiere configurar la interfaz física eth1 para utilizar la VLAN ID 100, se crearía una interfaz llamada eth0.100. Para ello tendrá que crear una nueva interfaz y luego establecer un nombre de dispositivo personalizado."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:71
 msgid ""
@@ -1359,12 +1476,14 @@ msgid ""
 " new Interface to be VLAN ID 100 on the physical eth1 interface we type "
 "**eth1.100**."
 msgstr ""
+"Las siguientes capturas de pantalla muestran esta operación. Primero creará una nueva interfaz. En este ejemplo estamos utilizando el protocolo estático. La interfaz física se iniciará como *sin especificar*; seleccionamos el cuadro desplegable y escribimos un nombre de interfaz personalizado en el cuadro. En este caso, como queremos que la nueva interfaz sea la VLAN ID 100 en la interfaz física eth1, escribimos **eth1.100**."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:79
 msgid ""
 "Once we have input the custom interface name, hit enter and the Interface"
 " dropdown box will fill in the name correctly."
 msgstr ""
+"Una vez que hayamos introducido el nombre de la interfaz personalizada, pulsamos enter y el cuadro desplegable de la interfaz rellenará el nombre correctamente."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:85
 msgid ""
@@ -1373,16 +1492,18 @@ msgid ""
 " with VLAN tag 100 set. All Ethernet frames recieved on eth1 with VLAN "
 "tag 100 will be recieved on this interface."
 msgstr ""
+"Esto es todo lo que se necesita para configurar una interfaz Opuntia etiquetada VLAN. Todo el tráfico transmitido por esta interfaz saldrá del sistema con la etiqueta VLAN 100 establecida. Todas las tramas Ethernet recibidas en eth1 con etiqueta VLAN 100 serán recibidas en esta interfaz."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:92
 msgid ""
 "This is what Opuntia will show when the interface is finished being "
 "configured. Note the interface name listed as **eth1.100**."
 msgstr ""
+"Esto es lo que mostrará Opuntia cuando se termine de configurar la interfaz. Observe que el nombre de la interfaz aparece como **eth1.100**."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:95
 msgid "QinQ"
-msgstr ""
+msgstr "QinQ"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:97
 msgid ""
@@ -1394,20 +1515,22 @@ msgid ""
 "customer tag (*C-TAG*) of 20. Follow directions to configure VLAN "
 "interfaces and input \"eth1.100.20\" as the device name."
 msgstr ""
+"Opuntia también es compatible con IEEE 802.1ad, conocido también como proveedor puente o etiquetado VLAN QinQ. Esto permite el *apilamiento* de etiquetas VLAN. La configuración es exactamente la misma que con la configuración normal de la VLAN, pero se añade una etiqueta VLAN adicional. En el siguiente ejemplo estamos configurando una interfaz QinQ que tiene una etiqueta de servicio de proveedor (*S-TAG*) de 100 y una etiqueta de cliente (*C-TAG*) de 20. Siga las instrucciones para configurar las interfaces VLAN e introduzca \"eth1.100.20\" como nombre del dispositivo."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:102
 msgid ""
 "Here is what Opuntia will show after this is configured. Note the device "
 "name listed as **eth1.100.20**."
 msgstr ""
+"He aquí lo que Opuntia mostrará después de configurarlo. Observe que el nombre del dispositivo aparece como **eth1.100.20**."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:108
 msgid "Here is what this looks like at the Linux interface level."
-msgstr ""
+msgstr "Así es como luce en el nivel de la interfaz de Linux."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:116
 msgid "Protocol Configuraion"
-msgstr ""
+msgstr "Configuración del protocolo"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:118
 msgid ""
@@ -1415,38 +1538,39 @@ msgid ""
 "configuration setting configures the main operating mode of the "
 "interface. Below are the most commonly used protocol types."
 msgstr ""
+"Opuntia es compatible con varios protocolos de interfaz diferentes. Este ajuste en la configuración del protocolo configura el modo de funcionamiento principal de la interfaz. A continuación se indican los tipos de protocolo más utilizados."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:121
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:158
 msgid "Static addresses"
-msgstr ""
+msgstr "Direcciones estáticas"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:122
 msgid "DHCP client"
-msgstr ""
+msgstr "Cliente DHCP"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:123
 msgid "DHCPv6 client"
-msgstr ""
+msgstr "Cliente DHCPv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:124
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:874
 msgid "Unmanaged"
-msgstr ""
+msgstr "No gestionado"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:125
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:777
 msgid "WireGuard VPN"
-msgstr ""
+msgstr "WireGuard VPN"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:126
 msgid "Link Aggregation (IEEE 802.3ad)"
-msgstr ""
+msgstr "Agregación de enlaces (IEEE 802.3ad)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:127
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:865
 msgid "PPPoE"
-msgstr ""
+msgstr "PPPoE"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:129
 msgid ""
@@ -1456,12 +1580,14 @@ msgid ""
 "one of these protocols and you are having difficulty plese contact "
 "ImageStream support at *support@imagestream.com*."
 msgstr ""
+"Vamos a cubrir cada uno de estos tipos de protocolo en detalle. Sin embargo, hay otros tipos que son compatibles pero que no estamos documentando en este momento debido a la falta de uso en el mundo real. Si considera que debe utilizar uno de estos protocolos y tiene dificultades, póngase en contacto con el servicio de asistencia de ImageStream en *support@imagestream.com*."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:133
 msgid ""
 "To change the protocol setting of an interface first navigate the the "
 "Interface page in the Web GUI."
 msgstr ""
+"Para cambiar la configuración del protocolo de una interfaz, primero navegue a la página de la Interfaz en la GUI Web."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:137
 msgid ""
@@ -1470,6 +1596,7 @@ msgid ""
 "interfaces page from the *Wan and Lan* example we used in talking about "
 "Opuntia interfaces."
 msgstr ""
+"Allí verá un listado de todas las interfaces actualmente configuradas en el sistema. A continuación mostramos la página de interfaces del ejemplo de *Wan y Lan* que utilizamos al hablar de las interfaces de Opuntia."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:144
 msgid ""
@@ -1477,12 +1604,14 @@ msgid ""
 " example has protocol DHCP configured on the *Wan* interface, DHCPv6 on "
 "the *Wan_6* interface and Static address protocol on the *Lan* interface."
 msgstr ""
+"Como puede ver tenemos tres interfaces definidas; Wan, Wan_6 y Lan. Este ejemplo tiene configurado el protocolo DHCP en la interfaz *Wan*, DHCPv6 en la interfaz *Wan_6* y el protocolo de dirección estática en la interfaz *Lan*."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:147
 msgid ""
 "To change an interface to a different protocol click the \"Edit\" button "
 "for that interface. Then select the drop down box labled \"Protocol\"."
 msgstr ""
+"Para cambiar una interfaz a un protocolo diferente, haga clic en el botón \"Edit\" (editar) de esa interfaz. A continuación, seleccione el cuadro desplegable denominado \"Protocolo\"."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:154
 msgid ""
@@ -1490,6 +1619,7 @@ msgid ""
 "change in the Interfaces page before you will be able to configure "
 "settings for the newly selected protocol."
 msgstr ""
+"Puede seleccionar su nuevo protocolo y tendrá que *Guardar y Aplicar* el cambio en la página de Interfaces antes de poder configurar los ajustes para el nuevo protocolo seleccionado."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:160
 msgid ""
@@ -1501,6 +1631,7 @@ msgid ""
 "protocol type is almost universally used on at least one interface in any"
 " deployment."
 msgstr ""
+"El \"Protocolo estático\" permite configurar manualmente direcciones IPv4/IPv6 e intervalos de direcciones en una interfaz. Este es uno de los escenarios de configuración más comunes. Este protocolo se utiliza con frecuencia con las direcciones *internas* RFC 1918 y para las conexiones ascendentes de Internet. El \"Protocolo Estático\" también permite la configuración de servidores DHCP/DHCPv6. Por lo tanto, este tipo de protocolo se utiliza casi de manera universal en al menos una interfaz en cualquier implementación."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:168
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:610
@@ -1509,6 +1640,7 @@ msgid ""
 "The interface configuration is accessed by navigating to the Network "
 "interfaces page."
 msgstr ""
+"Se accede a la configuración de la interfaz navegando a la página de interfaces de red."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:172
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:614
@@ -1517,40 +1649,42 @@ msgid ""
 "Once you have navigated to the interfaces page, you can click on the "
 "\"Edit\" button on the interface to see the \"General Settings\" tab."
 msgstr ""
+"Una vez que haya navegado a la página de interfaces, puede hacer clic en el botón \"Edit\" de la interfaz para ver la pestaña \"Configuración general\"."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:179
 msgid ""
 "In this screenshot you see the \"General Settings\" tab. This tab allows "
 "for the setting of static IPv4 and IPv6 addresses."
 msgstr ""
+"En esta captura de pantalla se ve la pestaña \"Ajustes generales\". Esta pestaña permite configurar direcciones IPv4 e IPv6 estáticas."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:182
 msgid "General Settings (IPv4/IPv6 address, netmask and Custom DNS servers)"
-msgstr ""
+msgstr "Configuración general (dirección IPv4/IPv6, máscara de red y servidores DNS personalizados)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:183
 msgid "Advanced Settings (Built-in IPv6, MAC address override and MTU override)"
-msgstr ""
+msgstr "Configuración avanzada (IPv6 incorporado, anulación de dirección MAC y anulación de MTU)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:184
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:629
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:727
 msgid "Physical Settings (Bridging configuration and Interface Selection)"
-msgstr ""
+msgstr "Ajustes físicos (configuración de puentes y selección de interfaces)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:185
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:630
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:728
 msgid "Firewall Settings (Firewall zone assigned to the interface)"
-msgstr ""
+msgstr "Configuración del cortafuegos (zona de cortafuegos asignada a la interfaz)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:186
 msgid "DHCP Server (DHCP Settings and IPv6 specific configuration)"
-msgstr ""
+msgstr "Servidor DHCP (configuración de DHCP y configuración específica de IPv6)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:188
 msgid "**IPv4**"
-msgstr ""
+msgstr "**IPv4**"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:190
 msgid ""
@@ -1560,28 +1694,32 @@ msgid ""
 "recommends using CIDR syntax as it's more human readable and less likely "
 "to result is the incorrect configuration of address ranges."
 msgstr ""
+"Las direcciones IPv4 son las direcciones estáticas más frecuentemente configuradas.  Al configurar la dirección IPv4 tiene la opción de introducir la dirección y la máscara de red por separado o de utilizar la notación de lista CIDR. ImageStream recomienda utilizar la sintaxis CIDR, ya que es más legible y es menos probable que se produzca una configuración incorrecta de los intervalos de direcciones."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:194
 msgid ""
 "To ensure that you are using CIDR List notation. Click the small check "
 "box at the end of the IPv4 address box."
 msgstr ""
+"Para asegurarse de que está utilizando la notación de la lista CIDR. Haga clic en la pequeña casilla de verificación situada al final del cuadro de direcciones IPv4."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:200
 msgid ""
 "When operting is CIDR notation it's import to make sure that you click "
 "the \"+\" button after typing in the address or it will not be saved."
 msgstr ""
+"Cuando se opera en notación CIDR es importante asegurarse de que se hace clic en el botón \"+\" después de escribir la dirección o no se guardará."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:202
 msgid "This example shows an address that has **NOT** been saved correctly."
-msgstr ""
+msgstr "Este ejemplo muestra una dirección que **NO** ha sido guardada correctamente."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:207
 msgid ""
 "And this example shows the address is correctly saved. You will see a new"
 " text box below all saved addresses."
 msgstr ""
+"Y este ejemplo muestra que la dirección se guarda correctamente. Verá un cuadro de texto nuevo debajo de todas las direcciones guardadas."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:212
 msgid ""
@@ -1589,10 +1727,11 @@ msgid ""
 " note that this should only be set on a single interface since this will "
 "set the global default IPv4 route for the system."
 msgstr ""
+"Otras configuraciones importantes de IPv4 incluyen \"Puerta de enlace IPv4\". Es importante tener en cuenta que esto debe establecerse únicamente en una sola interfaz, ya que esto fijará la ruta global IPv4 predeterminada para el sistema."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:215
 msgid "**IPv6 with Prefix Delegation**"
-msgstr ""
+msgstr "**IPv6 con delegación de prefijo**"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:217
 msgid ""
@@ -1601,6 +1740,7 @@ msgid ""
 "network Prefixes you **MUST** use the built IPv6 management options "
 "described below and DHCP server **MUST** be enabled on this interface."
 msgstr ""
+"Con las implementaciones IPv6, la mayoría de las configuraciones utilizarán el espacio de red proporcionado por el ISP. Si su implementación utiliza prefijos de red delegados por el proveedor, **DEBE** utilizar las opciones de gestión de IPv6 incorporadas que se describen a continuación y el servidor DHCP **DEBE** estar habilitado en esta interfaz."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:219
 msgid ""
@@ -1613,6 +1753,7 @@ msgid ""
 " This is fundementatly a dynamic proccess that makes it impossible to set"
 " a static IPv6 address."
 msgstr ""
+"El sistema operativo Opuntia incluye un sistema automático de gestión de IPv6 cuando recibe una delegación de prefijo IPv6 de un proveedor ascendente. Este sistema automático se asegurará de que el sistema está proporcionando a los clientes descendentes las direcciones IPv6 correctas y gestiona cualquier cambio en el enrutamiento que pueda ser necesario. La delegación de prefijos IPv6 es, con mucho, el escenario de configuración más común si se conecta a Internet IPv6. Se trata de un proceso fundamentalmente dinámico que hace imposible establecer una dirección IPv6 estática."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:224
 msgid ""
@@ -1625,6 +1766,7 @@ msgid ""
 " that you are likely to configure is IPv6 assignment length. The other "
 "two values are likely to remain unconfigured or in the default state."
 msgstr ""
+"Pero el sistema de gestión IPv6 incorporado permite varios valores ajustables que permiten al administrador del sistema controlar la implementación de redes y direcciones IPv6. Por orden de importancia, estas opciones son: longitud de la asignación IPv6, sufijo IPv6 e indicación de asignación IPv6. Cada una de estas opciones se analizará en detalle en esta sección. Es importante entender que en la mayoría de las configuraciones comunes el único ajuste que es probable que usted configure es la longitud de asignación IPv6. Los otros dos valores probablemente permanecerán sin configurar o en el estado predeterminado."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:233
 msgid ""
@@ -1635,6 +1777,7 @@ msgid ""
 " static IPv6 configuration options for setting a static IPv6 address, "
 "IPv6 gateway and IPv6 routed prefix."
 msgstr ""
+"La opción \"Longitud de la asignación IPv6\" permite al administrador elegir la longitud del prefijo IPv4 deseado para la interfaz. Esta configuración también se utiliza para indicar al sistema operativo Opuntia que habilite la gestión IPv6 incorporada en esta interfaz. Al seleccionar cualquier valor se desactivarán las opciones normales de configuración estática de IPv6 para establecer una dirección IPv6 estática, una puerta de enlace IPv6 y un prefijo enrutado IPv6."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:237
 msgid ""
@@ -1643,6 +1786,7 @@ msgid ""
 "most client devices (SLAAC and DHCPv6). To function correctly you must "
 "recieve a IPv6 Prefix delegation from an upstream provider."
 msgstr ""
+"La longitud de la asignación IPv6 suele ser de 64 bits. Una longitud de prefijo IPv6 de 64 bits permite la autoconfiguración de direcciones IPv6 estándar para la mayoría de los dispositivos cliente (SLAAC y DHCPv6). Para que funcione correctamente debe recibir una delegación de prefijo IPv6 de un proveedor ascendente."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:241
 msgid ""
@@ -1653,6 +1797,7 @@ msgid ""
 "changes the IPv6 prefix delegation those changes will be automatically "
 "applied to all downstream devices."
 msgstr ""
+"Por ejemplo, si el sistema Opuntia recibió una delegación de prefijo IPv6 de 2605:540:1::/60 y establecemos la \"longitud de asignación IPv6\" a 64 bits, Opuntia configurará uno de los 16 intervalos de red /64 en la delegación 2605:540:1::/60 en esta interfaz. Si el proveedor ascendente cambia la delegación del prefijo IPv6, esos cambios se aplicarán automáticamente a todos los dispositivos descendentes."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:245
 msgid ""
@@ -1660,6 +1805,7 @@ msgid ""
 "address of the router. So a human readable address on a interface is "
 "purely a management feature."
 msgstr ""
+"La mayoría de los sistemas operativos cliente instalan rutas IPv6 utilizando la dirección de enlace local del router. De esta manera una dirección legible para el ser humano en una interfaz es puramente una característica de gestión."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:247
 msgid ""
@@ -1672,6 +1818,7 @@ msgid ""
 "so in many cases you will not need to make adjustments to this setting if"
 " you want your routers IPv6 to in ::1."
 msgstr ""
+"El \"sufijo IPv6\" establece la ID de la interfaz IPv6. Son los últimos 64 bits de una dirección IPv6. Esto permite al administrador controlar la última parte de una dirección IPv6 que se asigna. Teniendo en cuenta nuestro ejemplo de recibir un prefijo IPv6 de 2605:540:1::/64, si estableciéramos el \"sufijo IPv6\" como \"::100:1\", la dirección IPv6 prevista asignada a la interfaz sería 2605:540:1::100:1/64. Esta configuración tiene un valor por defecto de \"::1\" por lo que en muchos casos no tendrá que hacer ajustes a esta configuración si desea sus router IPv6 en ::1."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:253
 msgid ""
@@ -1680,12 +1827,14 @@ msgid ""
 "use when being probed with standard troubleshooting tools like traceroute"
 " and ping."
 msgstr ""
+"La configuración del sufijo IPv6 es útil para la resolución de problemas de la red. Permite establecer la dirección IPv6 legible para el ser humano que el router utilizará cuando sea sondeado con herramientas estándar de resolución de problemas como traceroute y ping."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:256
 msgid ""
 "If a \"IPv6 assignment hint\" is outside of the IPv6 prefix ranges that "
 "are available this setting will have no effect."
 msgstr ""
+"Si una \"indicación de asignación de IPv6\" está fuera de los intervalos de prefijos IPv6 disponibles, esta configuración no tendrá efecto."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:258
 msgid ""
@@ -1698,6 +1847,7 @@ msgid ""
 "could set the hint value to \"2\". Or if it was required to assign "
 "2605:540:1:f::/64 we would set the value to \"f\"."
 msgstr ""
+"Si quisiéramos controlar qué prefijo /64 IPv6 se seleccionará podemos utilizar el segundo ajuste \"IPv6 indicación de asignación\" (assignment hint). Este es un valor opcional, no se establece de manera predeterminada. Si esta opción está en el estado por defecto, el sistema intentará asignar eficazmente las redes IPv6. Si se requiere el control de la red asignada; el valor es un número hexadecimal que coincide con la ID del sub-Prefijo. Así, en este ejemplo, si queremos asignar 2605:540:1:2::/64 podríamos establecer el valor de la indicación como \"2\". O si se requiriera asignar 2605:540:1:f::/64 fijaríamos el valor a \"f\"."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:264
 msgid ""
@@ -1711,16 +1861,18 @@ msgid ""
 "feature if you are receiving a Prefix Delegation. But it is useful in a "
 "few deployment scenarios so it's usage is detailed here."
 msgstr ""
+"Dada la naturaleza dinámica de la delegación de prefijos IPv6, a menudo no es necesario controlar la red específica. También es importante recordar que esto es una \"indicación\" que requiere que la dirección de red prevista sea incluida en su delegación de prefijo IPv6. Si su proveedor ajusta la delegación de prefijos asignada es muy posible que su \"indicación\" ya no pueda asignarse a un intervalo de red válido. Eso haría que este ajuste no tuviera ningún efecto. Por este motivo, le sugerimos que no utilice esta función si está recibiendo una delegación de prefijo. Sin embargo, es útil en algunos escenarios de implementación, por lo que su uso se detalla aquí."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:270
 msgid "**DHCP/DHCPv6 settings - Static protocol**"
-msgstr ""
+msgstr "**Configuración de DHCP/DHCPv6 - Protocolo estático**"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:272
 msgid ""
 "It is a required that you use DHCP server settings on the interface for "
 "downstream devices to recieve IPv6 prefix delegation."
 msgstr ""
+"Es necesario utilizar la configuración del servidor DHCP en la interfaz para que los dispositivos descendentes reciban la delegación de prefijo IPv6."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:274
 msgid ""
@@ -1732,36 +1884,38 @@ msgid ""
 "description of the DHCP / DHCPv6 server Interface settings and Global "
 "DHCP settings please look at the DHCP Server chapter linked below."
 msgstr ""
+"Los dispositivos cliente normalmente no tienen asignadas direcciones IPv6 de forma estática. Si está utilizando la gestión de IPv6 incorporada en Opuntia recomendada para delegar prefijos IPv6, debe configurar el servidor DHCP/DHCPv6 en esta interfaz. Esta sección sólo contendrá una breve lista de comandos y ajustes necesarios para garantizar el funcionamiento de los dispositivos cliente. Para una descripción completa de la configuración de la interfaz del servidor DHCP / DHCPv6 y de la configuración global de DHCP, consulte el capítulo sobre el servidor DHCP que aparece a continuación."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:279
 msgid ":doc:`dhcp-server`"
-msgstr ""
+msgstr ":doc:`servidor-dhcp`"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:285
 msgid ""
 "To begin, Edit the interface and click to the \"DHCP Server\" tab. You "
 "will see a large button labled \"Setup DHCP Server\"."
 msgstr ""
+"Para comenzar, edite la interfaz y haga clic en la pestaña \"Servidor DHCP\". Verá un botón grande denominado \"Configurar servidor DHCP\"."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:291
 msgid "This tab shows the basic DHCP server settings for the interface."
-msgstr ""
+msgstr "Esta pestaña muestra la configuración básica del servidor DHCP para la interfaz."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:293
 msgid "Ignore interface"
-msgstr ""
+msgstr "Ignorar la interfaz"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:294
 msgid "Start"
-msgstr ""
+msgstr "Inicio"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:295
 msgid "Limit"
-msgstr ""
+msgstr "Límite"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:296
 msgid "Lease time"
-msgstr ""
+msgstr "Tiempo de concesión"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:298
 msgid ""
@@ -1771,6 +1925,7 @@ msgid ""
 "manually assiging IPv4 addresses but you want to use the built-in IPv6 "
 "subsystem."
 msgstr ""
+"La casilla \"Ignorar la interfaz\" desactivará el servidor DHCP IPv4 en esta interfaz. Si se selecciona, ocultará automáticamente la pestaña de \"ajustes avanzados\". Esta puede ser una opción de configuración útil si está asignando de manera manual direcciones IPv4 pero quiere usar el subsistema IPv6 incorporado."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:302
 msgid ""
@@ -1781,6 +1936,7 @@ msgid ""
 " be allocated is 192.168.85.100. This is a required setting if DHCP "
 "server is enabled."
 msgstr ""
+"El ajuste de configuración \"Inicio\" especifica en qué lugar del intervalo de la red IPv4 se comienza a asignar las direcciones ip de los clientes DHCP. Por ejemplo, si tiene una red estática de 192.168.85.0/24 asignada a la interfaz y tiene la configuración \Inicio\" establecida en 100; la dirección ip más baja que se puede asignar es 192.168.85.100. Esta es una configuración necesaria si el servidor DHCP está activado."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:306
 msgid ""
@@ -1793,38 +1949,41 @@ msgid ""
 " 150 addresses above the \"Start\" setting. This is a required setting if"
 " DHCP server is enabled."
 msgstr ""
+"El ajuste \"Límite\" funciona con el valor de inicio para limitar el número de direcciones que se pueden asignar y así definir las direcciones DHCP que se pueden asignar. En nuestro ejemplo de iniciar nuestro grupo DHCP en 192.168.85.100, si utilizamos el valor predeterminado de 150 ro la configuración \"Límite\" resulta en el sistema asignando direcciones Ip de 192.168.85.100 a 192.168.85.250. O de lo contrario, limitar la asignación a 150 direcciones por encima de la configuración \"Inicio\". Esta es una configuración necesaria si el servidor DHCP está activado."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:311
 msgid ""
 "The \"Lease time\" setting defines the length of time that the DHCP Lease"
 " is valid. This is a required setting if DHCP server is enabled."
 msgstr ""
+"El ajuste \"Tiempo de concesión\" define la longitud de tiempo en el que la concesión DHCP es válida. Esta es una configuración necesaria si el servidor DHCP está activado."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:314
 msgid "To configure DHCPv6 settings click the \"IPv6 Settings\" tab."
-msgstr ""
+msgstr "Para configurar los ajustes de DHCPv6 haga clic en la pestaña \"Configuración de IPv6"\."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:320
 msgid ""
 "On this tab we see the DHCPv6 settings. The most commonly used settings "
 "are as follows."
 msgstr ""
+"En esta pestaña vemos la configuración de DHCPv6. Los ajustes más utilizados son los siguientes."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:322
 msgid "Router Advertisement-Service"
-msgstr ""
+msgstr "Servicio de notificación del router"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:323
 msgid "DHCPv6-Service"
-msgstr ""
+msgstr "Servicio DHCPv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:324
 msgid "DHCPv6-Mode"
-msgstr ""
+msgstr "Modo DHCPv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:325
 msgid "Announced DNS servers"
-msgstr ""
+msgstr "Servidores DNS anunciados"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:327
 msgid ""
@@ -1835,12 +1994,14 @@ msgid ""
 "(Stateless address autoconfiguration) to automatically configure IPv6 "
 "networks. The recommended value is \"Server mode\"."
 msgstr ""
+"La opción \"Servicio de notificación del router\" (Router Advertisement-Service) permite al sistema Opuntia enviar paquetes de notificación de router IPv6 en esta interfaz. Esto permite que los dispositivos cliente sepan que el sistema Opuntia está actuando como un router para esta red. También sirve como el principal habilitador para el uso de SLAAC (Configuración automática de direcciones sin estado) para configurar automáticamente las redes IPv6. El valor recomendado es \"Modo servidor\"."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:332
 msgid ""
 "The \"DHCPv6-Service\" is the setting that actually starts DHCPv6 on the "
 "Interface. The recommended value is \"Server mode\"."
 msgstr ""
+"El \"Servicio DHCPv6\" es la configuración que inicia efectivamente DHCPv6 en la interfaz. El valor recomendado es \"Modo servidor\"."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:334
 msgid ""
@@ -1848,6 +2009,7 @@ msgid ""
 "This settting will be explained in more detail in the DHCP Server "
 "chapter. The recommended value is \"Stateless + Stateful\"."
 msgstr ""
+"El \"Modo DHCPv6\" controla el modo de funcionamiento del servidor DHCPv6. Esta configuración se explicará con más detalle en el capítulo Servidor DHCP. El valor recomendado es \"Sin estado + Con estado\" (Stateless + Stateful)."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:337
 msgid ""
@@ -1857,6 +2019,7 @@ msgid ""
 "This is an optional setting since you may learn DNS servers from IPv4 "
 "DHCP or other methods."
 msgstr ""
+"La última configuración más común de IPv6 DHCPv6 es la de \"servidores DNS anunciados\". Este valor es muy similar a la configuración de la opción de servidor DNS para IPv4. Esto permite a los clientes DHCPv6 que sepan una lista de servidores DNS. Esta es una configuración opcional, ya que puede conocer los servidores DNS desde el DHCP IPv4 u otros métodos."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:341
 msgid ""
@@ -1865,10 +2028,11 @@ msgid ""
 "configuration value. Depending on the enviorment, it may be valid to only"
 " have IPv4 DNS servers specified in the IPv6 DHCPv6 service."
 msgstr ""
+"Una cosa interesante sobre la configuración de \"Servidores DNS anunciados\" es que puede anunciar direcciones de servidores DNS IPv4 o IPv6 utilizando este valor de configuración. Dependiendo del entorno, puede ser válido tener sólo servidores DNS IPv4 especificados en el servicio DHCPv6 IPv6."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:350
 msgid "**Static IPv6**"
-msgstr ""
+msgstr "**IPv6 estático**"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:352
 msgid ""
@@ -1879,28 +2043,30 @@ msgid ""
 "first must be sure that the \"IPv6 assignment length\" setting is set to "
 "disabled."
 msgstr ""
+"Hay varios escenarios de implementación en los que no recibirá una delegación de prefijo IPv6. Normalmente esto ocurre cuando se conocen rutas IPv6 a través de un protocolo de enrutamiento dinámico como BGP u Ospfv3. En estos casos es necesario configurar un IPv6 de manera manual en las interfaces. Para empezar, primero debe asegurarse de que el ajuste \"Longitud de la asignación IPv6\" está desactivado."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:360
 msgid ""
 "By disabling the \"IPv6 assignment length\" you will now see these "
 "configuration options."
 msgstr ""
+"Al desactivar la \"Longitud de asignación IPv6\" ahora verá estas opciones de configuración."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:362
 msgid "IPv6 address"
-msgstr ""
+msgstr "Dirección IPv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:363
 msgid "IPv6 gateway"
-msgstr ""
+msgstr "Puerta de enlace IPv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:364
 msgid "IPv6 routed Prefix"
-msgstr ""
+msgstr "Prefijo enrutado IPv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:365
 msgid "IPv6 suffix"
-msgstr ""
+msgstr "Sufijo IPv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:367
 msgid ""
@@ -1910,6 +2076,7 @@ msgid ""
 "address box. Below is an example of adding multiple IPv6 addresses to an "
 "interface."
 msgstr ""
+"Dado que IPv6 soporta fundamentalmente múltiples direcciones por interfaz, la notación de la lista CIDR es la única opción para configurar manualmente las direcciones IPv6. Asegúrese de hacer clic en la pequeña casilla de verificación al final del cuadro de dirección IPv6. A continuación se muestra un ejemplo de cómo añadir varias direcciones IPv6 a una interfaz."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:375
 msgid ""
@@ -1922,6 +2089,7 @@ msgid ""
 "can be done using dynamic routing protocols like BGP, Ospfv3 or static "
 "routes."
 msgstr ""
+"El \"prefijo enrutado IPv6\" se utiliza con el sistema de gestión IPv6 incorporado. Esto permite al administrador del sistema especificar un prefijo IPv6 estático que se distribuye a los dispositivos cliente utilizando DHCPv6. DHCPv6 **DEBE** estar activado para que esta configuración sea efectiva. Dado que este intervalo de prefijos se especifica de manera manual por el administrador; éste debe asegurarse de que este intervalo de prefijos IPv6 sea enrutado al sistema Opuntia. Esto puede hacerse utilizando protocolos de enrutamiento dinámico como BGP, Ospfv3 o rutas estáticas."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:380
 msgid ""
@@ -1931,6 +2099,7 @@ msgid ""
 "you have also specified a \"IPv6 routed Prefix\". This setting has a "
 "default value of \"::1\"."
 msgstr ""
+"El \"sufijo IPv6\" establece la ID de la interfaz IPv6. Son los últimos 64 bits de una dirección IPv6. Esto permite al administrador controlar la última parte de una dirección IPv6 que se asigna. Esta configuración sólo tiene efecto si también ha especificado un \"Prefijo enrutado IPv6\". Este ajuste tiene un valor predeterminado de \"::1\"."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:387
 msgid ""
@@ -1939,6 +2108,7 @@ msgid ""
 "After making changes to the configuration files you need to run the "
 "following command from the system shell. ::"
 msgstr ""
+"Al acceder a la interfaz de red, la configuración se almacena en un archivo en la ubicación */etc/config/network*. Puede editar este archivo con vi o nano. Después de realizar los cambios en los archivos de configuración es necesario ejecutar el siguiente comando desde la consola del sistema. ::"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:392
 msgid ""
@@ -1947,22 +2117,25 @@ msgid ""
 "DHCP/DHCPv6 server settings we will also cover that configuration in this"
 " section. The DHCP server settings are located at */etc/config/dhcp*."
 msgstr ""
+"Esto forzará al sistema a recargar la configuración en ejecución desde los archivos de configuración guardados. Dado que el protocolo estático se utiliza a menudo con la configuración del servidor DHCP/DHCPv6, también cubriremos esa configuración en esta sección. La configuración del servidor DHCP se encuentra en */etc/config/dhcp*."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:396
 msgid ""
 "When directly configuring the any settings in the configuration files it "
 "is possible to input invalid settings. Take care to enter correct values."
 msgstr ""
+"Al configurar directamente los ajustes en los archivos de configuración, es posible que se introduzcan ajustes no válidos. Tenga cuidado de introducir los valores correctos."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:399
 msgid "**Interface IPv4 settings**"
-msgstr ""
+msgstr "**Configuración de la interfaz IPv4**"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:401
 msgid ""
 "Below we will cover a few common IPv4 configuration scenarios and what "
 "the configuration file format will look like in those deployments."
 msgstr ""
+"A continuación cubriremos algunos escenarios comunes de configuración de IPv4 y cómo será el formato del archivo de configuración en esas implementaciones."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:408
 msgid ""
@@ -1972,6 +2145,7 @@ msgid ""
 "to be modified are /etc/config/network for the interface configuration. "
 "And /etc/config/dhcp for the DHCP server configuration."
 msgstr ""
+"Este ejemplo establece una dirección IPv4 estática en la interfaz llamada \"Home_Lan\" y un servidor DHCP en la interfaz con un intervalo de ip-pool de 192.168.85.10 - 192.168.85.250 con un tiempo de cesión (leasetime). Los dos archivos de configuración que hay que modificar son /etc/config/network para la configuración de la interfaz. Y /etc/config/dhcp para la configuración del servidor DHCP."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:412
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:436
@@ -1985,23 +2159,24 @@ msgstr ""
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:737
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:754
 msgid "/etc/config/network"
-msgstr ""
+msgstr "/etc/config/network"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:422
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:460
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:509
 msgid "/etc/config/dhcp"
-msgstr ""
+msgstr "/etc/config/dhcp"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:432
 msgid "**IPv4 CLI Options**"
-msgstr ""
+msgstr "**Opciones CLI IPv4**"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:434
 msgid ""
 "Here is a list of common configuration options for IPv4 interfaces and "
 "value descriptions."
 msgstr ""
+"A continuación se muestra una lista de opciones de configuración comunes para las interfaces IPv4 y las descripciones de los valores."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:439
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:463
@@ -2010,7 +2185,7 @@ msgstr ""
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:665
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:757
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:439
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:463
@@ -2019,7 +2194,7 @@ msgstr ""
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:665
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:757
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:439
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:463
@@ -2028,7 +2203,7 @@ msgstr ""
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:665
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:757
 msgid "Required"
-msgstr ""
+msgstr "Requerido"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:439
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:463
@@ -2037,21 +2212,21 @@ msgstr ""
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:665
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:757
 msgid "Description of the command"
-msgstr ""
+msgstr "Descripción del comando"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:441
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:558
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:667
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:759
 msgid "ifname"
-msgstr ""
+msgstr "ifname"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:441
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:558
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:667
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:759
 msgid "Interface Name"
-msgstr ""
+msgstr "Nombre de la interfaz"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:441
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:443
@@ -2065,51 +2240,51 @@ msgstr ""
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:759
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:761
 msgid "Yes"
-msgstr ""
+msgstr "Sí"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:441
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:558
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:667
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:759
 msgid "Physical Interface Name"
-msgstr ""
+msgstr "Nombre de la interfaz física"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:443
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:560
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:669
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:761
 msgid "proto"
-msgstr ""
+msgstr "proto"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:443
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:560
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:669
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:761
 msgid "Protocol Type"
-msgstr ""
+msgstr "Tipo de protocolo"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:443
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:560
 msgid "Protocol"
-msgstr ""
+msgstr "Protocolo"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:445
 msgid "ipaddr"
-msgstr ""
+msgstr "ipaddr"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:445
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:449
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:451
 msgid "ip address"
-msgstr ""
+msgstr "dirección ip"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:445
 msgid "Ip address CIDR list"
-msgstr ""
+msgstr "Lista CIDR de direcciones IP"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:447
 msgid "netmask"
-msgstr ""
+msgstr "netmask"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:447
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:449
@@ -2140,139 +2315,140 @@ msgstr ""
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:771
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:773
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:447
 msgid "IPv4 Subnet mask"
-msgstr ""
+msgstr "Máscara de subred IPv4"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:449
 msgid "gateway"
-msgstr ""
+msgstr "gateway"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:449
 msgid "Default IPv4 gateway"
-msgstr ""
+msgstr "Puerta de enlace IPv4 predeterminada"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:451
 msgid "broadcast"
-msgstr ""
+msgstr "broadcast"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:451
 msgid "Broadcast IPv4 address"
-msgstr ""
+msgstr "Dirección IPv4 de difusión"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:453
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:475
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:586
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:773
 msgid "dns"
-msgstr ""
+msgstr "dns"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:453
 msgid "list of ip addresses"
-msgstr ""
+msgstr "lista de direcciones ip"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:453
 msgid "Dns Server List"
-msgstr ""
+msgstr "Lista de servidores Dns"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:455
 msgid "metric"
-msgstr ""
+msgstr "metric"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:455
 msgid "integer"
-msgstr ""
+msgstr "entero"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:455
 msgid "Route metric for this interface"
-msgstr ""
+msgstr "Métrica de ruta para esta interfaz"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:458
 msgid "Here is a list of common IPv4 DHCP Configuraion options."
-msgstr ""
+msgstr "Esta es una lista de las opciones de configuración de DHCP IPv4 más comunes."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:465
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:582
 msgid "interface"
-msgstr ""
+msgstr "interface"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:465
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:582
 msgid "interface name"
-msgstr ""
+msgstr "nombre de la interfaz"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:465
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:582
 msgid "Opuntia Interface name"
-msgstr ""
+msgstr "Nombre de la interfaz de Opuntia"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:467
 msgid "ignore"
-msgstr ""
+msgstr "ignore"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:467
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:469
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:471
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:592
 msgid "Int"
-msgstr ""
+msgstr "Int"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:467
 msgid "Ignore IPv4 DHCP server on this interface"
-msgstr ""
+msgstr "Ignorar el servidor DHCP IPv4 en esta interfaz"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:469
 msgid "start"
-msgstr ""
+msgstr "start"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:469
 msgid "IPv4 dhcp pool start address ofset"
-msgstr ""
+msgstr "Ajuste de inicio del grupo de direcciones dhcp IPv4"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:471
 msgid "limit"
-msgstr ""
+msgstr "limit"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:471
 msgid "Number of addresses in the IPv4 dhcp pool"
-msgstr ""
+msgstr "Número de direcciones en el grupo dhcp IPv4"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:473
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:584
 msgid "leasetime"
-msgstr ""
+msgstr "leasetime"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:473
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:584
 msgid "Time"
-msgstr ""
+msgstr "Tiempo"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:473
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:584
 msgid "Lifetime of the dhcp lease  (hours or minutes)"
-msgstr ""
+msgstr "Tiempo de vida de la concesión dhcp (horas o minutos)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:475
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:586
 msgid "list of DNS addresses"
-msgstr ""
+msgstr "lista de direcciones DNS"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:475
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:586
 msgid "Lists of dns servers to advertise to dhcp clients"
-msgstr ""
+msgstr "Listas de servidores dns para notificar a los clientes dhcp"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:478
 msgid "**Interface IPv6 settings**"
-msgstr ""
+msgstr "**Configuración de la interfaz IPv6**"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:480
 msgid ""
 "Below we will cover a few common IPv6 configuration scenarios and what "
 "the configuration file format will look like in those deployments."
 msgstr ""
+"A continuación cubriremos algunos escenarios comunes de configuración de IPv6 y cómo será el formato del archivo de configuración en esas implementaciones."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:483
 msgid ""
@@ -2284,6 +2460,7 @@ msgid ""
 "\"::1\" the typical configuration only has the 'ip6assign' option "
 "configured."
 msgstr ""
+"Este ejemplo muestra una típica pila dual IPv4 / IPv6 donde se recibe una Delegación de Prefijo IPv6. Este ejemplo muestra que sólo es necesario configurar la longitud ip6assign. A continuación, se utilizará la gestión incorporada de IPv6 para determinar la subred IPv6 correcta para asignar a la interfaz. Como el sufijo IPv6(ip6ifaceid) tiene un valor predeterminada de \"::1\" la configuración típica sólo tiene configurada la opción 'ip6assign'."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:488
 msgid ""
@@ -2291,6 +2468,7 @@ msgid ""
 "IPv6 Prefix. This is configuration example for working in a dual-stack "
 "enviorment."
 msgstr ""
+"También estamos configurando el DHCPv6 para que asigne las direcciones a partir del prefijo IPv6 asignado. Este es un ejemplo de configuración para trabajar en un entorno de doble pila."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:491
 msgid ""
@@ -2301,6 +2479,7 @@ msgid ""
 "that the system obtained via DHCPv6. If there is insufficient IPv6 "
 "address space, the system will not assign a /64."
 msgstr ""
+"Este ejemplo muestra la configuración más sencilla de IPv6. Solicita que se asigne un bloque de red IPv6 /64 a la interfaz. Esto hará que el sistema intente obtener una red pública IPv6 válida para asignar a la interfaz. Este espacio de direcciones se asigna a partir de la delegación de prefijos IPv6 asignados que el sistema obtuvo mediante DHCPv6. Si no hay suficiente espacio de direcciones IPv6, el sistema no asignará un /64."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:506
 msgid ""
@@ -2309,22 +2488,25 @@ msgid ""
 "downstream devices. This is typically combinded with the simple Dual "
 "Stack interface configuraion above."
 msgstr ""
+"Esta configuración DHCP/DHCPv6 muestra cómo configurar el sistema Opuntia como servidor DHCPv6. Y permite que el sistema haga una delegación de prefijos a los dispositivos descendentes. Esto se suele combinar con la configuración simple de la interfaz de pila doble anterior."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:523
 msgid ""
 "This example shows two static IPv6 addresses assigned to the Home_Lan "
 "Interface."
 msgstr ""
+"Este ejemplo muestra dos direcciones IPv6 estáticas asignadas a la interfaz Home_Lan."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:536
 msgid ""
 "This example shows a configuration of a pure IPv6 network. This uses the "
 "built-in IPv6 management to assign the /64 netblock."
 msgstr ""
+"Este ejemplo muestra una configuración de una red IPv6 pura. Utiliza la gestión incorporada de IPv6 para asignar el bloque de red /64."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:547
 msgid "**IPv6 CLI Options**"
-msgstr ""
+msgstr "**Opciones CLI IPv6**"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:549
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:733
@@ -2332,128 +2514,129 @@ msgid ""
 "To access the Opuntia systems CLI interface please see the :ref:`Access-"
 "SSH` chapter of the manual."
 msgstr ""
+"Para acceder a la interfaz CLI de los sistemas Opuntia, consulte el capítulo :ref:`Acceso-SSH` del manual."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:551
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:660
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:752
 msgid "Common configuraion options are listed in the table below."
-msgstr ""
+msgstr "Las opciones de configuración más comunes se enumeran en la siguiente tabla."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:562
 msgid "ip6addr"
-msgstr ""
+msgstr "ip6addr"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:562
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:566
 msgid "ipv6 address"
-msgstr ""
+msgstr "dirección ipv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:562
 msgid "Yes / No*"
-msgstr ""
+msgstr "Sí / No*"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:562
 msgid "IPv6 Address (not required if an IPv4 ipaddr is set)"
-msgstr ""
+msgstr "Dirección IPv6 (no es necesaria si se establece una dirección IPv4)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:564
 msgid "ip6ifaceid"
-msgstr ""
+msgstr "ip6ifaceid"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:564
 msgid "ipv6 suffix"
-msgstr ""
+msgstr "sufijo ipv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:564
 msgid "IPv6 Interface ID ( fixed value, Random, eui64)"
-msgstr ""
+msgstr "ID de interfaz IPv6 ( valor fijo, aleatorio, eui64)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:566
 msgid "ip6gw"
-msgstr ""
+msgstr "ip6gw"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:566
 msgid "IPv6 Default Gateway"
-msgstr ""
+msgstr "Puerta de enlace IPv6 predeterminada"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:568
 msgid "ip6assign"
-msgstr ""
+msgstr "ip6assign"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:568
 msgid "prefix length"
-msgstr ""
+msgstr "longitud del prefijo"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:568
 msgid "Delegate a prefix of this length"
-msgstr ""
+msgstr "Delegar un prefijo de esta longitud"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:570
 msgid "ip6hint"
-msgstr ""
+msgstr "ip6hint"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:570
 msgid "prefix hint"
-msgstr ""
+msgstr "indicación de prefijo"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:570
 msgid "Prefix hint in Hex format"
-msgstr ""
+msgstr "Indicación de prefijo en formato Hex"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:572
 msgid "ip6class"
-msgstr ""
+msgstr "ip6class"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:572
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:574
 msgid "ipv6 prefix"
-msgstr ""
+msgstr "prefijo ipv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:574
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:769
 msgid "ip6prefix"
-msgstr ""
+msgstr "ip6prefix"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:574
 msgid "IPv6 prefix for distribution to clients devices"
-msgstr ""
+msgstr "Prefijo IPv6 para distribución a los dispositivos cliente"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:577
 msgid "/etc/config/dhcpv6"
-msgstr ""
+msgstr "/etc/config/dhcpv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:588
 msgid "dhcpv6"
-msgstr ""
+msgstr "dhcpv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:588
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:590
 msgid "server mode"
-msgstr ""
+msgstr "modo servidor"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:588
 msgid "DHCPv6 server ( server, relay or hybrid )"
-msgstr ""
+msgstr "Servidor DHCPv6 (servidor, relé o híbrido)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:590
 msgid "ra"
-msgstr ""
+msgstr "ra"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:590
 msgid "Router Advertisement mode (server, relay or hybrid)"
-msgstr ""
+msgstr "Modo de notificación del router (servidor, relé o híbrido)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:592
 msgid "ra_management"
-msgstr ""
+msgstr "ra_management"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:592
 msgid "DHCPv6 mode ( 1: Stateless + Stateful )"
-msgstr ""
+msgstr "Modo DHCPv6 ( 1: Sin estado + Con estado)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:598
 msgid "DHCP Client"
-msgstr ""
+msgstr "Cliente DHCP"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:600
 msgid ""
@@ -2462,6 +2645,7 @@ msgid ""
 "this is often the desired configuration since it allows automatic "
 "configuration of the IPv4 address and DNS settings."
 msgstr ""
+"El protocolo \"cliente DHCP\" configura una interfaz para solicitar un IPv4 mediante el protocolo DHCP. Cuando se conecta como dispositivo cliente a una red, esta suele ser la configuración deseada, ya que permite la configuración automática de la dirección IPv4 y de los ajustes DNS."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:603
 msgid ""
@@ -2469,12 +2653,14 @@ msgid ""
 " Opuntia has a *Wan* Interface for DHCP and a *Wan_6* Interface for "
 "DHCPv6 the physical interface needs to be set to the upstream interface."
 msgstr ""
+"La pila dual IPv4 e IPv6 requiere interfaces de Opuntia separadas. Por defecto, Opuntia tiene una interfaz *Wan* para DHCP y una interfaz *Wan_6* para DHCPv6. La interfaz física se debe configurar para la interfaz ascendente."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:605
 msgid ""
 "For more information on Dual Stack configurations see the :ref:`Wired-"
 "DHCPv6-Client` section."
 msgstr ""
+"Para más información sobre las configuraciones de pila dual o doble, consulte la sección :ref:`Cliente DHCPv6-alámbrico`."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:621
 msgid ""
@@ -2486,6 +2672,7 @@ msgid ""
 "interfaces connected to upstream Internet access the default *wan* "
 "firewall zone is likely the correct setting."
 msgstr ""
+"Esta captura de pantalla muestra la configuración básica de la interfaz DHCP. Dado que el protocolo \"cliente DHCP\" solicita la configuración de la red a un servidor DHCP, se requiere poca configuración por parte del usuario. El ajuste más importante de la configuración del usuario es probablemente la elección de la zona del Cortafuegos en la pestaña de configuración del cortafuegos. Dado que el \"cliente DHCP\" suele estar configurado en interfaces conectadas al acceso a Internet ascendente, la zona del cortafuegos *wan* predeterminada es probablemente la configuración correcta."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:626
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:724
@@ -2493,11 +2680,12 @@ msgid ""
 "The other Tabs have the following different types of configuration "
 "options."
 msgstr ""
+"Las otras pestañas tienen los siguientes tipos de opciones de configuración."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:628
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:726
 msgid "Advanced Settings (MAC address override and MTU override)"
-msgstr ""
+msgstr "Configuración avanzada (anulación de dirección MAC y anulación de MTU)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:635
 msgid ""
@@ -2506,12 +2694,14 @@ msgid ""
 " via ssh. To access the Opuntia systems CLI interface please see the :ref"
 ":`Access-SSH` chapter of the manual."
 msgstr ""
+"El protocolo \"cliente DHCP\" tiene pocas opciones de configuración predeterminadas. Por lo que la configuración de la CLI es muy sencilla. Sólo tiene que conectarse al sistema Opuntia a través de ssh. Para acceder a la interfaz CLI de los sistemas Opuntia, consulte el capítulo :ref:`Acceso-SSH` del manual."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:638
 msgid ""
 "Below is a typical configuration for the \"DHCP client\" protocol on a "
 "*Wan* interface."
 msgstr ""
+"A continuación se muestra una configuración típica para el protocolo \"cliente DHCP\" en una interfaz *Wan*."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:647
 msgid ""
@@ -2519,29 +2709,30 @@ msgid ""
 "configuration that overrides the hostname that the system will report to "
 "the upstream DHCP server."
 msgstr ""
+"Se trata de una configuración muy sencilla. A continuación se muestra una configuración más compleja que anula el nombre del anfitrión (hostname) que el sistema informará al servidor DHCP ascendente."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:658
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:750
 msgid "**CLI Configuraion Options**"
-msgstr ""
+msgstr "**Opciones de configuración de la CLI**"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:669
 msgid "Protocol 'dhcp'"
-msgstr ""
+msgstr "Protocolo 'dhcp'"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:671
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:763
 msgid "hostname"
-msgstr ""
+msgstr "hostname"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:671
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:763
 msgid "Hostname override (Defaults to current hostname)"
-msgstr ""
+msgstr "Anulación del nombre del anfitrión (por defecto, el nombre del anfitrión actual)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:678
 msgid "DHCPv6 Client"
-msgstr ""
+msgstr "Cliente DHCPv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:680
 msgid ""
@@ -2555,10 +2746,11 @@ msgid ""
 "interfaces, the role of DHCPv6 is often to recieve a IPv6 Prefix "
 "Delegation using DHCPv6-PD."
 msgstr ""
+"El protocolo \"DHCPv6 client\" configura una interfaz para solicitar la delegación de prefijos IPv6 a un servidor DHCPv6. Este es el protocolo \"cliente DHCP\" equivalente a IPv6 con algunas diferencias clave. Una de las principales diferencias es que Opuntia configurará automáticamente las direcciones IPv6 utilizando la configuración automática de direcciones sin estado (SLAAC), DHCPv6 sin estado, DHCPv6 con estado o DHCPv6-PD si alguna de estas opciones está disponible. Dado que las direcciones de anfitrión IPv6 se van a configurar automáticamente en las interfaces, la función de DHCPv6 suele ser la de recibir una delegación de prefijo IPv6 mediante DHCPv6-PD."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:687
 msgid "Dual Stack"
-msgstr ""
+msgstr "Pila dual"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:689
 msgid ""
@@ -2572,12 +2764,14 @@ msgid ""
 " physical interface is referenced in both the *Wan* and *Wan_6* Opuntia "
 "Interfaces."
 msgstr ""
+"Las operaciones de doble pila con direcciones IPv4 e IPv6 concurrentes asignadas a las mismas redes físicas son una configuración muy común. Opuntia permite este tipo de configuración pero no se pueden ejecutar múltiples protocolos en una sola interfaz de Opuntia; Opuntia por defecto incluye múltiples Interfaces para DHCP ascendente (*Wan*) y DHCPv6 (*Wan_6*). Estas interfaces permiten al operador configurar el protocolo DHCP y DHCPv6 en la misma interfaz física de Linux. Hay que tener cuidado para asegurarse de que se hace referencia a la misma interfaz física tanto en la interfaz *Wan* como en la *Wan_6* de Opuntia."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:709
 msgid ""
 "The DHCPv6 protocol has two main configuration options. The \"Request "
 "IPv6 address\" mode and the \"Request IPv6 Prefix length\"."
 msgstr ""
+"El protocolo DHCPv6 tiene dos opciones principales de configuración. El modo \"Solicitar dirección IPv6\" y \"Solicitar longitud de prefijo IPv6\"."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:711
 msgid ""
@@ -2585,6 +2779,7 @@ msgid ""
 " IPv6 address on the interface. The default option is *try* which as the "
 "name implies tries to allocate an IPv6 address. This recommended setting."
 msgstr ""
+"El modo \"Solicitar dirección IPv6\" establece si estamos intentando solicitar una dirección IPv6 en la interfaz. La opción predeterminada es *try* (intentar) que, como su nombre indica, intenta asignar una dirección IPv6. Esta configuración recomendada."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:714
 msgid ""
@@ -2593,12 +2788,14 @@ msgid ""
 "value is *auto* and available options are *auto, no, 0-64*. The *auto* "
 "setting will accept the prefix length that the upstream router provides."
 msgstr ""
+"La opción \"Solicitar longitud del prefijo IPv6\" especifica la longitud de la delegación de prefijos IPv6 solicitada al router ascendente. El valor predeterminado es *auto* y las opciones disponibles son *auto, no, 0-64*. La configuración *auto* aceptará la longitud del prefijo que el router ascendente proporcione."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:718
 msgid ""
 "The *auto* setting will not request automatically request enough IPv6 "
 "prefix space for your configuration."
 msgstr ""
+"La configuración *auto* no solicitará automáticamente suficiente espacio de prefijo IPv6 para su configuración."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:720
 msgid ""
@@ -2607,82 +2804,85 @@ msgid ""
 " Normally providers will not allow prefix delegation requests larger than"
 " a /56. Adjust the requested IPv6 Prefix length as needed."
 msgstr ""
+"Si necesita más espacio IPv6 del que su proveedor asigna al sistema por defecto, puede especificar manualmente la longitud del prefijo IPv6. Normalmente, los proveedores no permitirán solicitudes de delegación de prefijos mayores que un /56. Ajuste la longitud del prefijo IPv6 solicitado según sea necesario."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:735
 msgid ""
 "The DHCPv6 protocol has few required options for a standard configuraion."
 " Below is a common example configuraion."
 msgstr ""
+"El protocolo DHCPv6 tiene pocas opciones requeridas para una configuración estándar. A continuación se muestra un ejemplo de configuración común."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:747
 msgid ""
 "As you can see, minimal configuraion is necessary in most cases. Normally"
 " just reqaddress 'try' and the length of IPv6 prefix you need."
 msgstr ""
+"Como puede ver, en la mayoría de los casos solo es necesaria una configuración mínima. Normalmente sólo reqaddress 'try' y la longitud del prefijo IPv6 que se necesita."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:761
 msgid "Protocol 'dhcpv6'"
-msgstr ""
+msgstr "Protocolo 'dhcpv6'"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:763
 msgid "Hostname"
-msgstr ""
+msgstr "Hostname"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:765
 msgid "reqaddress"
-msgstr ""
+msgstr "reqaddress"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:765
 msgid "Mode"
-msgstr ""
+msgstr "Modo"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:765
 msgid "Request Mode (try, force, none)"
-msgstr ""
+msgstr "Modo de solicitud (intentar, forzar, ninguno)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:767
 msgid "reqprefix"
-msgstr ""
+msgstr "reqprefix"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:767
 msgid "IPv6 Prefix length"
-msgstr ""
+msgstr "Longitud del prefijo IPv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:767
 msgid "IPv6 Prefix length (auto, no, 0-64)"
-msgstr ""
+msgstr "Longitud del prefijo IPv6 (auto, no, 0-64)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:769
 msgid "IPv6 Prefix"
-msgstr ""
+msgstr "Prefijo IPv6"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:769
 msgid "User provided IPv6 for client delegation"
-msgstr ""
+msgstr "IPv6 proporcionado por el usuario para la delegación de cliente"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:771
 msgid "defaultroute"
-msgstr ""
+msgstr "defaultroute"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:771
 msgid "Boolean"
-msgstr ""
+msgstr "Booleano"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:771
 msgid "Default route (0 no, 1 yes, defaults to 1)"
-msgstr ""
+msgstr "Ruta predeterminada (0 no, 1 sí, por defecto 1)"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:773
 msgid "List of Ip addresses"
-msgstr ""
+msgstr "Lista de direcciones IP"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:773
 msgid "User provided Dns servers"
-msgstr ""
+msgstr "Servidores Dns proporcionados por el usuario"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:856
 msgid "Link Aggregation"
-msgstr ""
+msgstr "Agregación de enlaces"
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:876
 msgid ""
@@ -2690,6 +2890,7 @@ msgid ""
 "Kernel interface to be listed as an Opuntia interface. There are two "
 "major use-cases for this protocol."
 msgstr ""
+"*Unmanaged* (sin gestión) es un tipo de protocolo especial previsto para permitir que una interfaz del núcleo (Kernel) de Linux aparezca como una interfaz de Opuntia. Este protocolo tiene dos usos principales."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:879
 msgid ""
@@ -2698,6 +2899,7 @@ msgid ""
 "Kernel device in a Firewall zone that does not currently have any Opuntia"
 " protocol type."
 msgstr ""
+"En primer lugar, esto permite una interfaz para interactuar con la configuración :ref:`basado en zona de cortafuegos`. Esto puede ser útil si quiere incluir un dispositivo del Kernel Linux en una zona de cortafuegos que no tiene actualmente ningún tipo de protocolo Opuntia."
 
 #: ../../Opuntia-manual/configuration/wired-interfaces.rst:882
 msgid ""
@@ -2709,14 +2911,15 @@ msgid ""
 "connection and does not allow any traffic from that network to ever exit "
 "the *normal* Internet connection."
 msgstr ""
+"En segundo lugar, si se cuenta con una interfaz que configura con herramientas de Linux. Estos pueden permitir configuraciones más flexibles, pero todavía se necesita que Opuntia esté al tanto de la interfaz. Un ejemplo del mundo real es una configuración VPN que utiliza políticas de enrutamiento, tablas de enrutamiento del kernel e interfaces VLAN para proporcionar una red que se enruta por defecto a través de una conexión VPN y no permite que ningún tráfico de esa red salga nunca de la conexión *normal* de Internet."
 
 #: ../../Opuntia-manual/configuration/wireless.rst:3
 msgid "Wireless Interface Configuraion"
-msgstr ""
+msgstr "Configuración de la interfaz inalámbrica"
 
 #: ../../Opuntia-manual/configuration/wireless.rst:8
 msgid "Wireless Interfaces in Opuntia"
-msgstr ""
+msgstr "Interfaces inalámbricas en Opuntia"
 
 #: ../../Opuntia-manual/configuration/wireless.rst:10
 msgid ""
@@ -2724,62 +2927,65 @@ msgid ""
 "hardware platform you may have 802.11n, 802.11ac or 802.11ax interfaces. "
 "These interfaces can be configured in several different operating modes."
 msgstr ""
+"Opuntia cuenta con un amplio soporte para redes inalámbricas. Dependiendo de su plataforma de hardware puede tener interfaces 802.11n, 802.11ac u 802.11ax. Estas interfaces pueden configurarse en varios modos de funcionamiento."
 
 #: ../../Opuntia-manual/configuration/wireless.rst:14
 msgid "Access Point Configuraion"
-msgstr ""
+msgstr "Configuración del punto de acceso"
 
 #: ../../Opuntia-manual/introduction/about.rst:3
 msgid "Introduction"
-msgstr ""
+msgstr "Introducción"
 
 #: ../../Opuntia-manual/introduction/about.rst:8
 msgid "About Opuntia"
-msgstr ""
+msgstr "Acerca de Opuntia"
 
 #: ../../Opuntia-manual/introduction/about.rst:10
 msgid ""
 "Opuntia is high performance routing and edge computing platform based on "
 "OpenWrt. It includes support for these major features."
 msgstr ""
+"Opuntia es una plataforma de enrutamiento (routing) y computación de borde (edge computing) de alto desempeño basada en OpenWRT. Incluye soporte para las siguientes características principales."
 
 #: ../../Opuntia-manual/introduction/about.rst:13
 msgid "Support for IPv4/IPv6 connectivity"
-msgstr ""
+msgstr "Soporte para conectividad IPv4/IPv6"
 
 #: ../../Opuntia-manual/introduction/about.rst:14
 msgid "VPN client and server support for Ipsec, OpenVpn and Wireguard"
-msgstr ""
+msgstr "Soporte de cliente y servidor VPN para Ipsec, OpenVpn y Wireguard"
 
 #: ../../Opuntia-manual/introduction/about.rst:15
 msgid "Detailed usage statistics"
-msgstr ""
+msgstr "Estadísticas de uso detalladas"
 
 #: ../../Opuntia-manual/introduction/about.rst:16
 msgid ""
 "Free Range Routing (Dynamic routing support for BGP, Ospf, Eigrp and IS-"
 "IS)"
 msgstr ""
+"Enrutamiento de intervalo libre (soporte de enrutamiento dinámico para BGP, Ospf, Eigrp e IS-IS)"
 
 #: ../../Opuntia-manual/introduction/about.rst:17
 msgid "Automation via Ansible"
-msgstr ""
+msgstr "Automatización mediante Ansible"
 
 #: ../../Opuntia-manual/introduction/about.rst:18
 msgid "Local Docker containers"
-msgstr ""
+msgstr "Contenedores Docker locales"
 
 #: ../../Opuntia-manual/introduction/about.rst:19
 msgid "k3s (Light weight Kubernetes)"
-msgstr ""
+msgstr "k3s (Kubernetes ligero)"
 
 #: ../../Opuntia-manual/introduction/about.rst:21
 msgid "This provides a robust platform for many modern IT applications."
-msgstr ""
+msgstr "Esto proporciona una plataforma sólida para muchas aplicaciones informáticas modernas."
 
 #: ../../Opuntia-manual/introduction/about.rst:24
 msgid "Overview"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../Opuntia-manual/introduction/about.rst:26
 msgid ""
@@ -2787,18 +2993,19 @@ msgid ""
 "specific information on an Imagestream router please look the the correct"
 " quickstart guide."
 msgstr ""
+"Esta documentación es genérica para todas las plataformas de hardware de Opuntia. Para obtener información específica sobre un router Imagestream, consulte la guía de inicio rápido correspondiente."
 
 #: ../../Opuntia-manual/introduction/about.rst:29
 msgid ":doc:`../../ev1000/quickstart`"
-msgstr ""
+msgstr ":doc:`../../ev1000/quickstart`"
 
 #: ../../Opuntia-manual/introduction/about.rst:30
 msgid ":doc:`../../ap3500/quickstart`"
-msgstr ""
+msgstr ":doc:`../../ap3500/quickstart`"
 
 #: ../../Opuntia-manual/introduction/about.rst:31
 msgid ":doc:`../../rr1000/quickstart`"
-msgstr ""
+msgstr ":doc:`../../rr1000/quickstart`"
 
 #: ../../Opuntia-manual/introduction/about.rst:33
 msgid ""
@@ -2809,10 +3016,11 @@ msgid ""
 "they may lack the hardware requirements to run all configurations or "
 "services."
 msgstr ""
+"Dado que esta es una documentación genérica que describe todos los sistemas basados en Opuntia, puede encontrar diferencias en los nombres de las interfaces, las configuraciones predeterminadas u otros cambios de hardware/configuración dependiendo de su plataforma de hardware. Todas las plataformas comparten la lista de características de software, pero pueden carecer de los requisitos de hardware para ejecutar todas las configuraciones o servicios."
 
 #: ../../Opuntia-manual/introduction/about.rst:40
 msgid "Using this documentation"
-msgstr ""
+msgstr "Uso de esta documentación"
 
 #: ../../Opuntia-manual/introduction/about.rst:42
 msgid ""
@@ -2820,12 +3028,14 @@ msgid ""
 "through the web GUI menu system. In this document, we will use the "
 "following syntax to describe navigating through the GUI menu."
 msgstr ""
+"Muchas de las tareas descritas en esta documentación requieren navegar por el sistema de menús de la interfaz gráfica de usuario de la web. En este documento, utilizaremos la siguiente sintaxis para describir la navegación a través del menú de la GUI."
 
 #: ../../Opuntia-manual/introduction/about.rst:47
 msgid ""
 "This would describe clicking on the \"System\" button on the top GUI menu"
 " and selecting the Administration link from the drop-down menu."
 msgstr ""
+"Esto describirá que se debe hacer clic en el botón \"Sistema\" del menú superior de la interfaz gráfica de usuario (GUI) y seleccionar el enlace Administración en el menú desplegable."
 
 #: ../../Opuntia-manual/introduction/about.rst:50
 msgid ""
@@ -2838,6 +3048,7 @@ msgid ""
 "invalid configurations when directly editing the settings. We will "
 "provide examples of each method when relevant."
 msgstr ""
+"Cuando se utiliza la CLI suele haber dos métodos para cambiar los ajustes de configuración. El primer método es utilizar el comando \"uci\" para establecer los parámetros de configuración. Esta herramienta es adecuada para la automatización y el uso de scripts. El segundo método consiste en editar el archivo de configuración correcto situado en el directorio \"/etc/config/\". Este suele ser el método más conveniente para realizar cambios de configuración. Sin embargo, es posible introducir configuraciones no válidas al editar directamente los ajustes. Cuando sea pertinente, daremos ejemplos de cada método."
 
 #: ../../Opuntia-manual/introduction/about.rst:56
 msgid ""
@@ -2848,6 +3059,7 @@ msgid ""
 "configuration settings must be \"applied\" before they take place. Where "
 "possible this will be noted."
 msgstr ""
+"Algunas opciones de configuración de la línea de comandos y de la GUI web se aplican instantáneamente cuando se guarda la configuración. Un ejemplo de ello es la contraseña de root. Una vez introducida en la CLI o en la GUI web, la contraseña se cambia y no es necesario guardar nada más. Esto contrasta con la mayoría de los ajustes de configuración que deben ser \"aplicados\" antes de que tengan lugar. Siempre que sea posible, se tomará nota de ello."
 
 #: ../../Opuntia-manual/introduction/about.rst:61
 msgid ""
@@ -2856,6 +3068,7 @@ msgid ""
 "equivlent to clicking the \"Save & Apply\" in the Web GUI. Until this is "
 "done, these configue changes are not applied to the system."
 msgstr ""
+"Cuando se hacen cambios desde la CLI, si el cambio no se aplica instantáneamente; será necesario ejecutar el comando \"reload_config\". Esto equivale a hacer clic en el botón \"Guardar y Aplicar\" en la GUI web. Hasta que no se haga esto, estos cambios de configuración no se aplican al sistema."
 
 #: ../../Opuntia-manual/introduction/about.rst:65
 msgid ""
@@ -2864,14 +3077,15 @@ msgid ""
 "usful in some situations. To do this, click the small downwards facing "
 "triangle on the \"Save & Apply\" button and select the option."
 msgstr ""
+"Cuando se utiliza la GUI Web es posible \"Guardar y Aplicar\" la configuración mientras se omiten las comprobaciones de configuración normales. Esto puede ser útil en algunas situaciones. Para ello, haga clic en el pequeño triángulo orientado hacia abajo en el botón \"Guardar y aplicar\" y seleccione la opción."
 
 #: ../../Opuntia-manual/introduction/accessing.rst:3
 msgid "Accessing Opuntia"
-msgstr ""
+msgstr "Acceso a Opuntia"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:10
 msgid "Connectivity"
-msgstr ""
+msgstr "Conectividad"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:12
 msgid ""
@@ -2881,10 +3095,11 @@ msgid ""
 "the platform that your Opuntia system is currently using. Please "
 "reference the Quickstart guide for your specific device information."
 msgstr ""
+"Opuntia puede funcionar en una amplia variedad de sistemas, desde AP inalámbricos, enrutadores (router) pequeños, grandes sistemas y máquinas virtuales. Esta amplia variedad de equipos requiere que los métodos de acceso específicos van a depender de la plataforma que su sistema Opuntia está utilizando actualmente. Consulte la guía de inicio rápido para obtener información específica sobre su dispositivo."
 
 #: ../../Opuntia-manual/introduction/accessing.rst:19
 msgid "Access via Web GUI"
-msgstr ""
+msgstr "Acceso vía GUI web"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:21
 msgid ""
@@ -2895,6 +3110,7 @@ msgid ""
 "perfer. Please see the following section for restricting access to the "
 ":ref:`Hardening-Web-GUI`."
 msgstr ""
+"La forma más fácil de acceder a Opuntia es a través de la interfaz gráfica de usuario de la web (GUI Web). Puede acceder a la GUI Web utilizando cualquier dirección IPv4 o IPv6 asignada al sistema Opuntia. La interfaz *Wan* y cualquiera *Lan* permitirán el acceso a la GUI Web. Esto podría ser un acceso más permisivo de lo que algunos administradores prefieren. Consulte la siguiente sección para restringir el acceso a la :ref:`Refuerzo-GUI Web`."
 
 #: ../../Opuntia-manual/introduction/accessing.rst:25
 msgid ""
@@ -2903,6 +3119,7 @@ msgid ""
 "2605:6:62:ba40::1 then you would use this url "
 "\"https://[2605:6:62:ba40::1]/\"."
 msgstr ""
+"Para acceder a la GUI Web a través de IPv6 es necesario utilizar la sintaxis \"https://[dirección IPv6]/\". Por ejemplo, si su dirección IP de gestión IPv6 fuera 2605:6:62:ba40::1, utilizaría esta url \"https://[2605:6:62:ba40::1]/\"."
 
 #: ../../Opuntia-manual/introduction/accessing.rst:28
 msgid ""
@@ -2912,10 +3129,11 @@ msgid ""
 " currently unable to include a updated valid certificate for every "
 "device. ImageStream is currently working to resolve this issue."
 msgstr ""
+"Opuntia se entrega por defecto con un certificado SSL auto-firmado. Esto probablemente causará un error de seguridad al acceder a la GUI web. Debido a que no se puede asumir que los dispositivos de Opuntia tengan siempre acceso a Internet, por el momento no podemos incluir un certificado válido actualizado para cada dispositivo. ImageStream está trabajando actualmente para resolver este problema."
 
 #: ../../Opuntia-manual/introduction/accessing.rst:33
 msgid "Access via SSH"
-msgstr ""
+msgstr "Acceso vía SSH"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:35
 msgid ""
@@ -2925,16 +3143,18 @@ msgid ""
 "be the perfered configuration from a security standpoint. Please see the "
 ":ref:`Hardening-SSH-Access` chapter if this default is not acceptable."
 msgstr ""
+"Opuntia es compatible con el acceso ssh a la línea de comandos de Linux ( ash shell ). Opuntia, por defecto, permite el acceso SSH en todas las direcciones IPv4/IPv6 configuradas de manera local. Esto permite un fácil acceso a los administradores del sistema, pero puede no ser la configuración más adecuada desde el punto de vista de la seguridad. Le sugerimos que consulte el capítulo :ref:`Refuerzo Acceso SSH` si este valor por defecto no es aceptable."
 
 #: ../../Opuntia-manual/introduction/accessing.rst:39
 msgid ""
 "In all cases recommend adding ssh keys for normal operation. See this "
 "chapter for more details :ref:`Adding-SSH-Keys`."
 msgstr ""
+"En todos los casos se recomienda añadir claves ssh para un funcionamiento normal. Consulte este capítulo para más detalles :ref:`Añadiendo claves SSH`."
 
 #: ../../Opuntia-manual/introduction/accessing.rst:44
 msgid "Access via Serial Console"
-msgstr ""
+msgstr "Acceso vía consola serie"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:46
 msgid ""
@@ -2944,6 +3164,7 @@ msgid ""
 "may need a null Serial connection. Please check with your Quickstart "
 "guide to see if this is the case."
 msgstr ""
+"Para las plataformas de hardware que incluyen una consola serie; puede conectarse a la consola Local utilizando la conexión serie. Suele funcionar a una velocidad de 115,2kbps con 8n1. Dependiendo de la plataforma de hardware, es posible que necesite una conexión serie nula. Consulte su guía de inicio rápido para ver si este es el caso."
 
 #: ../../Opuntia-manual/introduction/accessing.rst:50
 msgid ""
@@ -2952,6 +3173,7 @@ msgid ""
 "seeing output but not being able to send keystrokes). Take care you a "
 "using the correct cable for your hardware platform."
 msgstr ""
+"Un problema común con las conexiones serie son los cables y la falta de terminales conectados; esto puede causar que la conexión falle de manera inesperada (por ejemplo ver la salida pero no poder enviar pulsaciones). Tenga cuidado de utilizar el cable correcto para su plataforma de hardware."
 
 #: ../../Opuntia-manual/introduction/accessing.rst:52
 msgid ""
@@ -2959,153 +3181,155 @@ msgid ""
 "platform. If your hardware platform supports an RJ-45 Serial connection, "
 "the pin-out will be as follows."
 msgstr ""
+"La combinación específica de conector y cable dependerá de la plataforma de hardware. Si su plataforma de hardware admite una conexión serie RJ-45, la distribución de terminales será la siguiente."
 
 #: ../../Opuntia-manual/introduction/accessing.rst:55
 msgid "RJ-45 to DE-9 Pinout Table"
-msgstr ""
+msgstr "Tabla de terminales RJ-45 a DE-9"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:58
 msgid "RJ-45 Cable Pin"
-msgstr ""
+msgstr "Terminal del Cable RJ-45"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:58
 msgid "Color"
-msgstr ""
+msgstr "Color"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:58
 msgid "RJ-45 Definition"
-msgstr ""
+msgstr "Definición de RJ-45"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:58
 msgid "DE-9 Pin"
-msgstr ""
+msgstr "Terminal DE-9"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:58
 msgid "DE-9 Definition"
-msgstr ""
+msgstr "Definición de DE-9"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:60
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:60
 msgid "Brown"
-msgstr ""
+msgstr "Marrón"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:60
 #: ../../Opuntia-manual/introduction/accessing.rst:74
 msgid "CTS"
-msgstr ""
+msgstr "CTS"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:60
 #: ../../Opuntia-manual/introduction/accessing.rst:74
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:60
 #: ../../Opuntia-manual/introduction/accessing.rst:74
 msgid "RTS"
-msgstr ""
+msgstr "RTS"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:62
 #: ../../Opuntia-manual/introduction/accessing.rst:64
 #: ../../Opuntia-manual/introduction/accessing.rst:70
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:62
 msgid "Purple"
-msgstr ""
+msgstr "Púrpura"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:62
 #: ../../Opuntia-manual/introduction/accessing.rst:72
 msgid "DSR"
-msgstr ""
+msgstr "DSR"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:62
 #: ../../Opuntia-manual/introduction/accessing.rst:70
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:64
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:64
 msgid "Yellow"
-msgstr ""
+msgstr "Amarillo"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:64
 #: ../../Opuntia-manual/introduction/accessing.rst:70
 msgid "RXD"
-msgstr ""
+msgstr "RXD"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:64
 #: ../../Opuntia-manual/introduction/accessing.rst:70
 msgid "TXD"
-msgstr ""
+msgstr "TXD"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:66
 #: ../../Opuntia-manual/introduction/accessing.rst:72
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:66
 msgid "Red"
-msgstr ""
+msgstr "Rojo"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:66
 #: ../../Opuntia-manual/introduction/accessing.rst:68
 msgid "GND"
-msgstr ""
+msgstr "GND"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:66
 #: ../../Opuntia-manual/introduction/accessing.rst:68
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:68
 msgid "Black"
-msgstr ""
+msgstr "Negro"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:70
 msgid "Orange"
-msgstr ""
+msgstr "Naranja"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:72
 #: ../../Opuntia-manual/introduction/accessing.rst:74
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:72
 msgid "Blue"
-msgstr ""
+msgstr "Azul"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:72
 msgid "DTR"
-msgstr ""
+msgstr "DTR"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:74
 msgid "Green"
-msgstr ""
+msgstr "Verde"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:76
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:76
 msgid "No Connect"
-msgstr ""
+msgstr "Sin conexión"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:76
 msgid "1, 9"
-msgstr ""
+msgstr "1, 9"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:79
 msgid ""
 "Once you have a Serial connection established, you can press any key to "
 "activate the Serial console."
 msgstr ""
+"Una vez establecida la conexión serie, puede pulsar cualquier tecla para activar la consola serie."
 
 #: ../../Opuntia-manual/introduction/accessing.rst:81
 msgid ""
@@ -3117,10 +3341,11 @@ msgid ""
 "console please see the :ref:`Hardening-Local-Console` chapter for more "
 "information."
 msgstr ""
+"Por defecto la consola Serial no tiene seguridad. La seguridad es proporcionada por el requisito de que el acceso a la consola Serie requiere la localización física del sistema Opuntia. Esto no siempre puede ser cierto; por ejemplo, si usted está accediendo a la consola serie usando un sistema remoto. En este caso es altamente recomendable que requiera el ingreso de una contraseña en la consola serie; consulte el capítulo :ref:`Refuerzo consola local` para más información."
 
 #: ../../Opuntia-manual/introduction/accessing.rst:89
 msgid "Access via Local Console"
-msgstr ""
+msgstr "Acceso vía consola local"
 
 #: ../../Opuntia-manual/introduction/accessing.rst:91
 msgid ""
@@ -3129,6 +3354,7 @@ msgid ""
 " and then press any key on the keyboard. This will spawn a new ash CLI "
 "shell."
 msgstr ""
+"Para las plataformas de hardware que admiten conexiones USB y de vídeo. El acceso a la CLI es muy sencillo. Basta con conectar un teclado y un monitor al sistema y pulsar cualquier tecla del teclado. Esto generará una consola ash CLI nueva."
 
 #: ../../Opuntia-manual/introduction/accessing.rst:94
 msgid ""
@@ -3140,10 +3366,11 @@ msgid ""
 "please see the :ref:`Hardening-Local-Console` chapter for more "
 "information."
 msgstr ""
+"Por defecto, la consola local no tiene seguridad. La seguridad es proporcionada por el requisito de que el acceso a la consola local requiere la localización física del sistema Opuntia. Esto no siempre puede ser cierto; por ejemplo, si usted está accediendo a la consola local usando un sistema remoto. En este caso es altamente recomendable que requiera el ingreso de una contraseña en la consola local; consulte el capítulo :ref:`Refuerzo consola local` para más información."
 
 #: ../../Opuntia-manual/security/hardening.rst:3
 msgid "Security Hardening"
-msgstr ""
+msgstr "Refuerzo de la seguridad"
 
 #: ../../Opuntia-manual/security/hardening.rst:7
 msgid ""
@@ -3155,16 +3382,18 @@ msgid ""
 "administrators should consider limiting access in higher security "
 "configurations."
 msgstr ""
+"Este capítulo cubre los procedimientos para refuerzo de la seguridad de los sistemas Opuntia. Por defecto, Opuntia está configurado para permitir un fácil acceso al sistema para su administración. Pero estos ajustes se eligieron para favorecer el acceso por encima de las preocupaciones de seguridad. Opuntia no tiene una configuración insegura; no obstante despliega avisos de inicio de sesión en varias situaciones en las que los administradores deberían considerar limitar el acceso a configuraciones de mayor seguridad."
 
 #: ../../Opuntia-manual/security/hardening.rst:12
 msgid ""
 "When possible, administrators should consider sperating the control plane"
 " of your network from the data plane."
 msgstr ""
+"Cuando sea posible, los administradores deben considerar la posibilidad de separar el plano de control de su red del plano de datos."
 
 #: ../../Opuntia-manual/security/hardening.rst:17
 msgid "Hardening Web GUI"
-msgstr ""
+msgstr "Refuerzo de la GUI de la web"
 
 #: ../../Opuntia-manual/security/hardening.rst:19
 msgid ""
@@ -3173,10 +3402,11 @@ msgid ""
 "default *Wan* Firewall zone. Please see the :ref:`Firewall-Limiting-"
 "External-access` chapter for more information."
 msgstr ""
+"Por defecto, Opuntia permite el acceso a la GUI Web en CUALQUIER dirección de interfaz IPv4/IPv6. Recomendamos excluir el acceso a la GUI Web a la zona del cortafuegos *Wan* predeterminada. Consulte el capítulo :ref:`Cortafuegos-Limitación de acceso externo` para obtener más información."
 
 #: ../../Opuntia-manual/security/hardening.rst:25
 msgid "Hardening SSH Access"
-msgstr ""
+msgstr "Refuerzo del acceso SSH"
 
 #: ../../Opuntia-manual/security/hardening.rst:27
 msgid ""
@@ -3185,14 +3415,15 @@ msgid ""
 "*Wan* Firewall zone. Please see the :ref:`Firewall-Limiting-External-"
 "access` chapter for more information."
 msgstr ""
+"Por defecto, Opuntia responderá a los intentos de conexión Ssh a cualquier dirección IPv4/IPv6 vinculada. Recomendamos excluir el acceso a Ssh de la zona del cortafuegos *Wan* predeterminada. Consulte el capítulo :ref:`Cortafuegos-Limitación de acceso externo` para obtener más información."
 
 #: ../../Opuntia-manual/security/hardening.rst:33
 msgid "Hardening Serial / Local Console"
-msgstr ""
+msgstr "Refuerzo de la Consola Serie / Local"
 
 #: ../../Opuntia-manual/security/hardening.rst:35
 msgid "This requires Opuntia version 4.8.16 r49304 or newer."
-msgstr ""
+msgstr "Esto requiere la versión 4.8.16 r49304 o más reciente de Opuntia."
 
 #: ../../Opuntia-manual/security/hardening.rst:37
 msgid ""
@@ -3202,14 +3433,15 @@ msgid ""
 "Machines running Opuntia often do have remote methods to access the Local"
 " console. So this is an important security concern."
 msgstr ""
+"Por defecto, Opuntia no requiere una contraseña cuando se accede al sistema desde una consola Serie o Local. Dado que esto requiere el acceso físico a las plataformas de hardware, generalmente se considera seguro. Sin embargo, las máquinas virtuales que ejecutan Opuntia suelen tener métodos remotos para acceder a la consola local. Por lo que esto resulta en una importante preocupación de seguridad."
 
 #: ../../Opuntia-manual/security/hardening.rst:41
 msgid ""
 "To require a password for Serial / Local Console logins use the following"
 " prodcure."
 msgstr ""
+"Para solicitar una contraseña para los inicios de sesión de la Consola Serial / Local utilice el siguiente procedimiento."
 
 #: ../../Opuntia-manual/security/hardening.rst:43
 msgid "To make these adjustments use the following commands from the CLI ::"
-msgstr ""
-
+msgstr "Para realizar estos ajustes utilice los siguientes comandos de la CLI ::"

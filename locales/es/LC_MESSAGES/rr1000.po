@@ -19,61 +19,64 @@ msgstr ""
 
 #: ../../rr1000/hardware.rst:3
 msgid "RR1000 Hardware details"
-msgstr ""
+msgstr "Información del hardware del RR1000"
 
 #: ../../rr1000/hardware.rst:5
 msgid ""
 "The RR1000 a router, vpn server, security device and edge compute "
 "platform depending on software and hardware configurations."
 msgstr ""
+"El RR1000 es un router, un servidor vpn, un dispositivo de seguridad y una plataforma de computación de borde (edge), dependiendo de las configuraciones de software y hardware."
 
 #: ../../rr1000/hardware.rst:8
 msgid "The router has six Ethernet Interfaces."
-msgstr ""
+msgstr "El router tiene seis interfaces Ethernet."
 
 #: ../../rr1000/quickstart.rst:3
 msgid "Rebel Router QuickStart Guide"
-msgstr ""
+msgstr "Guía de inicio rápido del router Rebel"
 
 #: ../../rr1000/quickstart.rst:5
 msgid ""
 "The Rebel Router (RR1000) is configured by default to allow access via "
 "several different methods."
 msgstr ""
+"El router Rebel (RR1000) está configurado por defecto para permitir el acceso a través de varios métodos diferentes."
 
 #: ../../rr1000/quickstart.rst:7 ../../rr1000/quickstart.rst:19
 msgid "Access via Ethernet using SSH"
-msgstr ""
+msgstr "Acceso vía Ethernet mediante SSH"
 
 #: ../../rr1000/quickstart.rst:8 ../../rr1000/quickstart.rst:18
 msgid "Access via Ethernet using the Web Interface"
-msgstr ""
+msgstr "Acceso vía Ethernet mediante la interfaz web"
 
 #: ../../rr1000/quickstart.rst:9
 msgid "Access using the built-in console port"
-msgstr ""
+msgstr "Acceso mediante el puerto de consola integrado"
 
 #: ../../rr1000/quickstart.rst:12
 msgid "Table of Contents"
-msgstr ""
+msgstr "Índice"
 
 #: ../../rr1000/quickstart.rst:14
 msgid "The documentation for the RR1000 is still a work in progress."
-msgstr ""
+msgstr "La documentación del RR1000 sigue siendo un trabajo en curso."
 
 #: ../../rr1000/quickstart.rst:16
 msgid ""
 "The RR1000 is configured by default to allow access via several different"
 " methods."
 msgstr ""
+"El RR1000 está configurado por defecto para permitir el acceso a través de varios métodos diferentes."
 
 #: ../../rr1000/quickstart.rst:20
 msgid "Access via the Serial Interface"
-msgstr ""
+msgstr "Acceso vía interfaz serie"
 
 #: ../../rr1000/quickstart.rst:23
 msgid "Ethernet Connectivity"
-msgstr ""
+msgstr "Conectividad Ethernet"
 
 #: ../../rr1000/quickstart.rst:25
 msgid ""
@@ -81,10 +84,11 @@ msgid ""
 "interface can be connected directly to a client device or an Ethernet "
 "switch with a standard Ethernet cable."
 msgstr ""
+"La interfaz Ethernet del RR1000 es compatible con auto-mdi/mdix, por lo que la interfaz puede conectarse directamente a un dispositivo cliente o a un conmutador Ethernet con un cable Ethernet estándar."
 
 #: ../../rr1000/quickstart.rst:28
 msgid "**IPv4**"
-msgstr ""
+msgstr "**IPv4**"
 
 #: ../../rr1000/quickstart.rst:30
 msgid ""
@@ -94,6 +98,7 @@ msgid ""
 " client. It will receive an ip address from any existing DHCP servers "
 "that are present on the network connected to the Ethernet interface."
 msgstr ""
+"El RR1000 tiene una sola interfaz Ethernet. La configuración por defecto del RR1000 es la de puentear la interfaz Ethernet con la radio inalámbrica. Debido a esta configuración por defecto, el RR1000 actúa por defecto como cliente DHCP. Recibirá una dirección ip de cualquier servidor DHCP existente que se encuentre presente en la red conectada a la interfaz Ethernet."
 
 #: ../../rr1000/quickstart.rst:34
 msgid ""
@@ -102,16 +107,18 @@ msgid ""
 "Ethernet interface. In this failback mode the RR1000 will then be "
 "accessable using this self-assigned address."
 msgstr ""
+"Si el RR1000 no consigue obtener una concesión DHCP en los primeros 60 segundos, el RR1000 cambiará de modo y asignará 10.10.199.1/24 a la interfaz Ethernet. En este modo de emergencia, el RR1000 será accesible utilizando esta dirección autoasignada."
 
 #: ../../rr1000/quickstart.rst:37
 msgid ""
 "Once you have determined the correct IPv4 address you can then move to "
 "accessing the RR1000 via the Web GUI or via SSH."
 msgstr ""
+"Una vez que usted haya determinado la dirección IPv4 correcta, puede seguir para acceder al RR1000 a través de la GUI Web o vía SSH."
 
 #: ../../rr1000/quickstart.rst:39
 msgid "**IPv6**"
-msgstr ""
+msgstr "**IPv6**"
 
 #: ../../rr1000/quickstart.rst:41
 msgid ""
@@ -119,6 +126,7 @@ msgid ""
 "Address Autoconfiguration) if these methods are present on the connected "
 "network."
 msgstr ""
+"El RR1000 obtendrá una dirección IPv6 utilizando DHCPv6 o SLAAC (Configuración automática de direcciones sin estado) si estos métodos están presentes en la red conectada."
 
 #: ../../rr1000/quickstart.rst:44
 msgid ""
@@ -131,6 +139,7 @@ msgid ""
 "to send a ping packet to the IPv6 \"all routers\" multicast "
 "address(ff02::2)."
 msgstr ""
+"El RR1000 siempre configurará una dirección de enlace local IPv6 basada en la dirección MAC ([1]_) del RR1000. Esta dirección de enlace local IPv6 está presente en todo momento, incluso si otras configuraciones IPv4 e IPv6 no son válidas. Por lo tanto, la dirección de enlace local es la forma más fiable de acceder al RR1000. Dado que esta dirección se basa en la dirección MAC de la interfaz Ethernet, es única para cada RR1000. Un método sencillo para determinar esta dirección es enviar un paquete ping a la dirección multicast IPv6 "de todos los router" (ff02::2)."
 
 #: ../../rr1000/quickstart.rst:49
 msgid ""
@@ -140,6 +149,7 @@ msgid ""
 "using Link Local addresses. For example Linux systems would use the "
 "following syntax if your interface was \"eth0\"::"
 msgstr ""
+"Para los sistemas Linux esto se puede hacer mediante el siguiente comando asumiendo que su interfaz Ethernet es \"eth0\". Tenga en cuenta que la mayoría de los sistemas operativos requieren que se especifique la interfaz además de la dirección cuando se utilizan direcciones de enlace local. Por ejemplo, los sistemas Linux utilizarían la siguiente sintaxis si su interfaz fuera \"eth0\"::"
 
 #: ../../rr1000/quickstart.rst:55
 msgid ""
@@ -148,16 +158,18 @@ msgid ""
 "Link local address([2]_) using the MAC address located on the product "
 "label."
 msgstr ""
+"Además, es posible calcular la dirección de enlace local utilizando la dirección MAC. Se pueden utilizar varias calculadoras en línea para encontrar fácilmente la dirección de enlace local ([2]_) por medio de la dirección MAC que se encuentra en la etiqueta del producto."
 
 #: ../../rr1000/quickstart.rst:58
 msgid ""
 "Once you have determined the correct IPv6 address you can then move to "
 "accessing the RR1000 via the Web GUI or via SSH."
 msgstr ""
+"Una vez que usted haya determinado la dirección IPv6 correcta, puede seguir para acceder al RR1000 a través de la GUI Web o vía SSH."
 
 #: ../../rr1000/quickstart.rst:61
 msgid "Serial Connectivity"
-msgstr ""
+msgstr "Conectividad en serie"
 
 #: ../../rr1000/quickstart.rst:63
 msgid ""
@@ -167,6 +179,7 @@ msgid ""
 "using 8 data bits; no parity bit and 1 stop bit; or commonly known as "
 "\"115.2kbps 8n1\"."
 msgstr ""
+"El RR1000 dispone de un conector DE-9([3]_) que utiliza el estándar serie Rs232. Necesitará una conexión **Serie nula** para conectarse a esta interfaz. La interfaz funcionará a una tasa de baudios de 115,200 bps y utilizará 8 bits de datos; sin bit de paridad y 1 bit de parada; o comúnmente conocido como \"115.2kbps 8n1\"."
 
 #: ../../rr1000/quickstart.rst:67
 msgid ""
@@ -174,26 +187,29 @@ msgid ""
 "issues with incorrect cables. As noted above, a **Null Serial** cable is "
 "required."
 msgstr ""
+"La causa más probable de los problemas al utilizar la interfaz serie son los problemas con los cables incorrectos. Como se ha indicado anteriormente, se necesita un cable **Serie Nulo**."
 
 #: ../../rr1000/quickstart.rst:71
 msgid "Web GUI Access"
-msgstr ""
+msgstr "Acceso a la interfaz gráfica de usuario (GUI) en la web"
 
 #: ../../rr1000/quickstart.rst:73
 msgid "**Access via Ethernet using the Web Interface - IPv4**"
-msgstr ""
+msgstr "** Acceso vía Ethernet mediante la interfaz web - IPv4**"
 
 #: ../../rr1000/quickstart.rst:75
 msgid ""
 "This interface defaults to a network address range of 10.10.199.0/24 with"
 " the router configured as 10.10.199.1 and supports DHCP client access."
 msgstr ""
+"Esta interfaz tiene por defecto un intervalo de direcciones de red de 10.10.199.0/24 con el router configurado como 10.10.199.1 y es compatible con el acceso de cliente DHCP."
 
 #: ../../rr1000/quickstart.rst:78
 msgid ""
 "When the RR1000 is using the failback IPv4 address access the login page "
 "use the following url: `https://10.10.199.1/ <https://10.10.199.1>`_"
 msgstr ""
+"Cuando el RR1000 está utilizando la dirección IPv4 de emergencia acceder a la página de inicio de sesión en la siguiente url: `https://10.10.199.1/ <https://10.10.199.1>`_"
 
 #: ../../rr1000/quickstart.rst:80 ../../rr1000/quickstart.rst:99
 msgid ""
@@ -201,22 +217,25 @@ msgid ""
 "warning in when connecting to the RR1000 for the first time. These "
 "warnings can be safely ignored for accessing the management Web GUI."
 msgstr ""
+"El RR1000 se entrega con un certificado ssl auto-firmado. Esto puede causar una advertencia al conectarse al RR1000 por primera vez. Estas advertencias pueden ignorarse de manera segura para acceder a la GUI de la web de gestión."
 
 #: ../../rr1000/quickstart.rst:83 ../../rr1000/quickstart.rst:111
 msgid ""
 "The admin username is \"**root**\".  The default password is "
 "\"**imagestream**\"."
 msgstr ""
+"El nombre de usuario del administrador es "**root**".  La contraseña por defecto es "**imagestream**"."
 
 #: ../../rr1000/quickstart.rst:86
 msgid ""
 "We strongly recommend that you change the default password as your first "
 "configuration change."
 msgstr ""
+"Le recomendamos encarecidamente que cambie la contraseña predeterminada como primer cambio en la configuración."
 
 #: ../../rr1000/quickstart.rst:92
 msgid "**Access via Ethernet using the Web Interface - IPv6**"
-msgstr ""
+msgstr "** Acceso vía Ethernet mediante la interfaz web - IPv6**"
 
 #: ../../rr1000/quickstart.rst:94
 msgid ""
@@ -225,14 +244,15 @@ msgid ""
 "syntax. If we assume that you determined your Ipv6 Link Local address is "
 "\"fe80::b291:37ff:fe05:1\" then the correct url would be as follows::"
 msgstr ""
+"Para acceder a la GUI Web utilizando IPv6 el método es similar al de utilizar IPv4. Para introducir una dirección IPv6 en un navegador web utilice la siguiente sintaxis. Si asumimos que usted determinó que su dirección de enlace local Ipv6 es \"fe80::b291:37ff:fe05:1\" entonces la url correcta sería la siguiente::"
 
 #: ../../rr1000/quickstart.rst:103
 msgid "CLI Access via SSH"
-msgstr ""
+msgstr "Acceso CLI vía SSH"
 
 #: ../../rr1000/quickstart.rst:105
 msgid "**IPv4 & IPv6**"
-msgstr ""
+msgstr "**IPv4 e IPv6**"
 
 #: ../../rr1000/quickstart.rst:107
 msgid ""
@@ -242,10 +262,11 @@ msgid ""
 " need to determine which address was a assigned by looking at your DHCP "
 "sever. In the following screenshot the address was assigned via DHCP."
 msgstr ""
+"El RR1000 también se puede acceder vía SSH. Usando la dirección ip del RR1000 conéctese como usuario root. Si el RR1000 está en modo IPv4 de emergencia (failback) la dirección ip será 10.10.199.1. Si el RR1000 está usando DHCP o DHCPv6 necesita determinar qué dirección fue asignada revisando su servidor DHCP. En la siguiente captura de pantalla la dirección fue asignada vía DHCP."
 
 #: ../../rr1000/quickstart.rst:117
 msgid "CLI Access via the Serial Interface"
-msgstr ""
+msgstr "Acceso CLI vía interfaz serie"
 
 #: ../../rr1000/quickstart.rst:119
 msgid ""
@@ -254,20 +275,20 @@ msgid ""
 " of Opuntia version 4.8.16). Just connect using this interface (for "
 "details see above) and press the \"enter\" key."
 msgstr ""
+"El RR1000 cuenta con una interfaz DE-9 Rs232 integrada. Cuando se conecta vía Interfaz Serie; para acceder a la CLI no se requiere actualmente ninguna contraseña (a partir de la versión 4.8.16 de Opuntia). Sólo tiene que conectarse mediante esta interfaz (para más información, véase más arriba) y pulsar la tecla \"enter\"."
 
 #: ../../rr1000/quickstart.rst:124
 msgid "Footnotes"
-msgstr ""
+msgstr "Notas a pie de página"
 
 #: ../../rr1000/quickstart.rst:125
 msgid "Using the RFC4862 standard for Link Local address creation"
-msgstr ""
+msgstr "Uso del estándar RFC4862 para la creación de direcciones de enlace local"
 
 #: ../../rr1000/quickstart.rst:126
 msgid "https://ben.akrin.com/?p=1347 Ipv6 Link Local Calculator"
-msgstr ""
+msgstr "https://ben.akrin.com/?p=1347 Calculador de enlace local Ipv6"
 
 #: ../../rr1000/quickstart.rst:127
 msgid "The DE-9 connector is often incorrectly known as an DB-9 interface."
-msgstr ""
-
+msgstr "El conector DE-9 suele conocerse incorrectamente como interfaz DB-9."

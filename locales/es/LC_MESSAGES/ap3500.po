@@ -19,15 +19,15 @@ msgstr ""
 
 #: ../../ap3500/hardware.rst:3
 msgid "AP3500 Hardware details"
-msgstr ""
+msgstr "Información del hardware del AP3500"
 
 #: ../../ap3500/hardware.rst:5 ../../ap3500/quickstart.rst:5
 msgid "Table of Contents"
-msgstr ""
+msgstr "Índice"
 
 #: ../../ap3500/hardware.rst:8
 msgid "Hardware Description"
-msgstr ""
+msgstr "Descripción del hardware"
 
 #: ../../ap3500/hardware.rst:10
 msgid ""
@@ -37,30 +37,31 @@ msgid ""
 "differing Gain, beam widths and mounting options for differing "
 "deplyoments."
 msgstr ""
+"El AP3500 es un punto de acceso alámbrico para exteriores diseñado para utilizarse en aplicaciones Punto a Punto o Punto a Multipunto. El AP3500 está diseñado para acoplarse a diferentes unidades externas de antena. Estos cuentan con Ganancias, ángulo de radiación y opciones de montaje diferentes para implementaciones diversas."
 
 #: ../../ap3500/hardware.rst:14
 msgid "90° beam width sector anntena with 9.6dBi Gain"
-msgstr ""
+msgstr "Antena sectorial con ángulo de radiación de 90° con ganancia de 9.6dBi"
 
 #: ../../ap3500/hardware.rst:15
 msgid "60° beam width sector anntena with 13.2dBi Gain"
-msgstr ""
+msgstr "Antena sectorial con ángulo de radiación de 60° con ganancia de 13.2dBi"
 
 #: ../../ap3500/hardware.rst:16
 msgid "30° beam width sector anntena with 18.4dBi Gain"
-msgstr ""
+msgstr "Antena sectorial con ángulo de radiación de 30° con ganancia de 18.4dBi"
 
 #: ../../ap3500/hardware.rst:17
 msgid "Point to Point dish anntena with 24.5dBi Gain"
-msgstr ""
+msgstr "Antena parabólica punto a punto con ganancia de 24.5dBi"
 
 #: ../../ap3500/hardware.rst:18
 msgid "Point to Point dish anntena with 27.5dBi Gain"
-msgstr ""
+msgstr "Antena parabólica punto a punto con ganancia de 27.5dBi"
 
 #: ../../ap3500/hardware.rst:20
 msgid "**Block Diagram**"
-msgstr ""
+msgstr "**Diagrama de bloques**"
 
 #: ../../ap3500/hardware.rst:22
 msgid ""
@@ -70,48 +71,50 @@ msgid ""
 "CPU features a network accelerator that supports 2Gbps of IPv4/6 routing,"
 " NAT and NAPT+HQoS."
 msgstr ""
+"El AP3500 cuenta con un procesador de doble núcleo a 880Mhz, 32 bits.Mips1004kc. Está conectado a una memoria DDR2 de 256 MB, 16 MB de memoria flash NAND, cuenta con una interfaz Ethernet de 1 Gbit/s simple y una interfaz de radio inalámbrica. La CPU cuenta con un acelerador de red que soporta 2Gbps de routing IPv4/6, NAT y NAPT+HQoS."
 
 #: ../../ap3500/hardware.rst:30
 msgid "The system is powered by Ethernet PoE using the IEEE 802.3af standard."
-msgstr ""
+msgstr "El sistema se alimenta mediante Ethernet PoE utilizando el estándar IEEE 802.3af."
 
 #: ../../ap3500/hardware.rst:33
 msgid "Visual Guide"
-msgstr ""
+msgstr "Guía visual"
 
 #: ../../ap3500/hardware.rst:35
 msgid "**Front View**"
-msgstr ""
+msgstr "**Vista frontal**"
 
 #: ../../ap3500/hardware.rst:41
 msgid "**Side View**"
-msgstr ""
+msgstr "**Vista lateral**"
 
 #: ../../ap3500/hardware.rst:47
 msgid "**Port View**"
-msgstr ""
+msgstr "**Vista del puerto**"
 
 #: ../../ap3500/quickstart.rst:3
 msgid "AP3500 QuickStart Guide"
-msgstr ""
+msgstr "Guía de inicio rápido del AP3500"
 
 #: ../../ap3500/quickstart.rst:7
 msgid ""
 "The AP3500 is configured by default to allow access via several different"
 " methods."
 msgstr ""
+"El AP3500 está configurado por defecto para permitir el acceso a través de varios métodos diferentes."
 
 #: ../../ap3500/quickstart.rst:9
 msgid "Access via Ethernet using the Web Interface"
-msgstr ""
+msgstr "Acceso vía Ethernet mediante la interfaz web"
 
 #: ../../ap3500/quickstart.rst:10
 msgid "Access via Ethernet using SSH"
-msgstr ""
+msgstr "Acceso vía Ethernet mediante SSH"
 
 #: ../../ap3500/quickstart.rst:13
 msgid "Ethernet Connectivity"
-msgstr ""
+msgstr "Conectividad Ethernet"
 
 #: ../../ap3500/quickstart.rst:15
 msgid ""
@@ -119,10 +122,11 @@ msgid ""
 "interface can be connected directly to a client device or an Ethernet "
 "switch with a standard Ethernet cable."
 msgstr ""
+"La interfaz Ethernet del AP3500 es compatible con auto-mdi/mdix, por lo que la interfaz puede conectarse directamente a un dispositivo cliente o a un conmutador Ethernet con un cable Ethernet estándar."
 
 #: ../../ap3500/quickstart.rst:18
 msgid "**IPv4**"
-msgstr ""
+msgstr "**IPv4**"
 
 #: ../../ap3500/quickstart.rst:20
 msgid ""
@@ -132,6 +136,7 @@ msgid ""
 " client. It will receive an ip address from any existing DHCP servers "
 "that are present on the network connected to the Ethernet interface."
 msgstr ""
+"El AP3500 tiene una interfaz Ethernet simple. La configuración por defecto del AP3500 es la de puentear la interfaz Ethernet con la radio inalámbrica. Debido a esta configuración predeterminada, el AP3500 actúa por defecto como cliente DHCP. Recibirá una dirección ip de cualquier servidor DHCP existente que se encuentre presente en la red conectada a la interfaz Ethernet."
 
 #: ../../ap3500/quickstart.rst:24
 msgid ""
@@ -140,16 +145,18 @@ msgid ""
 "Ethernet interface. In this failback mode the AP3500 will then be "
 "accessable using this self-assigned address."
 msgstr ""
+"Si el AP3500 no consigue obtener una concesión DHCP en los primeros 60 segundos, el AP3500 cambiará de modo y asignará 10.10.199.1/24 a la interfaz Ethernet. En este modo de emergencia (failback), el AP3500 será accesible utilizando esta dirección autoasignada."
 
 #: ../../ap3500/quickstart.rst:27
 msgid ""
 "Once you have determined the correct IPv4 address you can then move to "
 "accessing the AP3500 via the Web GUI or via SSH."
 msgstr ""
+"Una vez que usted haya determinado la dirección IPv4 correcta, puede seguir para acceder al AP3500 a través de la GUI Web o vía SSH."
 
 #: ../../ap3500/quickstart.rst:29
 msgid "**IPv6**"
-msgstr ""
+msgstr "**IPv6**"
 
 #: ../../ap3500/quickstart.rst:31
 msgid ""
@@ -157,6 +164,7 @@ msgid ""
 "Address Autoconfiguration) if these methods are present on the connected "
 "network."
 msgstr ""
+"El AP3500 obtendrá una dirección IPv6 utilizando DHCPv6 o SLAAC (Configuración automática de direcciones sin estado) si estos métodos están presentes en la red conectada."
 
 #: ../../ap3500/quickstart.rst:34
 msgid ""
@@ -169,6 +177,7 @@ msgid ""
 "to send a ping packet to the IPv6 \"all routers\" multicast "
 "address(ff02::2)."
 msgstr ""
+"El AP3500 siempre configurará una dirección de enlace local IPv6 basada en la dirección MAC ([1]_) del AP3500. Esta dirección de enlace local IPv6 está presente en todo momento, incluso si otras configuraciones IPv4 e IPv6 no son válidas. Por lo tanto, la dirección de enlace local es la forma más fiable de acceder al AP3500. Dado que esta dirección se basa en la dirección MAC de la interfaz Ethernet, es única para cada AP3500. Un método sencillo para determinar esta dirección es enviar un paquete ping a la dirección multicast IPv6 \"de todos los router\" (ff02::2)."
 
 #: ../../ap3500/quickstart.rst:39
 msgid ""
@@ -178,6 +187,7 @@ msgid ""
 "using Link Local addresses. For example Linux systems would use the "
 "following syntax if your interface was \"eth0\"::"
 msgstr ""
+"Para los sistemas Linux esto se puede hacer mediante el siguiente comando asumiendo que su interfaz Ethernet es \"eth0\". Tenga en cuenta que la mayoría de los sistemas operativos requieren que se especifique la interfaz además de la dirección cuando se utilizan direcciones de enlace local. Por ejemplo, los sistemas Linux utilizarían la siguiente sintaxis si su interfaz fuera \"eth0\"::"
 
 #: ../../ap3500/quickstart.rst:45
 msgid ""
@@ -187,32 +197,36 @@ msgid ""
 "label. Note; the AP3500 will have a MAC address that begins with "
 "\"B0:91:37\"."
 msgstr ""
+"Además, es posible calcular la dirección de enlace local utilizando la dirección MAC. Se pueden utilizar varias calculadoras en línea para encontrar fácilmente la dirección de enlace local ([2]_) por medio de la dirección MAC que se encuentra en la etiqueta del producto. Nota; el AP3500 tendrá una dirección MAC que empieza con \"B0:91:37\"."
 
 #: ../../ap3500/quickstart.rst:49
 msgid ""
 "Once you have determined the correct IPv6 address you can then move to "
 "accessing the AP3500 via the Web GUI or via SSH."
 msgstr ""
+"Una vez que usted haya determinado la dirección IPv6 correcta, puede seguir para acceder al AP3500 a través de la GUI Web o vía SSH."
 
 #: ../../ap3500/quickstart.rst:52
 msgid "Web GUI Access"
-msgstr ""
+msgstr "Acceso a la interfaz gráfica de usuario (GUI) en la web"
 
 #: ../../ap3500/quickstart.rst:54
 msgid "**Access via Ethernet using the Web Interface - IPv4**"
-msgstr ""
+msgstr "** Acceso vía Ethernet mediante la interfaz web - IPv4**"
 
 #: ../../ap3500/quickstart.rst:56
 msgid ""
 "This interface defaults to a network address range of 10.10.199.0/24 with"
 " the router configured as 10.10.199.1 and supports DHCP client access."
 msgstr ""
+"Esta interfaz tiene por defecto un intervalo de direcciones de red de 10.10.199.0/24 con el router configurado como 10.10.199.1 y es compatible con el acceso de cliente DHCP."
 
 #: ../../ap3500/quickstart.rst:59
 msgid ""
 "When the AP3500 is using the failback IPv4 address access the login page "
 "use the following url: `https://10.10.199.1/ <https://10.10.199.1>`_"
 msgstr ""
+"Cuando el AP3500 está utilizando la dirección IPv4 de emergencia (failback) acceder a la página de inicio de sesión en la siguiente url: `https://10.10.199.1/ <https://10.10.199.1>`_"
 
 #: ../../ap3500/quickstart.rst:61 ../../ap3500/quickstart.rst:80
 msgid ""
@@ -220,22 +234,25 @@ msgid ""
 "warning in when connecting to the AP3500 for the first time. These "
 "warnings can be safely ignored for accessing the management Web GUI."
 msgstr ""
+"El AP3500 se entrega con un certificado ssl auto-firmado. Esto puede causar una advertencia al conectarse al AP3500 por primera vez. Estas advertencias pueden ignorarse de manera segura para acceder a la GUI Web de gestión."
 
 #: ../../ap3500/quickstart.rst:64 ../../ap3500/quickstart.rst:92
 msgid ""
 "The admin username is \"**root**\".  The default password is "
 "\"**imagestream**\"."
 msgstr ""
+"El nombre de usuario del administrador es \"**root**\".  La contraseña por defecto es \"**imagestream**\"."
 
 #: ../../ap3500/quickstart.rst:67
 msgid ""
 "We strongly recommend that you change the default password as your first "
 "configuration change."
 msgstr ""
+"Le recomendamos encarecidamente que cambie la contraseña predeterminada como primer cambio en la configuración."
 
 #: ../../ap3500/quickstart.rst:73
 msgid "**Access via Ethernet using the Web Interface - IPv6**"
-msgstr ""
+msgstr "** Acceso vía Ethernet mediante la interfaz web - IPv6**"
 
 #: ../../ap3500/quickstart.rst:75
 msgid ""
@@ -244,14 +261,15 @@ msgid ""
 "syntax. If we assume that you determined your Ipv6 Link Local address is "
 "\"fe80::b291:37ff:fe05:1\" then the correct url would be as follows::"
 msgstr ""
+"Para acceder a la GUI Web utilizando IPv6 el método es similar al de utilizar IPv4. Para introducir una dirección IPv6 en un navegador web utilice la siguiente sintaxis. Si asumimos que usted determinó que su dirección de enlace local Ipv6 es \"fe80::b291:37ff:fe05:1\" entonces la url correcta sería la siguiente::"
 
 #: ../../ap3500/quickstart.rst:84
 msgid "CLI Access via SSH"
-msgstr ""
+msgstr "Acceso CLI vía SSH"
 
 #: ../../ap3500/quickstart.rst:86
 msgid "**IPv4 & IPv6**"
-msgstr ""
+msgstr "**IPv4 e IPv6**"
 
 #: ../../ap3500/quickstart.rst:88
 msgid ""
@@ -261,16 +279,16 @@ msgid ""
 " need to determine which address was a assigned by looking at your DHCP "
 "sever. In the following screenshot the address was assigned via DHCP."
 msgstr ""
+"El AP3500 también se puede acceder vía SSH. Usando la dirección ip del AP3500 conéctese como usuario root. Si el AP3500 está en modo IPv4 de emergencia (failback) la dirección ip será 10.10.199.1. Si el AP3500 está usando DHCP o DHCPv6 necesita determinar qué dirección fue asignada revisando su servidor DHCP. En la siguiente captura de pantalla la dirección fue asignada vía DHCP."
 
 #: ../../ap3500/quickstart.rst:99
 msgid "Footnotes"
-msgstr ""
+msgstr "Notas a pie de página"
 
 #: ../../ap3500/quickstart.rst:100
 msgid "Using the RFC4862 standard for Link Local address creation"
-msgstr ""
+msgstr "Uso del estándar RFC4862 para la creación de direcciones de enlace local"
 
 #: ../../ap3500/quickstart.rst:101
 msgid "https://ben.akrin.com/?p=1347 Ipv6 Link Local Calculator"
-msgstr ""
-
+msgstr "https://ben.akrin.com/?p=1347 Calculador de enlace local Ipv6"

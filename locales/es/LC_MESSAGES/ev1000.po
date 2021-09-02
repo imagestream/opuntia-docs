@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../ev1000/hardware.rst:3
 msgid "Ev1000 Hardware details"
-msgstr ""
+msgstr "Información del hardware del Ev1000"
 
 #: ../../ev1000/hardware.rst:5
 msgid ""
@@ -28,39 +28,38 @@ msgid ""
 "server, security device and edge compute device depending on software "
 "configuration. The hardware"
 msgstr ""
-"El Envoy 1000 es una plataforma compacta que se puede utilizar como "
-"router, servidor vpn, dispositivo de seguridad y dispositivo informático "
-"perimetral dependiendo de la configuración del software. El hardware"
+"El Envoy 1000 es una plataforma compacta que se puede utilizar como router, servidor vpn, dispositivo de seguridad y dispositivo de computo de borde (edge compute) dependiendo de la configuración del software. El hardware"
 
 #: ../../ev1000/quickstart.rst:5
 msgid "EV1000 QuickStart Guide"
-msgstr ""
+msgstr "Guía de inicio rápido del EV1000"
 
 #: ../../ev1000/quickstart.rst:7
 msgid "Table of Contents"
-msgstr ""
+msgstr "Índice"
 
 #: ../../ev1000/quickstart.rst:9
 msgid ""
 "The EV1000 is configured by default to allow access via several different"
 " methods."
 msgstr ""
+"El EV1000 está configurado por defecto para permitir el acceso a través de varios métodos diferentes."
 
 #: ../../ev1000/quickstart.rst:11
 msgid "Access via Ethernet using the Web Interface"
-msgstr ""
+msgstr "Acceso vía Ethernet mediante la interfaz web"
 
 #: ../../ev1000/quickstart.rst:12
 msgid "Access via Ethernet using SSH"
-msgstr ""
+msgstr "Acceso vía Ethernet mediante SSH"
 
 #: ../../ev1000/quickstart.rst:13
 msgid "Access via the Serial Interface"
-msgstr ""
+msgstr "Acceso vía interfaz serie"
 
 #: ../../ev1000/quickstart.rst:16
 msgid "Ethernet Connectivity"
-msgstr ""
+msgstr "Conectividad Ethernet"
 
 #: ../../ev1000/quickstart.rst:18
 msgid ""
@@ -68,9 +67,7 @@ msgid ""
 "interface can be connected directly to a client device or an Ethernet "
 "switch with a standard Ethernet cable."
 msgstr ""
-"La interfaz Ethernet en el EV1000 admite mdi/mdix automático para que la "
-"interfaz se pueda conectar directamente a un dispositivo cliente o a un "
-"conmutador Ethernet con un cable Ethernet estándar."
+"La interfaz Ethernet del EV1000 es compatible con auto-mdi/mdix, por lo que la interfaz puede conectarse directamente a un dispositivo cliente o a un conmutador Ethernet con un cable Ethernet estándar."
 
 #: ../../ev1000/quickstart.rst:21
 msgid ""
@@ -79,15 +76,11 @@ msgid ""
 " default configuration EV1000. It is possible to change these defaults "
 "once this unit is configured."
 msgstr ""
-"El EV1000 tiene tres interfaces Ethernet. Estos están marcados en la "
-"parte posterior del EV1000 como Eth0, Eth1 y Eth2. A continuación se "
-"muestra una descripción de la configuración predeterminada de fábrica "
-"EV1000. Es posible cambiar estos valores predeterminados una vez "
-"configurada esta unidad."
+"El EV1000 cuenta con tres interfaces Ethernet. Están marcadas en la parte posterior del EV1000 como Eth0, Eth1 y Eth2. Más adelante se muestra una descripción de la configuración predeterminada de fábrica del EV1000. Es posible cambiar estos valores predeterminados durnt ela configuración de la unidad."
 
 #: ../../ev1000/quickstart.rst:24
 msgid "**Eth0 and Eth1**"
-msgstr ""
+msgstr "**Eth0 y Eth1**"
 
 #: ../../ev1000/quickstart.rst:26
 msgid ""
@@ -98,28 +91,20 @@ msgid ""
 "obtain a valid IPv4 address and default routes; in the case where both "
 "interfaces install a default route Eth0 will be the perfered interface."
 msgstr ""
-"La configuración predeterminada del EV1000 es configurar Eth0 y Eth1 como"
-" interfaces discretas. Estas interfaces se ejecutan en modo cliente DHCP "
-"y DHCPv6. Seguirá intentando recibir una dirección IPv4 e IPv6 en la "
-"interfaz Wan hasta que se realice correctamente. Puesto que ambas "
-"interfaces están intentando obtener una dirección IPv4 válida y rutas "
-"predeterminadas; en el caso de que ambas interfaces instalen una ruta "
-"predeterminada Eth0 será la interfaz perferida."
+"La configuración predeterminada del EV1000 establece a Eth0 y Eth1 como interfaces discretas. Estas interfaces se ejecutan en modo cliente DHCP y DHCPv6. Seguirá intentando recibir una dirección IPv4 e IPv6 en la interfaz Wan hasta que se realice correctamente. Debido a que ambas interfaces están intentando obtener una dirección IPv4 válida y rutas predeterminadas, en el caso de que ambas interfaces instalen una ruta predeterminada, Eth0 será la interfaz preferida."
 
 #: ../../ev1000/quickstart.rst:31
 msgid ""
 "The Eth0 and Eth1 interface are part of the Wan Firewall Zone. It will "
 "Source Nat traffic flowing out these interfaces by default."
 msgstr ""
-"La interfaz Eth0 y Eth1 forman parte de wan firewall zone. El tráfico Nat"
-" de origen fluyendo estas interfaces de forma predeterminada."
+"Las interfaces Eth0 y Eth1 forman parte de la Zona del Cortafuegos (firewall) de la Wan. De manera predeterminada, fluirá tráfico Source Nat por estas interfaces."
 
 #: ../../ev1000/quickstart.rst:33
 msgid "**Eth2**"
-msgstr ""
+msgstr "**Eth2**"
 
 #: ../../ev1000/quickstart.rst:35
-#, fuzzy
 msgid ""
 "The Eth2 interface is configured as the default management interface. "
 "This interface is connfigured as a DHCP and DHCPv6 server. The default ip"
@@ -127,11 +112,7 @@ msgid ""
 "the 10.10.199.0/24 network. This interface is in the management firewall "
 "zone."
 msgstr ""
-"La interfaz Eth2 se configura como interfaz de administración "
-"predeterminada. Esta interfaz se consfigura como servidor DHCP. La "
-"dirección IP predeterminada de esta interfaz es 10.10.199.1/24. "
-"Proporcionará DHCP para la red 10.10.199.0/24. Esta interfaz se encuentra"
-" en la zona del firewall de administración."
+"La interfaz Eth2 se configura como interfaz de gestión predeterminada. Esta interfaz está configurada como servidor DHCP y DHCPv6. La dirección ip predeterminada de esta interfaz es 10.10.199.1/24. Proporcionará DHCP para la red 10.10.199.0/24. Esta interfaz se encuentra en la zona del firewall de gestión."
 
 #: ../../ev1000/quickstart.rst:39
 msgid ""
@@ -139,13 +120,11 @@ msgid ""
 "Eth0 or Eth1; then an IPv6 network will be configured on the management "
 "interface."
 msgstr ""
-"Si el EV1000 obtiene una desligación de prefijo IPv6 mediante DHCPv6 en "
-"Eth0 o Eth1; a continuación, se configurará una red IPv6 en la interfaz "
-"de administración."
+"Si el EV1000 obtiene una delegación de prefijo IPv6 mediante DHCPv6 en Eth0 o Eth1, entonces se configurará una red IPv6 en la interfaz de gestión."
 
 #: ../../ev1000/quickstart.rst:42
 msgid "**All Ethernet Interfaces**"
-msgstr ""
+msgstr "**Todas las interfaces Ethernet**"
 
 #: ../../ev1000/quickstart.rst:44
 msgid ""
@@ -159,15 +138,7 @@ msgid ""
 "determine this address is to send a ping packet to the IPv6 \"all "
 "routers\" multicast address(ff02::2)."
 msgstr ""
-"El EV1000 configurará siempre una dirección local del link IPv6 basada en"
-" la dirección MAC([1]_) del EV1000. Esta dirección IPv6 local de Link "
-"está presente en todo momento, incluso si IPv4 y otras configuraciones de"
-" IPv6 no son válidas. Así que la dirección local del link es la forma más"
-" relaible de acceder al EV1000. Puesto que esta dirección se basa en la "
-"dirección MAC de la interfaz Ethernet es unquie a cada interfaz EV1000 "
-"así que a menudo no es el más conveniente como usted debe determinar la "
-"dirección específica. Un método para determinar esta dirección es enviar "
-"un paquete ping a la dirección multicast IPv6 \"all Routers\" (ff02::2)."
+"El EV1000 configurará siempre una dirección de enlace local IPv6 basada en la dirección MAC([1]_) del EV1000. Esta dirección de enlace local IPv6 está presente en todo momento, incluso si otras configuraciones IPv4 e IPv6 no son válidas. De esta forma la dirección de enlace local es la forma más fiable de acceder al EV1000. Dado que esta dirección se basa en la dirección MAC de la interfaz Ethernet es única para cada interfaz del EV1000 por lo que no es común que sea la forma más conveniente para determinar la dirección específica. Un método para determinar esta dirección es enviar un paquete ping a la dirección multicast IPv6 \"todos los Routers\" (ff02::2)."
 
 #: ../../ev1000/quickstart.rst:50
 msgid ""
@@ -177,6 +148,7 @@ msgid ""
 "using Link Local addresses. For example Linux systems would use the "
 "following syntax if your interface was \"eth0\"::"
 msgstr ""
+"Para los sistemas Linux esto se puede hacer mediante el siguiente comando asumiendo que su interfaz Ethernet es \"eth0\". Tenga en cuenta que la mayoría de los sistemas operativos requieren que se especifique la interfaz además de la dirección cuando se utilizan direcciones de enlace local. Por ejemplo, los sistemas Linux utilizarían la siguiente sintaxis si su interfaz fuera \"eth0\"::"
 
 #: ../../ev1000/quickstart.rst:56
 msgid ""
@@ -185,16 +157,18 @@ msgid ""
 "Link local address([2]_) using the MAC address located on the product "
 "label."
 msgstr ""
+"Además, es posible calcular la dirección de enlace local utilizando la dirección MAC. Se pueden utilizar varias calculadoras en línea para encontrar fácilmente la dirección de enlace local ([2]_) por medio de la dirección MAC que se encuentra en la etiqueta del producto."
 
 #: ../../ev1000/quickstart.rst:59
 msgid ""
 "Once you have determined the correct IPv4 or IPv6 address you can then "
 "move to accessing the EV1000 via the Web GUI or via SSH."
 msgstr ""
+"Una vez que usted haya determinado la dirección IPv4 o IPv6 correcta, puede seguir para acceder al EV1000 a través de la interfaz de usuario gráfica en línea, GUI Web o vía SSH."
 
 #: ../../ev1000/quickstart.rst:62
 msgid "Serial Connectivity"
-msgstr ""
+msgstr "Conectividad en serie"
 
 #: ../../ev1000/quickstart.rst:64
 msgid ""
@@ -204,6 +178,7 @@ msgid ""
 "using 8 data bits; no parity bit and 1 stop bit; or commonly known as "
 "\"115.2kbps 8n1\"."
 msgstr ""
+"El EV1000 dispone de un conector DE-9([3]_) que utiliza el estándar serie Rs232. Necesitará una conexión **Serie nula** para conectarse a esta interfaz. La interfaz funcionará a una tasa de baudios de 115,200 bps y utilizará 8 bits de datos; sin bit de paridad y 1 bit de parada; o comúnmente conocido como \"115.2kbps 8n1\"."
 
 #: ../../ev1000/quickstart.rst:68
 msgid ""
@@ -211,14 +186,15 @@ msgid ""
 "issues with incorrect cables. As noted above, a **Null Serial** cable is "
 "required."
 msgstr ""
+"La causa más probable de los problemas al utilizar la interfaz serie son los causados por el uso de cables incorrectos. Como se ha indicado anteriormente, se necesita un cable **Serie Nulo**."
 
 #: ../../ev1000/quickstart.rst:72
 msgid "Web GUI Access"
-msgstr ""
+msgstr "Acceso a la interfaz gráfica de usuario (GUI) en la web"
 
 #: ../../ev1000/quickstart.rst:74
 msgid "**Access via Ethernet using the Web Interface**"
-msgstr ""
+msgstr "** Acceso vía Ethernet mediante la interfaz web**"
 
 #: ../../ev1000/quickstart.rst:76
 msgid ""
@@ -228,12 +204,14 @@ msgid ""
 "the login page is the following url: `https://10.10.199.1/ "
 "<https://10.10.199.1>`_"
 msgstr ""
+"La interfaz de gestión (Eth2) tiene por defecto un intervalo de direcciones de red de 10.10.199.0/24 con el router configurado como 10.10.199.1 y es compatible con el acceso de cliente DHCP. Si se conecta a través de esta interfaz, la dirección de acceso a la página de inicio de sesión es la siguiente url: `https://10.10.199.1/ <https://10.10.199.1>`_"
 
 #: ../../ev1000/quickstart.rst:80
 msgid ""
 "Additionally the EV1000 can be accessed on the Eth0 and Eth1 either using"
 " the IP addresses assigned via DHCP/DHCPv6 or Ipv6 Link Local address."
 msgstr ""
+"Además, se puede acceder al EV1000 en Eth0 y Eth1 utilizando las direcciones IP asignadas a través de DHCP/DHCPv6 o la dirección de enlace local Ipv6."
 
 #: ../../ev1000/quickstart.rst:83 ../../ev1000/quickstart.rst:102
 msgid ""
@@ -241,22 +219,25 @@ msgid ""
 "warning in when connecting to the EV1000 for the first time. These "
 "warnings can be safely ignored for accessing the management Web GUI."
 msgstr ""
+"El EV1000 se entrega con un certificado ssl auto-firmado. Esto puede causar una advertencia al conectarse al EV1000 por primera vez. Estas advertencias pueden ignorarse de manera segura para acceder a la GUI Web de gestión."
 
 #: ../../ev1000/quickstart.rst:86 ../../ev1000/quickstart.rst:114
 msgid ""
 "The admin username is \"**root**\".  The default password is "
 "\"**imagestream**\"."
 msgstr ""
+"El nombre de usuario del administrador es \"**root**\".  La contraseña por defecto es \"**imagestream**\"."
 
 #: ../../ev1000/quickstart.rst:89
 msgid ""
 "We strongly recommend that you change the default password as your first "
 "configuration task."
 msgstr ""
+"Le recomendamos encarecidamente que cambie la contraseña predeterminada como primera tarea en la configuración."
 
 #: ../../ev1000/quickstart.rst:95
 msgid "**Access via Ethernet using the Web Interface: Link Local details**"
-msgstr ""
+msgstr "** Acceso vía Ethernet mediante la interfaz web** Información del enlace local**"
 
 #: ../../ev1000/quickstart.rst:97
 msgid ""
@@ -266,14 +247,15 @@ msgid ""
 "address is \"fe80::b291:37ff:fe05:1\" then the correct url would be as "
 "follows::"
 msgstr ""
+"Para acceder a la GUI Web utilizando el enlace local IPv6, el método es similar al de utilizar IPv4. Para introducir una dirección IPv6 en un navegador web utilice la siguiente sintaxis. Si asumimos que usted determinó que su dirección de enlace local Ipv6 es \"fe80::b291:37ff:fe05:1\" entonces la url correcta sería la siguiente::"
 
 #: ../../ev1000/quickstart.rst:106
 msgid "CLI Access via SSH"
-msgstr ""
+msgstr "Acceso CLI vía SSH"
 
 #: ../../ev1000/quickstart.rst:108
 msgid "**IPv4 & IPv6**"
-msgstr ""
+msgstr "**IPv4 e IPv6**"
 
 #: ../../ev1000/quickstart.rst:110
 msgid ""
@@ -285,10 +267,11 @@ msgid ""
 "at your DHCP sever. In the following screenshot the address was assigned "
 "via DHCP."
 msgstr ""
+"El EV1000 también se puede acceder vía SSH. Usando la dirección ip del EV1000 conéctese como usuario root. Si se conecta a la interfaz de gestión del EV1000 la dirección ip será 10.10.199.1. Si se conecta a Eth0 o Eth1, el EV1000 estará usando DHCP o DHCPv6 y tendrá que determinar qué dirección fue asignada revisando su servidor DHCP. En la siguiente captura de pantalla la dirección fue asignada vía DHCP."
 
 #: ../../ev1000/quickstart.rst:121
 msgid "CLI Access via the Serial Interface"
-msgstr ""
+msgstr "Acceso CLI vía interfaz serie"
 
 #: ../../ev1000/quickstart.rst:123
 msgid ""
@@ -297,79 +280,80 @@ msgid ""
 " of Opuntia version 4.8.16). Just connect using this interface (for "
 "details see above) and press the \"enter\" key."
 msgstr ""
+"El EV1000 cuenta con una interfaz DE-9 Rs232 integrada. Cuando se conecta vía Interfaz Serie; para acceder a la CLI no se requiere actualmente ninguna contraseña (a partir de la versión 4.8.16 de Opuntia). Sólo tiene que conectarse mediante esta interfaz (para más información, véase más arriba) y pulsar la tecla \"enter\"."
 
 #: ../../ev1000/quickstart.rst:127
 msgid "Firewall defaults"
-msgstr ""
+msgstr "Valores predeterminados del cortafuegos (firewall)"
 
 #: ../../ev1000/quickstart.rst:129
 msgid ""
 "The table below describes the default firewall zone and policy for the "
 "EV1000."
 msgstr ""
+"La siguiente tabla describe la zona y la política de cortafuegos predeterminadas para el EV1000."
 
 #: ../../ev1000/quickstart.rst:131
 msgid "Firewall Interface defaults"
-msgstr ""
+msgstr "Valores predeterminados de la Interfaz del cortafuegos"
 
 #: ../../ev1000/quickstart.rst:134
 msgid "Interface Name"
-msgstr ""
+msgstr "Nombre de la interfaz"
 
 #: ../../ev1000/quickstart.rst:134
 msgid "Default Zone"
-msgstr ""
+msgstr "Zona predeterminada"
 
 #: ../../ev1000/quickstart.rst:134
 msgid "Input policy"
-msgstr ""
+msgstr "Política de entrada"
 
 #: ../../ev1000/quickstart.rst:134
 msgid "Forward policy"
-msgstr ""
+msgstr "Política de avance"
 
 #: ../../ev1000/quickstart.rst:134
 msgid "Output policy"
-msgstr ""
+msgstr "Política de salida"
 
 #: ../../ev1000/quickstart.rst:136
 msgid "Eth0"
-msgstr ""
+msgstr "Eth0"
 
 #: ../../ev1000/quickstart.rst:136 ../../ev1000/quickstart.rst:138
 msgid "Wan"
-msgstr ""
+msgstr "Wan"
 
 #: ../../ev1000/quickstart.rst:136 ../../ev1000/quickstart.rst:138
 #: ../../ev1000/quickstart.rst:140
 msgid "Accept"
-msgstr ""
+msgstr "Aceptar"
 
 #: ../../ev1000/quickstart.rst:138
 msgid "Eth1"
-msgstr ""
+msgstr "Eth1"
 
 #: ../../ev1000/quickstart.rst:140
 msgid "Eth2"
-msgstr ""
+msgstr "Eth2"
 
 #: ../../ev1000/quickstart.rst:140
 msgid "Management"
-msgstr ""
+msgstr "Gestión"
 
 #: ../../ev1000/quickstart.rst:147
 msgid "Footnotes"
-msgstr ""
+msgstr "Notas a pie de página"
 
 #: ../../ev1000/quickstart.rst:148
 msgid "Using the RFC4862 standard for Link Local address creation"
-msgstr ""
+msgstr "Uso del estándar RFC4862 para la creación de direcciones de enlace local"
 
 #: ../../ev1000/quickstart.rst:149
 msgid "https://ben.akrin.com/?p=1347 Ipv6 Link Local Calculator"
-msgstr ""
+msgstr "https://ben.akrin.com/?p=1347 Calculador de enlace local Ipv6"
 
 #: ../../ev1000/quickstart.rst:150
 msgid "The DE-9 connector is often incorrectly known as a DB-9 interface."
-msgstr ""
-
+msgstr "El conector DE-9 suele conocerse incorrectamente como interfaz DB-9."
