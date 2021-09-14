@@ -19,6 +19,7 @@ It's focused on providing advanced routing and edge computing features.
    Opuntia-manual/configuration/configuration-managment
    Opuntia-manual/configuration/os-managment
    Opuntia-manual/configuration/wired-interfaces
+   Opuntia-manual/configuration/wireless
    Opuntia-manual/configuration/dhcp-server
    Opuntia-manual/configuration/firewall
    Opuntia-manual/configuration/vpn
