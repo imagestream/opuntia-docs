@@ -7,7 +7,10 @@ Wireless Interface Configuraion
 Wireless Basics
 ---------------
 
-Opuntia supports most common WiFi standards. Current hardware platforms support the Wi-Fi 4, Wi-Fi 5 and Wi-Fi 6 standards.  
+Opuntia supports most common WiFi standards. Current hardware platforms support the Wi-Fi 4, Wi-Fi 5 and Wi-Fi 6 standards. 
+
+WiFi operates in three main spectrums of radio frequency. The 2.4Ghz, 5Ghz and 6Ghz bands. These are further subdivided into 
+channels. 
 
 Wireless Interfaces in Opuntia
 ------------------------------
@@ -39,6 +42,29 @@ the client TX rate.
 In the Associated Stations section we can see the single connected client device. We can see useful information such as MAC-Address, Host 
 Ip addresses, signal to noise, current RX/TX data rates, MCS Class and operating mode.
 
-Access Point Configuraion
--------------------------
+Wireless Configuraion
+---------------------
+
+To configure Wireless interfaces first navigate to the Wireless Overview page.
+
+Main Menu - *Network -> Wireless*
+
+Wireless Overview
+#################
+
+.. image:: ../manual-images/Network-Wireless-Overview.png
+  :width: 700
+  :alt: Wifi configuration Overview page
+
+Wireless Scanning
+#################
+
+Opuntia supports scanning for local SSID's on each radio that is installed. This can be useful for finding existing WiFi networks to join. 
+The Scan is limited to the radio doing the scan. In the example below we used radio0 which is operating in the 2.4Ghz spectrum. So we 
+see Wireless networks in channel 1-11. 
+
+
+.. image:: ../manual-images/Network-Wireless-Scan-example.png
+  :width: 700
+  :alt: Wifi scanning example 
 
