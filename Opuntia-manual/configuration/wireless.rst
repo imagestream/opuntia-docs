@@ -10,7 +10,24 @@ Wireless Basics
 Opuntia supports most common WiFi standards. Current hardware platforms support the Wi-Fi 4, Wi-Fi 5 and Wi-Fi 6 standards. 
 
 WiFi operates in three main spectrums of radio frequency. The 2.4Ghz, 5Ghz and 6Ghz bands. These are further subdivided into 
-channels. 
+channels. Each country has specific requirements for transmit power and other restrictions. Opuntia will limit radio TX power
+based on your current country code. But some restrictions like indoor vs outdoor use can not always be determined based on the
+hardware platform. So please consult your local regulations.  
+
+Below is the supported WiFi frequency ranges and channel supported by Opuntia while operating in the United States. 
+
++-------------------+-----------------+----------------------------------+
+| Wifi Specificaion | Frequency Range | Valid range of 20 Mhz channels   |   
++-------------------+-----------------+----------------------------------+
+| WiFi 4            | 2.4Ghz, 5Ghz    | 2.4Ghz: 1-11 5Ghz: 32-68, 96-177 |
++-------------------+-----------------+----------------------------------+
+| WiFi 5            | 5Ghz            | 5Ghz: 32-68, 96-177              |
++-------------------+-----------------+----------------------------------+
+| WiFi 6            | 2.4Ghz, 5Ghz    | 2.4Ghz: 1-11 5Ghz: 32-68, 96-177 |
++-------------------+-----------------+----------------------------------+
+| WiFi 6e           | 6Ghz            | 6Ghz: 1-233                      |
++-------------------+-----------------+----------------------------------+
+
 
 Wireless Interfaces in Opuntia
 ------------------------------
@@ -52,9 +69,15 @@ Main Menu - *Network -> Wireless*
 Wireless Overview
 #################
 
+The Wireless Overview page will show each radio installed. Configuraion of the each radio, SSID's configured by each radio, currently 
+associated stations and signal rates. 
+
 .. image:: ../manual-images/Network-Wireless-Overview.png
   :width: 700
   :alt: Wifi configuration Overview page
+
+This example shows an AP2100 with two radio's installed. The first (radio0) is in WiFi using channel #1 (2.412 Ghz). And the second radio 
+(radio1) is using channel #157 in the 5Ghz range.  
 
 Wireless Scanning
 #################
@@ -62,7 +85,6 @@ Wireless Scanning
 Opuntia supports scanning for local SSID's on each radio that is installed. This can be useful for finding existing WiFi networks to join. 
 The Scan is limited to the radio doing the scan. In the example below we used radio0 which is operating in the 2.4Ghz spectrum. So we 
 see Wireless networks in channel 1-11. 
-
 
 .. image:: ../manual-images/Network-Wireless-Scan-example.png
   :width: 700
