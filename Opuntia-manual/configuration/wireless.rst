@@ -14,19 +14,19 @@ channels. Each country has specific requirements for transmit power and other re
 based on your current country code. But some restrictions like indoor vs outdoor use can not always be determined based on the
 hardware platform. So please consult your local regulations.  
 
-Below is the supported WiFi frequency ranges and channel supported by Opuntia while operating in the United States. 
+Below is the supported WiFi frequency ranges and channels supported by Opuntia while operating in the United States. 
 
-+-------------------+-----------------+----------------------------------+
-| Wifi Specificaion | Frequency Range | Valid range of 20 Mhz channels   |   
-+-------------------+-----------------+----------------------------------+
-| WiFi 4            | 2.4Ghz, 5Ghz    | 2.4Ghz: 1-11 5Ghz: 32-68, 96-177 |
-+-------------------+-----------------+----------------------------------+
-| WiFi 5            | 5Ghz            | 5Ghz: 32-68, 96-177              |
-+-------------------+-----------------+----------------------------------+
-| WiFi 6            | 2.4Ghz, 5Ghz    | 2.4Ghz: 1-11 5Ghz: 32-68, 96-177 |
-+-------------------+-----------------+----------------------------------+
-| WiFi 6e           | 6Ghz            | 6Ghz: 1-233                      |
-+-------------------+-----------------+----------------------------------+
++--------------------+-----------------+----------------------------------+
+| Wifi Specificaion  | Frequency Range | Valid range of 20 Mhz channels   |   
++--------------------+-----------------+----------------------------------+
+| WiFi 4 (802.11n)   | 2.4Ghz, 5Ghz    | 2.4Ghz: 1-11 5Ghz: 32-68, 96-177 |
++--------------------+-----------------+----------------------------------+
+| WiFi 5 (802.11ac)  | 5Ghz            | 5Ghz: 32-68, 96-177              |
++--------------------+-----------------+----------------------------------+
+| WiFi 6 (802.11ax)  | 2.4Ghz, 5Ghz    | 2.4Ghz: 1-11 5Ghz: 32-68, 96-177 |
++--------------------+-----------------+----------------------------------+
+| WiFi 6e (802.11ax) | 6Ghz            | 6Ghz: 1-233                      |
++--------------------+-----------------+----------------------------------+
 
 
 Wireless Interfaces in Opuntia
