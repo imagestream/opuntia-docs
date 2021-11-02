@@ -77,7 +77,9 @@ associated stations and signal rates.
   :alt: Wifi configuration Overview page
 
 This example shows an AP2100 with two radio's installed. The first (radio0) is in WiFi using channel #1 (2.412 Ghz). And the second radio 
-(radio1) is using channel #157 in the 5Ghz range.  
+(radio1) is using channel #157 in the 5Ghz range.
+
+This screen will also show the currently associated stations. In this case, you see a single client connected to the "EVPN5" wifi SSID. 
 
 Wireless Scanning
 #################
@@ -89,4 +91,5 @@ see Wireless networks in channel 1-11.
 .. image:: ../manual-images/Network-Wireless-Scan-example.png
   :width: 700
   :alt: Wifi scanning example 
+
 
