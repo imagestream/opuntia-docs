@@ -59,15 +59,12 @@ the client TX rate.
 In the Associated Stations section we can see the single connected client device. We can see useful information such as MAC-Address, Host 
 Ip addresses, signal to noise, current RX/TX data rates, MCS Class and operating mode.
 
-Wireless Configuraion
----------------------
+Wireless Overview
+-----------------
 
-To configure Wireless interfaces first navigate to the Wireless Overview page.
+To view Wireless interfaces first navigate to the Wireless Overview page.
 
 Main Menu - *Network -> Wireless*
-
-Wireless Overview
-#################
 
 The Wireless Overview page will show each radio installed. Configuraion of the each radio, SSID's configured by each radio, currently 
 associated stations and signal rates. 
@@ -92,4 +89,66 @@ see Wireless networks in channel 1-11.
   :width: 700
   :alt: Wifi scanning example 
 
+Wireless Configuraion
+---------------------
 
+To configured Wireless interfaces first navigate to the Wireless Overview page.
+
+Main Menu - *Network -> Wireless*
+
+The Wireless Overview page will show each radio installed. Configuraion of the each radio, SSID's configured by each radio, currently 
+associated stations and signal rates. 
+
+Access Point Mode
+#################
+
+Web GUI
+******* 
+
+Access Point mode is the most common configuration for Wireless devices. This mode allows wifi enabled devices to connect the Opuntia system 
+and then access the network that is bridged onto the wireless Interface. 
+
+To begin configuring a new Wireless device first find the radio interface that you want add the SSID and click the *Add* button. You will then
+see the following screen. By default Access Point mode is selected. 
+
+.. image:: ../manual-images/Network-Wireless-Add.png
+  :width: 700
+  :alt: Wireless AP mode configuration 
+
+This screen shows the full configuration for the Wireless interface. It's broken up into two different sections, *Device Configuraion* and 
+*Interface Configuraion*. 
+
+Device Configuraion configures the hardware settings of the radio. 
+
+.. note:: Changes to hardware level configurations will effect ALL SSID's currently configured to use this radio device.  
+
+The general setup tab covers all of the common hardware settings. We have an *Enable* / *Disable* button that will shutdown the SSID on the 
+radio interface. Operating frequency which allows for configuring the 802.11 mode (see Wireless Basics at the top of this setion for more 
+information), Wi-Fi channel and channel width. 
+
+The last option is transmit power. This value is effected by your Wi-Fi channel and Operating mode in addition to your current operating region.   
+
+Interface Configuraion 
+
+Client Mode
+###########
+
+802.11s Mode
+############
+
+Access Point WDS Mode
+#####################
+
+Client Mode WDS
+###############
+
+Other Modes 
+###########
+
+Opuntia supports several other Wireless interface configuration modes. These are listed below. Since their usage uncommon, at this time we 
+do not plan to cover them in detail in this documentation. If you have a use case for these modes and need assistance with configuration or
+usage, please contact support via e-mail support@imagestream.com or via phone at +1 (210) 569-1211. 
+
+ Ad-Hoc
+ Pseudo Ad-Hoc
+ Monitor
