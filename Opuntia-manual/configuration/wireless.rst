@@ -124,9 +124,10 @@ Device Configuraion configures the hardware settings of the radio.
 
 The general setup tab covers all of the common hardware settings. We have an *Enable* / *Disable* button that will shutdown the SSID on the 
 radio interface. Operating frequency which allows for configuring the 802.11 mode (see Wireless Basics at the top of this setion for more 
-information), Wi-Fi channel and channel width. 
+information), Wi-Fi channel and channel width in Mhz. 
 
-The last option is transmit power. This value is effected by your Wi-Fi channel and Operating mode in addition to your current operating region.   
+The last option is transmit power. This the maximum transmit power is affected by your Wi-Fi channel, Operating mode and your current operating 
+region.   
 
 Interface Configuraion 
 
