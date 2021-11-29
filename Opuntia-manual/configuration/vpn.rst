@@ -244,6 +244,60 @@ Once that rule is installed you will see this from the firewall ruleset summary.
 Client Setup
 ############
 
+Windows 10
+**********
+
+Windows 10 supports IPsec/L2TP clients natively. In this section we will detail the configuraion process when setting up a Windows 10 
+client to connect to our example IPsec/L2TP vpn from above.
+
+.. image:: ../manual-images/VPN-Client/VPN-L2TP-Win10-Step1.png
+  :width: 700
+  :alt: Windows 10 Step 1 - VPN settings
+
+The first step is to open the *Network & Internet* settings in the Windows 10 control panel. And then click the *VPN* setting in the left 
+panel. 
+
+Then click the *Add a VPN connection* button.
+
+.. image:: ../manual-images/VPN-Client/VPN-L2TP-Win10-Step2.png
+  :width: 700
+  :alt: Windows 10 Step 2 - Vpn provider, name and server address/host name. 
+
+This will bring up the VPN connection configuraion page.
+
+Set the *VPN provider* to "Windows (built-in)". Connection name can be any name we wish, in our example we will set it to "Office-VPN". 
+
+Since our example VPN server is at ip address 203.0.113.1 we will configure that in the *Server Name or address* box. This could be a DNS 
+hostname in other configurations.
+
+.. image:: ../manual-images/VPN-Client/VPN-L2TP-Win10-Step3.png
+  :width: 700
+  :alt: Windows 10 Step 3 - Vpn type, Psk, Username and Password. 
+
+Now we need to change the VPN type to "L2TP/IPsec with pre-shared key". This matches the configuraion of the Opuntia system that we configured 
+in the section above. Doing this will add the "Pre-Shared key" option. Enter your configured PSK; in this example it's 3dTamd01m. 
+
+The type of sign-in info is "User name and password". Next enter your chosen username/password information. Following our example; 
+username *alice* password *47roses*. 
+
+To save the vpn configuration click the "Save" button. 
+
+.. image:: ../manual-images/VPN-Client/VPN-L2TP-Win10-Final.png
+  :width: 700
+  :alt: Windows 10 Final VPN configuraion Step. 
+
+After saving the configuraion you will be returned to the *Network & Internet* settings in the Windows 10 control panel.
+
+You can then click the Office-VPN button a small drop down box will then expand. 
+
+.. image:: ../manual-images/VPN-Client/VPN-L2TP-Win10-Connect.png
+  :width: 700
+  :alt: Windows 10 Final VPN configuraion Step. 
+
+Finally to connect to the VPN just click the connect button. 
+
+By default Windows 10 will route all traffic through the IPsec/L2TP Vpn.
+
 MacOS Big Sur
 *************
 

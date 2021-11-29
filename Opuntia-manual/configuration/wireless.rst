@@ -129,7 +129,9 @@ information), Wi-Fi channel and channel width in Mhz.
 The last option is transmit power. This the maximum transmit power is affected by your Wi-Fi channel, Operating mode and your current operating 
 region.   
 
-Interface Configuraion 
+Interface Configuraion configures SSID specific settings. 
+
+This section has several tabs, general setup sets the SSID mode, ESSID Name and network the SSID is bridged 
 
 Client Mode
 ###########
