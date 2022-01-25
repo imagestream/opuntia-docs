@@ -17,12 +17,13 @@ It's focused on providing advanced routing and edge computing features.
    Opuntia-manual/introduction/accessing
    Opuntia-manual/configuration/administrative-configuration
    Opuntia-manual/configuration/configuration-managment
-   Opuntia-manual/configuration/os-managment
+   Opuntia-manual/configuration/os-management
    Opuntia-manual/configuration/wired-interfaces
    Opuntia-manual/configuration/wireless
    Opuntia-manual/configuration/dhcp-server
    Opuntia-manual/configuration/firewall
    Opuntia-manual/configuration/vpn
+   Opuntia-manual/configuration/monitoring
    Opuntia-manual/security/hardening
    Opuntia-manual/advanced/frr
    Opuntia-manual/advanced/ipv6-dynamic

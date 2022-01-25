@@ -131,7 +131,9 @@ region.
 
 Interface Configuraion configures SSID specific settings. 
 
-This section has several tabs, general setup sets the SSID mode, ESSID Name and network the SSID is bridged 
+This section has several tabs, general setup, wireless security, mac-filters and advanced settings. 
+
+
 
 Client Mode
 ###########
