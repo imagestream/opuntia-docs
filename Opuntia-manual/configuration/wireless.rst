@@ -28,6 +28,8 @@ Below is the supported WiFi frequency ranges and channels supported by Opuntia w
 | WiFi 6e (802.11ax) | 6Ghz            | 6Ghz: 1-233                      |
 +--------------------+-----------------+----------------------------------+
 
+.. note:: Picking a DFS channel may cause a 60 second delay on activating the Wireless interface this is due to FCC requirements. 
+
 
 Wireless Interfaces in Opuntia
 ------------------------------
